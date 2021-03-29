@@ -1,0 +1,1678 @@
+/usr/bin/python3.6 /home/iptpnocpe/traffmon/traffmon.py
+START STAMP 1606333834.2996495
+---------------COUNTRY: Peru-------------
+***************** CUSTOMER: Econocable ***********************
+================= Reource: uplinks ***********************
+
+** nfdump -M /var/lib/nfsen/profiles/profiles-data/live/r0-l3-lim-pe  -T  -r 2020/11/24/nfcapd.202011241945 -n 10 -s inif/bytes
+nfdump filter:
+out if 130
+Top 10 Input If ordered by bytes:
+Date first seen          Duration Proto          Input If    Flows(%)     Packets(%)       Bytes(%)         pps      bps   bpp
+2020-11-24 19:43:32.311   311.739 any                 164    51026(15.3)   46.6 M(27.3)   66.1 G(29.9)   149474    1.7 G  1419
+2020-11-24 19:43:32.310   311.675 any                 159    77582(23.3)   36.9 M(21.6)   48.6 G(22.0)   118290    1.2 G  1317
+2020-11-24 19:43:32.308   311.614 any                 157    75499(22.7)   32.3 M(19.0)   42.9 G(19.4)   103656    1.1 G  1329
+2020-11-24 19:43:39.148   301.753 any                  98    75749(22.8)   30.7 M(18.0)   34.5 G(15.6)   101733  915.6 M  1124
+2020-11-24 19:43:39.148   301.753 any                 162    24668( 7.4)   12.4 M( 7.3)   14.8 G( 6.7)    41230  393.3 M  1192
+2020-11-24 19:43:32.308   311.485 any                 161    28140( 8.5)   11.5 M( 6.7)   13.9 G( 6.3)    36883  356.1 M  1206
+2020-11-24 19:44:18.932   236.890 any                  49       14( 0.0)     1088( 0.0)    1.2 M( 0.0)        4    39870  1085
+
+Summary: total flows: 332678, total bytes: 220848173184, total packets: 170396096, avg bps: 5667460225, avg pps: 546593, avg bpp: 1296
+Time window: 2020-11-24 19:14:36 - 2020-11-24 19:48:45
+Total flows processed: 2839468, Blocks skipped: 0, Bytes read: 249658920
+Sys: 0.831s flows/second: 3413737.1  Wall: 0.830s flows/second: 3417060.6
+
+[{'name': 'WAVE 1', 'match': '157'}, {'name': 'WAVE 2', 'match': '159'}, {'name': 'HSIP', 'match': '98'}, {'name': 'FACEBOOK PNI 1', 'match': '161', 'check': True, 'assoc_as': '32934'}, {'name': 'FACEBOOK PNI 2', 'match': '162', 'check': True, 'assoc_as': '32934'}, {'name': 'GGC Google', 'match': '164', 'check': True}]
+{'name': 'Econocable', 'resource_usage': {'uplinks': {}}}
+{'name': 'Econocable', 'resource_usage': {'uplinks': {'WAVE 1': 1100000000}}}
+{'name': 'Econocable', 'resource_usage': {'uplinks': {'WAVE 1': 1100000000, 'WAVE 2': 1200000000}}}
+{'name': 'Econocable', 'resource_usage': {'uplinks': {'WAVE 1': 1100000000, 'WAVE 2': 1200000000, 'HSIP': 915600000}}}
+{'name': 'Econocable', 'resource_usage': {'uplinks': {'WAVE 1': 1100000000, 'WAVE 2': 1200000000, 'HSIP': 915600000, 'FACEBOOK PNI 1': 356100000}}}
+{'name': 'Econocable', 'resource_usage': {'uplinks': {'WAVE 1': 1100000000, 'WAVE 2': 1200000000, 'HSIP': 915600000, 'FACEBOOK PNI 1': 356100000, 'FACEBOOK PNI 2': 393300000}}}
+================= Reource: as ***********************
+
+** nfdump -M /var/lib/nfsen/profiles/profiles-data/live/r0-l3-lim-pe  -T  -r 2020/11/24/nfcapd.202011241945 -n 20 -s srcas/bytes
+nfdump filter:
+out if 130
+Top 20 Src AS ordered by bytes:
+Date first seen          Duration Proto            Src AS    Flows(%)     Packets(%)       Bytes(%)         pps      bps   bpp
+2020-11-24 19:43:32.311   311.739 any                   0    54662(16.4)   46.8 M(27.5)   66.2 G(30.0)   150225    1.7 G  1412
+2020-11-24 19:43:32.310   311.675 any                2906    39206(11.8)   36.5 M(21.4)   54.5 G(24.7)   117056    1.4 G  1493
+2020-11-24 19:43:34.484   309.436 any                3549    66245(19.9)   26.7 M(15.7)   30.8 G(14.0)    86210  797.0 M  1155
+2020-11-24 19:43:32.308   311.611 any               32934    54952(16.5)   24.1 M(14.2)   28.8 G(13.0)    77380  739.0 M  1193
+2020-11-24 19:43:32.310   311.673 any               15169    65526(19.7)   19.7 M(11.6)   23.2 G(10.5)    63235  595.7 M  1177
+2020-11-24 19:43:32.308   311.614 any               20940    10094( 3.0)    4.6 M( 2.7)    6.5 G( 2.9)    14813  167.2 M  1410
+2020-11-24 19:43:39.149   301.751 any               20446      840( 0.3)    1.2 M( 0.7)    1.8 G( 0.8)     4129   48.4 M  1465
+2020-11-24 19:43:38.072   305.271 any               54113      843( 0.3)    1.2 M( 0.7)    1.8 G( 0.8)     3932   46.1 M  1465
+2020-11-24 19:43:32.311   311.483 any               16509     9963( 3.0)    2.1 M( 1.3)    1.6 G( 0.7)     6885   42.2 M   765
+2020-11-24 19:43:39.148   301.753 any               22697     4989( 1.5)    1.9 M( 1.1)    1.0 G( 0.5)     6276   27.2 M   541
+2020-11-24 19:43:36.853   306.492 any               60781      541( 0.2)   346752( 0.2)  443.3 M( 0.2)     1131   11.6 M  1278
+2020-11-24 19:43:33.208   310.586 any               16276     1196( 0.4)   476416( 0.3)  411.7 M( 0.2)     1533   10.6 M   864
+2020-11-24 19:43:32.375   311.483 any               14618     6590( 2.0)   779904( 0.5)  363.1 M( 0.2)     2503    9.3 M   465
+2020-11-24 19:43:32.308   311.358 any                8075     4836( 1.5)   666432( 0.4)  341.2 M( 0.2)     2140    8.8 M   511
+2020-11-24 19:43:40.302   300.599 any               28890       58( 0.0)   200384( 0.1)  299.2 M( 0.1)      666    8.0 M  1492
+2020-11-24 19:43:36.213   306.940 any               47764      167( 0.1)   183744( 0.1)  271.2 M( 0.1)      598    7.1 M  1476
+2020-11-24 19:43:34.228   308.669 any               23456     2456( 0.7)   471424( 0.3)  237.4 M( 0.1)     1527    6.2 M   503
+2020-11-24 19:43:33.844   310.013 any                 714      874( 0.3)   256384( 0.2)  227.9 M( 0.1)      827    5.9 M   888
+2020-11-24 19:43:33.590   307.896 any               54994      215( 0.1)   150848( 0.1)  217.6 M( 0.1)      489    5.7 M  1442
+2020-11-24 19:43:32.436   309.819 any               59930      240( 0.1)   133312( 0.1)  168.2 M( 0.1)      430    4.3 M  1261
+
+Summary: total flows: 332678, total bytes: 220848173184, total packets: 170396096, avg bps: 5667460225, avg pps: 546593, avg bpp: 1296
+Time window: 2020-11-24 19:14:36 - 2020-11-24 19:48:45
+Total flows processed: 2839468, Blocks skipped: 0, Bytes read: 249658920
+Sys: 0.836s flows/second: 3394706.1  Wall: 0.834s flows/second: 3400625.6
+
+[{'name': 'Google', 'match': '15169'}, {'name': 'Facebok', 'match': '32934'}, {'name': 'Akamai', 'match': '20940'}, {'name': 'Netflix', 'match': '2906'}, {'name': 'Telefonica', 'match': '6147', 'priority': 1}, {'name': 'Amazon', 'match': '16509'}, {'name': 'Yachay', 'match': '3132', 'priority': 1}]
+AS 0 FIX Google AS 15169<----------------
+
+** nfdump -M /var/lib/nfsen/profiles/profiles-data/live/r0-l3-lim-pe  -T  -r 2020/11/24/nfcapd.202011241945 -n 20 -s srcas/bytes
+nfdump filter:
+(out if 130) and src as 0 and ((src net 8.8.4.0/24 or src net 8.8.8.0/24 or src net 8.15.202.0/24 or src net 8.34.208.0/20 or src net 8.35.192.0/20 or src net 23.236.48.0/20 or src net 23.251.128.0/19 or src net 34.64.0.0/10 or src net 35.184.0.0/13 or src net 35.192.0.0/11 or src net 35.224.0.0/12 or src net 35.240.0.0/13 or src net 45.121.228.0/22 or src net 64.15.112.0/20 or src net 64.233.160.0/19 or src net 66.102.0.0/20 or src net 66.249.64.0/19 or src net 70.32.128.0/19 or src net 72.14.192.0/18 or src net 74.114.24.0/21 or src net 74.125.0.0/16 or src net 89.207.231.0/24 or src net 103.62.64.0/22 or src net 104.132.0.0/16 or src net 104.133.0.0/17 or src net 104.134.92.0/24 or src net 104.134.128.0/17 or src net 104.154.0.0/15 or src net 104.196.0.0/14 or src net 107.167.160.0/19 or src net 107.178.192.0/18 or src net 108.59.80.0/20 or src net 108.170.192.0/18 or src net 108.177.0.0/17 or src net 113.197.106.0/24 or src net 130.211.0.0/16 or src net 136.22.64.0/23 or src net 136.22.86.0/23 or
+Top 20 Src AS ordered by bytes:
+Date first seen          Duration Proto            Src AS    Flows(%)     Packets(%)       Bytes(%)         pps      bps   bpp
+2020-11-24 19:43:32.376   310.710 any                   0     3636(100.0)   234048(100.0)   47.6 M(100.0)      753    1.2 M   203
+
+Summary: total flows: 3636, total bytes: 47562048, total packets: 234048, avg bps: 1224602, avg pps: 753, avg bpp: 203
+Time window: 2020-11-24 19:14:36 - 2020-11-24 19:48:45
+Total flows processed: 2839468, Blocks skipped: 0, Bytes read: 249658920
+Sys: 0.851s flows/second: 3335935.2  Wall: 0.852s flows/second: 3329922.3
+
+AS 0 CUMULATED AS 0 USAGE: 1200000------------>
+
+** nfdump -M /var/lib/nfsen/profiles/profiles-data/live/r0-l3-lim-pe  -T  -r 2020/11/24/nfcapd.202011241945 -n 20 -s srcas/bytes
+nfdump filter:
+(out if 130) and src as 3549 and ((src net 8.8.4.0/24 or src net 8.8.8.0/24 or src net 8.15.202.0/24 or src net 8.34.208.0/20 or src net 8.35.192.0/20 or src net 23.236.48.0/20 or src net 23.251.128.0/19 or src net 34.64.0.0/10 or src net 35.184.0.0/13 or src net 35.192.0.0/11 or src net 35.224.0.0/12 or src net 35.240.0.0/13 or src net 45.121.228.0/22 or src net 64.15.112.0/20 or src net 64.233.160.0/19 or src net 66.102.0.0/20 or src net 66.249.64.0/19 or src net 70.32.128.0/19 or src net 72.14.192.0/18 or src net 74.114.24.0/21 or src net 74.125.0.0/16 or src net 89.207.231.0/24 or src net 103.62.64.0/22 or src net 104.132.0.0/16 or src net 104.133.0.0/17 or src net 104.134.92.0/24 or src net 104.134.128.0/17 or src net 104.154.0.0/15 or src net 104.196.0.0/14 or src net 107.167.160.0/19 or src net 107.178.192.0/18 or src net 108.59.80.0/20 or src net 108.170.192.0/18 or src net 108.177.0.0/17 or src net 113.197.106.0/24 or src net 130.211.0.0/16 or src net 136.22.64.0/23 or src net 136.22.86.0/23
+Top 20 Src AS ordered by bytes:
+Date first seen          Duration Proto            Src AS    Flows(%)     Packets(%)       Bytes(%)         pps      bps   bpp
+
+Summary: total flows: 0, total bytes: 0, total packets: 0, avg bps: 0, avg pps: 0, avg bpp: 0
+Time window: 2020-11-24 19:14:36 - 2020-11-24 19:48:45
+Total flows processed: 2839468, Blocks skipped: 0, Bytes read: 249658920
+Sys: 0.799s flows/second: 3551425.9  Wall: 0.798s flows/second: 3555833.3
+
+AS 0 CUMULATED AS 3549 USAGE: 1200000------------>
+AS 0 USAGE: 1200000------------>
+{'name': 'Econocable', 'resource_usage': {'uplinks': {'WAVE 1': 1100000000, 'WAVE 2': 1200000000, 'HSIP': 915600000, 'FACEBOOK PNI 1': 356100000, 'FACEBOOK PNI 2': 393300000, 'GGC Google': 1700000000}, 'as': {}}}
+AS 0 FIX Facebok AS 32934<----------------
+
+** nfdump -M /var/lib/nfsen/profiles/profiles-data/live/r0-l3-lim-pe  -T  -r 2020/11/24/nfcapd.202011241945 -n 20 -s srcas/bytes
+nfdump filter:
+(out if 130) and src as 0 and ((src net 31.13.24.0/21 or src net 31.13.64.0/18 or src net 45.64.40.0/22 or src net 66.220.144.0/20 or src net 69.63.176.0/20 or src net 69.171.224.0/19 or src net 74.119.76.0/22 or src net 102.132.96.0/20 or src net 103.4.96.0/22 or src net 129.134.0.0/16 or src net 147.75.208.0/20 or src net 157.240.0.0/16 or src net 173.252.64.0/18 or src net 179.60.192.0/22 or src net 185.60.216.0/22 or src net 185.89.216.0/22 or src net 199.201.64.0/22 or src net 204.15.20.0/22))
+Top 20 Src AS ordered by bytes:
+Date first seen          Duration Proto            Src AS    Flows(%)     Packets(%)       Bytes(%)         pps      bps   bpp
+
+Summary: total flows: 0, total bytes: 0, total packets: 0, avg bps: 0, avg pps: 0, avg bpp: 0
+Time window: 2020-11-24 19:14:36 - 2020-11-24 19:48:45
+Total flows processed: 2839468, Blocks skipped: 0, Bytes read: 249658920
+Sys: 0.765s flows/second: 3709162.8  Wall: 0.764s flows/second: 3713533.5
+
+AS 0 CUMULATED AS 0 USAGE: 0------------>
+
+** nfdump -M /var/lib/nfsen/profiles/profiles-data/live/r0-l3-lim-pe  -T  -r 2020/11/24/nfcapd.202011241945 -n 20 -s srcas/bytes
+nfdump filter:
+(out if 130) and src as 3549 and ((src net 31.13.24.0/21 or src net 31.13.64.0/18 or src net 45.64.40.0/22 or src net 66.220.144.0/20 or src net 69.63.176.0/20 or src net 69.171.224.0/19 or src net 74.119.76.0/22 or src net 102.132.96.0/20 or src net 103.4.96.0/22 or src net 129.134.0.0/16 or src net 147.75.208.0/20 or src net 157.240.0.0/16 or src net 173.252.64.0/18 or src net 179.60.192.0/22 or src net 185.60.216.0/22 or src net 185.89.216.0/22 or src net 199.201.64.0/22 or src net 204.15.20.0/22))
+Top 20 Src AS ordered by bytes:
+Date first seen          Duration Proto            Src AS    Flows(%)     Packets(%)       Bytes(%)         pps      bps   bpp
+
+Summary: total flows: 0, total bytes: 0, total packets: 0, avg bps: 0, avg pps: 0, avg bpp: 0
+Time window: 2020-11-24 19:14:36 - 2020-11-24 19:48:45
+Total flows processed: 2839468, Blocks skipped: 0, Bytes read: 249658920
+Sys: 0.832s flows/second: 3409850.8  Wall: 0.832s flows/second: 3410514.3
+
+AS 0 CUMULATED AS 3549 USAGE: 0------------>
+AS 0 USAGE: 0------------>
+{'name': 'Econocable', 'resource_usage': {'uplinks': {'WAVE 1': 1100000000, 'WAVE 2': 1200000000, 'HSIP': 915600000, 'FACEBOOK PNI 1': 356100000, 'FACEBOOK PNI 2': 393300000, 'GGC Google': 1700000000}, 'as': {'Google': 596900000}}}
+AS 0 FIX Akamai AS 20940<----------------
+
+** nfdump -M /var/lib/nfsen/profiles/profiles-data/live/r0-l3-lim-pe  -T  -r 2020/11/24/nfcapd.202011241945 -n 20 -s srcas/bytes
+nfdump filter:
+(out if 130) and src as 0 and ((src net 2.16.0.0/13 or src net 4.77.205.0/24 or src net 23.0.0.0/12 or src net 23.32.0.0/11 or src net 23.64.0.0/14 or src net 23.72.0.0/13 or src net 23.192.0.0/11 or src net 43.249.213.0/24 or src net 49.231.112.0/24 or src net 59.151.164.0/22 or src net 60.87.0.0/20 or src net 60.254.129.0/24 or src net 60.254.130.0/23 or src net 60.254.140.0/22 or src net 60.254.148.0/24 or src net 60.254.152.0/22 or src net 60.254.173.0/24 or src net 60.254.174.0/23 or src net 60.254.180.0/22 or src net 60.254.184.0/23 or src net 60.254.186.0/24 or src net 63.84.59.0/24 or src net 63.85.36.0/24 or src net 63.150.12.0/24 or src net 63.151.137.0/24 or src net 63.217.8.0/24 or src net 63.217.232.0/24 or src net 63.227.135.0/24 or src net 63.233.60.0/23 or src net 63.233.112.0/24 or src net 63.233.126.0/24 or src net 63.233.224.0/24 or src net 63.235.20.0/23 or src net 63.238.251.0/24 or src net 63.239.232.0/23 or src net 64.208.187.0/24 or src net 64.212.114.0/23 or src net 65.116.164
+Top 20 Src AS ordered by bytes:
+Date first seen          Duration Proto            Src AS    Flows(%)     Packets(%)       Bytes(%)         pps      bps   bpp
+
+Summary: total flows: 0, total bytes: 0, total packets: 0, avg bps: 0, avg pps: 0, avg bpp: 0
+Time window: 2020-11-24 19:14:36 - 2020-11-24 19:48:45
+Total flows processed: 2839468, Blocks skipped: 0, Bytes read: 249658920
+Sys: 0.920s flows/second: 3083361.9  Wall: 0.919s flows/second: 3088049.8
+
+AS 0 CUMULATED AS 0 USAGE: 0------------>
+
+** nfdump -M /var/lib/nfsen/profiles/profiles-data/live/r0-l3-lim-pe  -T  -r 2020/11/24/nfcapd.202011241945 -n 20 -s srcas/bytes
+nfdump filter:
+(out if 130) and src as 3549 and ((src net 2.16.0.0/13 or src net 4.77.205.0/24 or src net 23.0.0.0/12 or src net 23.32.0.0/11 or src net 23.64.0.0/14 or src net 23.72.0.0/13 or src net 23.192.0.0/11 or src net 43.249.213.0/24 or src net 49.231.112.0/24 or src net 59.151.164.0/22 or src net 60.87.0.0/20 or src net 60.254.129.0/24 or src net 60.254.130.0/23 or src net 60.254.140.0/22 or src net 60.254.148.0/24 or src net 60.254.152.0/22 or src net 60.254.173.0/24 or src net 60.254.174.0/23 or src net 60.254.180.0/22 or src net 60.254.184.0/23 or src net 60.254.186.0/24 or src net 63.84.59.0/24 or src net 63.85.36.0/24 or src net 63.150.12.0/24 or src net 63.151.137.0/24 or src net 63.217.8.0/24 or src net 63.217.232.0/24 or src net 63.227.135.0/24 or src net 63.233.60.0/23 or src net 63.233.112.0/24 or src net 63.233.126.0/24 or src net 63.233.224.0/24 or src net 63.235.20.0/23 or src net 63.238.251.0/24 or src net 63.239.232.0/23 or src net 64.208.187.0/24 or src net 64.212.114.0/23 or src net 65.116.
+Top 20 Src AS ordered by bytes:
+Date first seen          Duration Proto            Src AS    Flows(%)     Packets(%)       Bytes(%)         pps      bps   bpp
+2020-11-24 19:43:39.213   301.687 any                3549     9450(100.0)    2.2 M(100.0)    3.1 G(100.0)     7320   81.7 M  1394
+
+Summary: total flows: 9450, total bytes: 3080536768, total packets: 2208448, avg bps: 81688286, avg pps: 7320, avg bpp: 1394
+Time window: 2020-11-24 19:14:36 - 2020-11-24 19:48:45
+Total flows processed: 2839468, Blocks skipped: 0, Bytes read: 249658920
+Sys: 0.940s flows/second: 3018925.0  Wall: 0.938s flows/second: 3025206.6
+
+AS 0 CUMULATED AS 3549 USAGE: 81700000------------>
+AS 0 USAGE: 81700000------------>
+{'name': 'Econocable', 'resource_usage': {'uplinks': {'WAVE 1': 1100000000, 'WAVE 2': 1200000000, 'HSIP': 915600000, 'FACEBOOK PNI 1': 356100000, 'FACEBOOK PNI 2': 393300000, 'GGC Google': 1700000000}, 'as': {'Google': 596900000, 'Facebok': 739000000}}}
+AS 0 FIX Netflix AS 2906<----------------
+
+** nfdump -M /var/lib/nfsen/profiles/profiles-data/live/r0-l3-lim-pe  -T  -r 2020/11/24/nfcapd.202011241945 -n 20 -s srcas/bytes
+nfdump filter:
+(out if 130) and src as 0 and ((src net 23.246.0.0/18 or src net 37.77.184.0/21 or src net 45.57.0.0/17 or src net 64.120.128.0/17 or src net 66.197.128.0/17 or src net 69.53.224.0/19 or src net 108.175.32.0/20 or src net 185.2.220.0/22 or src net 185.9.188.0/22 or src net 192.173.64.0/18 or src net 198.38.96.0/19 or src net 198.45.48.0/20 or src net 208.75.76.0/22))
+Top 20 Src AS ordered by bytes:
+Date first seen          Duration Proto            Src AS    Flows(%)     Packets(%)       Bytes(%)         pps      bps   bpp
+
+Summary: total flows: 0, total bytes: 0, total packets: 0, avg bps: 0, avg pps: 0, avg bpp: 0
+Time window: 2020-11-24 19:14:36 - 2020-11-24 19:48:45
+Total flows processed: 2839468, Blocks skipped: 0, Bytes read: 249658920
+Sys: 0.828s flows/second: 3427359.6  Wall: 0.828s flows/second: 3428352.7
+
+AS 0 CUMULATED AS 0 USAGE: 0------------>
+
+** nfdump -M /var/lib/nfsen/profiles/profiles-data/live/r0-l3-lim-pe  -T  -r 2020/11/24/nfcapd.202011241945 -n 20 -s srcas/bytes
+nfdump filter:
+(out if 130) and src as 3549 and ((src net 23.246.0.0/18 or src net 37.77.184.0/21 or src net 45.57.0.0/17 or src net 64.120.128.0/17 or src net 66.197.128.0/17 or src net 69.53.224.0/19 or src net 108.175.32.0/20 or src net 185.2.220.0/22 or src net 185.9.188.0/22 or src net 192.173.64.0/18 or src net 198.38.96.0/19 or src net 198.45.48.0/20 or src net 208.75.76.0/22))
+Top 20 Src AS ordered by bytes:
+Date first seen          Duration Proto            Src AS    Flows(%)     Packets(%)       Bytes(%)         pps      bps   bpp
+2020-11-24 19:43:39.214   301.687 any                3549      447(100.0)   200512(100.0)  292.5 M(100.0)      664    7.8 M  1458
+
+Summary: total flows: 447, total bytes: 292537024, total packets: 200512, avg bps: 7757365, avg pps: 664, avg bpp: 1458
+Time window: 2020-11-24 19:14:36 - 2020-11-24 19:48:45
+Total flows processed: 2839468, Blocks skipped: 0, Bytes read: 249658920
+Sys: 0.815s flows/second: 3482932.9  Wall: 0.814s flows/second: 3487617.3
+
+AS 0 CUMULATED AS 3549 USAGE: 7800000------------>
+AS 0 USAGE: 7800000------------>
+{'name': 'Econocable', 'resource_usage': {'uplinks': {'WAVE 1': 1100000000, 'WAVE 2': 1200000000, 'HSIP': 915600000, 'FACEBOOK PNI 1': 356100000, 'FACEBOOK PNI 2': 393300000, 'GGC Google': 1700000000}, 'as': {'Google': 596900000, 'Facebok': 739000000, 'Akamai': 248900000}}}
+AS 0 FIX Telefonica AS 6147<----------------
+
+** nfdump -M /var/lib/nfsen/profiles/profiles-data/live/r0-l3-lim-pe  -T  -r 2020/11/24/nfcapd.202011241945 -n 20 -s srcas/bytes
+nfdump filter:
+(out if 130) and src as 0 and ((src net 170.79.36.0/22 or src net 181.64.0.0/18 or src net 181.64.96.0/19 or src net 181.64.128.0/17 or src net 181.65.0.0/16 or src net 181.66.0.0/15 or src net 190.40.0.0/16 or src net 190.41.0.0/17 or src net 190.41.128.0/19 or src net 190.41.192.0/19 or src net 190.42.0.0/15 or src net 190.232.0.0/13 or src net 199.229.76.0/24 or src net 200.0.166.0/23 or src net 200.0.170.0/23 or src net 200.0.172.0/23 or src net 200.4.223.0/24 or src net 200.4.224.0/19 or src net 200.10.64.0/19 or src net 200.10.130.0/23 or src net 200.10.188.0/24 or src net 200.11.48.0/20 or src net 200.16.0.0/21 or src net 200.37.0.0/16 or src net 200.48.0.0/16 or src net 200.60.0.0/16 or src net 200.106.0.0/17 or src net 200.107.128.0/18 or src net 200.121.0.0/16 or src net 201.131.220.0/22 or src net 201.230.0.0/16 or src net 201.240.0.0/16))
+Top 20 Src AS ordered by bytes:
+Date first seen          Duration Proto            Src AS    Flows(%)     Packets(%)       Bytes(%)         pps      bps   bpp
+
+Summary: total flows: 0, total bytes: 0, total packets: 0, avg bps: 0, avg pps: 0, avg bpp: 0
+Time window: 2020-11-24 19:14:36 - 2020-11-24 19:48:45
+Total flows processed: 2839468, Blocks skipped: 0, Bytes read: 249658920
+Sys: 0.826s flows/second: 3436510.1  Wall: 0.825s flows/second: 3441203.8
+
+AS 0 CUMULATED AS 0 USAGE: 0------------>
+
+** nfdump -M /var/lib/nfsen/profiles/profiles-data/live/r0-l3-lim-pe  -T  -r 2020/11/24/nfcapd.202011241945 -n 20 -s srcas/bytes
+nfdump filter:
+(out if 130) and src as 3549 and ((src net 170.79.36.0/22 or src net 181.64.0.0/18 or src net 181.64.96.0/19 or src net 181.64.128.0/17 or src net 181.65.0.0/16 or src net 181.66.0.0/15 or src net 190.40.0.0/16 or src net 190.41.0.0/17 or src net 190.41.128.0/19 or src net 190.41.192.0/19 or src net 190.42.0.0/15 or src net 190.232.0.0/13 or src net 199.229.76.0/24 or src net 200.0.166.0/23 or src net 200.0.170.0/23 or src net 200.0.172.0/23 or src net 200.4.223.0/24 or src net 200.4.224.0/19 or src net 200.10.64.0/19 or src net 200.10.130.0/23 or src net 200.10.188.0/24 or src net 200.11.48.0/20 or src net 200.16.0.0/21 or src net 200.37.0.0/16 or src net 200.48.0.0/16 or src net 200.60.0.0/16 or src net 200.106.0.0/17 or src net 200.107.128.0/18 or src net 200.121.0.0/16 or src net 201.131.220.0/22 or src net 201.230.0.0/16 or src net 201.240.0.0/16))
+Top 20 Src AS ordered by bytes:
+Date first seen          Duration Proto            Src AS    Flows(%)     Packets(%)       Bytes(%)         pps      bps   bpp
+2020-11-24 19:43:39.149   301.750 any                3549     6889(100.0)    5.0 M(100.0)    7.1 G(100.0)    16731  189.4 M  1415
+
+Summary: total flows: 6889, total bytes: 7145194368, total packets: 5048704, avg bps: 189433487, avg pps: 16731, avg bpp: 1415
+Time window: 2020-11-24 19:14:36 - 2020-11-24 19:48:45
+Total flows processed: 2839468, Blocks skipped: 0, Bytes read: 249658920
+Sys: 0.805s flows/second: 3525410.7  Wall: 0.804s flows/second: 3530789.5
+
+AS 0 CUMULATED AS 3549 USAGE: 189400000------------>
+AS 0 USAGE: 189400000------------>
+{'name': 'Econocable', 'resource_usage': {'uplinks': {'WAVE 1': 1100000000, 'WAVE 2': 1200000000, 'HSIP': 915600000, 'FACEBOOK PNI 1': 356100000, 'FACEBOOK PNI 2': 393300000, 'GGC Google': 1700000000}, 'as': {'Google': 596900000, 'Facebok': 739000000, 'Akamai': 248900000, 'Netflix': 1407800000}}}
+AS 0 FIX Amazon AS 16509<----------------
+
+** nfdump -M /var/lib/nfsen/profiles/profiles-data/live/r0-l3-lim-pe  -T  -r 2020/11/24/nfcapd.202011241945 -n 20 -s srcas/bytes
+nfdump filter:
+(out if 130) and src as 0 and ((src net 2.59.128.0/22 or src net 3.0.0.0/15 or src net 3.2.2.0/23 or src net 3.5.0.0/16 or src net 3.6.0.0/15 or src net 3.8.0.0/13 or src net 3.16.0.0/13 or src net 3.24.0.0/14 or src net 3.34.0.0/15 or src net 3.36.0.0/14 or src net 3.64.0.0/11 or src net 3.96.0.0/14 or src net 3.101.0.0/16 or src net 3.104.0.0/14 or src net 3.112.0.0/14 or src net 3.120.0.0/13 or src net 3.128.0.0/12 or src net 3.208.0.0/12 or src net 3.224.0.0/12 or src net 3.248.0.0/13 or src net 5.252.144.0/23 or src net 8.18.144.0/23 or src net 13.32.0.0/13 or src net 13.48.0.0/13 or src net 13.56.0.0/14 or src net 13.112.0.0/14 or src net 13.124.0.0/14 or src net 13.208.0.0/14 or src net 13.212.0.0/15 or src net 13.224.0.0/12 or src net 13.244.0.0/15 or src net 13.248.0.0/14 or src net 15.152.0.0/16 or src net 15.156.0.0/15 or src net 15.160.0.0/15 or src net 15.164.0.0/15 or src net 15.177.0.0/18 or src net 15.177.64.0/20 or src net 15.177.80.0/21 or src net 15.177.88.0/22 or src net 15.184.0.0
+Top 20 Src AS ordered by bytes:
+Date first seen          Duration Proto            Src AS    Flows(%)     Packets(%)       Bytes(%)         pps      bps   bpp
+
+Summary: total flows: 0, total bytes: 0, total packets: 0, avg bps: 0, avg pps: 0, avg bpp: 0
+Time window: 2020-11-24 19:14:36 - 2020-11-24 19:48:45
+Total flows processed: 2839468, Blocks skipped: 0, Bytes read: 249658920
+Sys: 1.020s flows/second: 2782927.3  Wall: 1.017s flows/second: 2789965.6
+
+
+** nfdump -M /var/lib/nfsen/profiles/profiles-data/live/r0-l3-lim-pe  -T  -r 2020/11/24/nfcapd.202011241945 -n 20 -s srcas/bytes
+nfdump filter:
+(out if 130) and src as 0 and ((src net 74.117.16.0/22 or src net 74.117.148.0/23 or src net 74.118.104.0/22 or src net 74.122.241.0/24 or src net 74.123.145.0/24 or src net 74.214.200.0/21 or src net 74.221.129.0/24 or src net 74.221.130.0/23 or src net 74.221.133.0/24 or src net 74.221.135.0/24 or src net 74.221.137.0/24 or src net 74.221.139.0/24 or src net 74.221.141.0/24 or src net 75.2.0.0/17 or src net 76.76.17.0/24 or src net 76.76.21.0/24 or src net 76.223.0.0/17 or src net 76.223.160.0/21 or src net 76.223.176.0/20 or src net 78.108.124.0/23 or src net 79.125.0.0/17 or src net 79.143.156.0/24 or src net 81.90.143.0/24 or src net 82.115.214.0/24 or src net 82.192.96.0/23 or src net 82.192.100.0/23 or src net 82.192.108.0/23 or src net 85.92.100.0/22 or src net 85.115.38.0/24 or src net 85.236.136.0/21 or src net 85.238.10.0/24 or src net 87.236.67.0/24 or src net 87.237.84.0/24 or src net 87.237.86.0/24 or src net 87.238.80.0/21 or src net 88.218.222.0/24 or src net 89.22.192.0/21 or src net
+Top 20 Src AS ordered by bytes:
+Date first seen          Duration Proto            Src AS    Flows(%)     Packets(%)       Bytes(%)         pps      bps   bpp
+
+Summary: total flows: 0, total bytes: 0, total packets: 0, avg bps: 0, avg pps: 0, avg bpp: 0
+Time window: 2020-11-24 19:14:36 - 2020-11-24 19:48:45
+Total flows processed: 2839468, Blocks skipped: 0, Bytes read: 249658920
+Sys: 0.994s flows/second: 2855013.5  Wall: 0.992s flows/second: 2860538.7
+
+
+** nfdump -M /var/lib/nfsen/profiles/profiles-data/live/r0-l3-lim-pe  -T  -r 2020/11/24/nfcapd.202011241945 -n 20 -s srcas/bytes
+nfdump filter:
+(out if 130) and src as 0 and ((src net 167.88.58.0/24 or src net 168.100.88.0/24 or src net 168.100.96.0/23 or src net 168.149.240.0/21 or src net 168.151.30.0/24 or src net 168.238.4.0/23 or src net 168.238.6.0/24 or src net 168.238.100.0/24 or src net 168.245.155.0/24 or src net 170.10.223.0/24 or src net 170.39.88.0/24 or src net 170.39.141.0/24 or src net 170.72.224.0/23 or src net 170.72.228.0/23 or src net 170.72.235.0/24 or src net 170.72.236.0/22 or src net 170.89.128.0/22 or src net 170.89.132.0/23 or src net 170.89.134.0/24 or src net 170.89.141.0/24 or src net 170.89.144.0/24 or src net 170.89.146.0/23 or src net 170.89.149.0/24 or src net 170.89.150.0/23 or src net 170.89.152.0/24 or src net 170.89.156.0/22 or src net 170.89.160.0/24 or src net 170.89.164.0/24 or src net 170.89.173.0/24 or src net 170.89.176.0/24 or src net 170.89.178.0/24 or src net 170.89.181.0/24 or src net 170.89.182.0/23 or src net 170.89.184.0/24 or src net 170.89.189.0/24 or src net 170.89.190.0/23 or src net 170.1
+Top 20 Src AS ordered by bytes:
+Date first seen          Duration Proto            Src AS    Flows(%)     Packets(%)       Bytes(%)         pps      bps   bpp
+
+Summary: total flows: 0, total bytes: 0, total packets: 0, avg bps: 0, avg pps: 0, avg bpp: 0
+Time window: 2020-11-24 19:14:36 - 2020-11-24 19:48:45
+Total flows processed: 2839468, Blocks skipped: 0, Bytes read: 249658920
+Sys: 0.984s flows/second: 2883586.9  Wall: 0.982s flows/second: 2890511.5
+
+AS 0 CUMULATED AS 0 USAGE: 0------------>
+
+** nfdump -M /var/lib/nfsen/profiles/profiles-data/live/r0-l3-lim-pe  -T  -r 2020/11/24/nfcapd.202011241945 -n 20 -s srcas/bytes
+nfdump filter:
+(out if 130) and src as 3549 and ((src net 2.59.128.0/22 or src net 3.0.0.0/15 or src net 3.2.2.0/23 or src net 3.5.0.0/16 or src net 3.6.0.0/15 or src net 3.8.0.0/13 or src net 3.16.0.0/13 or src net 3.24.0.0/14 or src net 3.34.0.0/15 or src net 3.36.0.0/14 or src net 3.64.0.0/11 or src net 3.96.0.0/14 or src net 3.101.0.0/16 or src net 3.104.0.0/14 or src net 3.112.0.0/14 or src net 3.120.0.0/13 or src net 3.128.0.0/12 or src net 3.208.0.0/12 or src net 3.224.0.0/12 or src net 3.248.0.0/13 or src net 5.252.144.0/23 or src net 8.18.144.0/23 or src net 13.32.0.0/13 or src net 13.48.0.0/13 or src net 13.56.0.0/14 or src net 13.112.0.0/14 or src net 13.124.0.0/14 or src net 13.208.0.0/14 or src net 13.212.0.0/15 or src net 13.224.0.0/12 or src net 13.244.0.0/15 or src net 13.248.0.0/14 or src net 15.152.0.0/16 or src net 15.156.0.0/15 or src net 15.160.0.0/15 or src net 15.164.0.0/15 or src net 15.177.0.0/18 or src net 15.177.64.0/20 or src net 15.177.80.0/21 or src net 15.177.88.0/22 or src net 15.184.
+Top 20 Src AS ordered by bytes:
+Date first seen          Duration Proto            Src AS    Flows(%)     Packets(%)       Bytes(%)         pps      bps   bpp
+2020-11-24 19:43:39.212   304.708 any                3549     2779(100.0)   873280(100.0)    1.2 G(100.0)     2865   30.8 M  1342
+
+Summary: total flows: 2779, total bytes: 1172526528, total packets: 873280, avg bps: 30784266, avg pps: 2865, avg bpp: 1342
+Time window: 2020-11-24 19:14:36 - 2020-11-24 19:48:45
+Total flows processed: 2839468, Blocks skipped: 0, Bytes read: 249658920
+Sys: 1.044s flows/second: 2718193.1  Wall: 1.042s flows/second: 2723741.7
+
+
+** nfdump -M /var/lib/nfsen/profiles/profiles-data/live/r0-l3-lim-pe  -T  -r 2020/11/24/nfcapd.202011241945 -n 20 -s srcas/bytes
+nfdump filter:
+(out if 130) and src as 3549 and ((src net 74.117.16.0/22 or src net 74.117.148.0/23 or src net 74.118.104.0/22 or src net 74.122.241.0/24 or src net 74.123.145.0/24 or src net 74.214.200.0/21 or src net 74.221.129.0/24 or src net 74.221.130.0/23 or src net 74.221.133.0/24 or src net 74.221.135.0/24 or src net 74.221.137.0/24 or src net 74.221.139.0/24 or src net 74.221.141.0/24 or src net 75.2.0.0/17 or src net 76.76.17.0/24 or src net 76.76.21.0/24 or src net 76.223.0.0/17 or src net 76.223.160.0/21 or src net 76.223.176.0/20 or src net 78.108.124.0/23 or src net 79.125.0.0/17 or src net 79.143.156.0/24 or src net 81.90.143.0/24 or src net 82.115.214.0/24 or src net 82.192.96.0/23 or src net 82.192.100.0/23 or src net 82.192.108.0/23 or src net 85.92.100.0/22 or src net 85.115.38.0/24 or src net 85.236.136.0/21 or src net 85.238.10.0/24 or src net 87.236.67.0/24 or src net 87.237.84.0/24 or src net 87.237.86.0/24 or src net 87.238.80.0/21 or src net 88.218.222.0/24 or src net 89.22.192.0/21 or src n
+Top 20 Src AS ordered by bytes:
+Date first seen          Duration Proto            Src AS    Flows(%)     Packets(%)       Bytes(%)         pps      bps   bpp
+
+Summary: total flows: 0, total bytes: 0, total packets: 0, avg bps: 0, avg pps: 0, avg bpp: 0
+Time window: 2020-11-24 19:14:36 - 2020-11-24 19:48:45
+Total flows processed: 2839468, Blocks skipped: 0, Bytes read: 249658920
+Sys: 1.039s flows/second: 2731605.1  Wall: 1.037s flows/second: 2735702.8
+
+
+** nfdump -M /var/lib/nfsen/profiles/profiles-data/live/r0-l3-lim-pe  -T  -r 2020/11/24/nfcapd.202011241945 -n 20 -s srcas/bytes
+nfdump filter:
+(out if 130) and src as 3549 and ((src net 167.88.58.0/24 or src net 168.100.88.0/24 or src net 168.100.96.0/23 or src net 168.149.240.0/21 or src net 168.151.30.0/24 or src net 168.238.4.0/23 or src net 168.238.6.0/24 or src net 168.238.100.0/24 or src net 168.245.155.0/24 or src net 170.10.223.0/24 or src net 170.39.88.0/24 or src net 170.39.141.0/24 or src net 170.72.224.0/23 or src net 170.72.228.0/23 or src net 170.72.235.0/24 or src net 170.72.236.0/22 or src net 170.89.128.0/22 or src net 170.89.132.0/23 or src net 170.89.134.0/24 or src net 170.89.141.0/24 or src net 170.89.144.0/24 or src net 170.89.146.0/23 or src net 170.89.149.0/24 or src net 170.89.150.0/23 or src net 170.89.152.0/24 or src net 170.89.156.0/22 or src net 170.89.160.0/24 or src net 170.89.164.0/24 or src net 170.89.173.0/24 or src net 170.89.176.0/24 or src net 170.89.178.0/24 or src net 170.89.181.0/24 or src net 170.89.182.0/23 or src net 170.89.184.0/24 or src net 170.89.189.0/24 or src net 170.89.190.0/23 or src net 17
+Top 20 Src AS ordered by bytes:
+Date first seen          Duration Proto            Src AS    Flows(%)     Packets(%)       Bytes(%)         pps      bps   bpp
+
+Summary: total flows: 0, total bytes: 0, total packets: 0, avg bps: 0, avg pps: 0, avg bpp: 0
+Time window: 2020-11-24 19:14:36 - 2020-11-24 19:48:45
+Total flows processed: 2839468, Blocks skipped: 0, Bytes read: 249658920
+Sys: 1.055s flows/second: 2691084.3  Wall: 1.052s flows/second: 2697019.5
+
+AS 0 CUMULATED AS 3549 USAGE: 30800000------------>
+AS 0 USAGE: 30800000------------>
+{'name': 'Econocable', 'resource_usage': {'uplinks': {'WAVE 1': 1100000000, 'WAVE 2': 1200000000, 'HSIP': 915600000, 'FACEBOOK PNI 1': 356100000, 'FACEBOOK PNI 2': 393300000, 'GGC Google': 1700000000}, 'as': {'Google': 596900000, 'Facebok': 739000000, 'Akamai': 248900000, 'Netflix': 1407800000, 'Telefonica': 189400000}}}
+AS 0 FIX Yachay AS 3132<----------------
+
+** nfdump -M /var/lib/nfsen/profiles/profiles-data/live/r0-l3-lim-pe  -T  -r 2020/11/24/nfcapd.202011241945 -n 20 -s srcas/bytes
+nfdump filter:
+(out if 130) and src as 0 and ((src net 161.132.0.0/16 or src net 167.250.204.0/22 or src net 200.0.107.0/24 or src net 200.0.136.0/24 or src net 200.0.164.0/22 or src net 200.0.168.0/24 or src net 200.1.176.0/21 or src net 200.11.32.0/24 or src net 200.11.36.0/22 or src net 209.45.0.0/17))
+Top 20 Src AS ordered by bytes:
+Date first seen          Duration Proto            Src AS    Flows(%)     Packets(%)       Bytes(%)         pps      bps   bpp
+
+Summary: total flows: 0, total bytes: 0, total packets: 0, avg bps: 0, avg pps: 0, avg bpp: 0
+Time window: 2020-11-24 19:14:36 - 2020-11-24 19:48:45
+Total flows processed: 2839468, Blocks skipped: 0, Bytes read: 249658920
+Sys: 0.827s flows/second: 3431281.8  Wall: 0.826s flows/second: 3436123.3
+
+AS 0 CUMULATED AS 0 USAGE: 0------------>
+
+** nfdump -M /var/lib/nfsen/profiles/profiles-data/live/r0-l3-lim-pe  -T  -r 2020/11/24/nfcapd.202011241945 -n 20 -s srcas/bytes
+nfdump filter:
+(out if 130) and src as 3549 and ((src net 161.132.0.0/16 or src net 167.250.204.0/22 or src net 200.0.107.0/24 or src net 200.0.136.0/24 or src net 200.0.164.0/22 or src net 200.0.168.0/24 or src net 200.1.176.0/21 or src net 200.11.32.0/24 or src net 200.11.36.0/22 or src net 209.45.0.0/17))
+Top 20 Src AS ordered by bytes:
+Date first seen          Duration Proto            Src AS    Flows(%)     Packets(%)       Bytes(%)         pps      bps   bpp
+2020-11-24 19:43:39.729   300.978 any                3549      156(100.0)    36992(100.0)   30.6 M(100.0)      122   812314   826
+
+Summary: total flows: 156, total bytes: 30561088, total packets: 36992, avg bps: 812314, avg pps: 122, avg bpp: 826
+Time window: 2020-11-24 19:14:36 - 2020-11-24 19:48:45
+Total flows processed: 2839468, Blocks skipped: 0, Bytes read: 249658920
+Sys: 0.828s flows/second: 3426503.4  Wall: 0.828s flows/second: 3429085.5
+
+AS 0 CUMULATED AS 3549 USAGE: 812314------------>
+AS 0 USAGE: 812314------------>
+{'name': 'Econocable', 'resource_usage': {'uplinks': {'WAVE 1': 1100000000, 'WAVE 2': 1200000000, 'HSIP': 915600000, 'FACEBOOK PNI 1': 356100000, 'FACEBOOK PNI 2': 393300000, 'GGC Google': 1700000000}, 'as': {'Google': 596900000, 'Facebok': 739000000, 'Akamai': 248900000, 'Netflix': 1407800000, 'Telefonica': 189400000, 'Amazon': 73000000}}}
+INFLUXING>>>>>>>>>>
+[{'time': 1606333834, 'measurement': 'uplinks', 'tags': {'customer': 'Econocable', 'country': 'Peru'}, 'fields': {'WAVE 1': 1100000000, 'WAVE 2': 1200000000, 'HSIP': 915600000, 'FACEBOOK PNI 1': 356100000, 'FACEBOOK PNI 2': 393300000, 'GGC Google': 1700000000}}, {'time': 1606333834, 'measurement': 'as', 'tags': {'customer': 'Econocable', 'country': 'Peru'}, 'fields': {'Google': 596900000, 'Facebok': 739000000, 'Akamai': 248900000, 'Netflix': 1407800000, 'Telefonica': 189400000, 'Amazon': 73000000, 'Yachay': 812314}}]
+***************** CUSTOMER: Bernardo ***********************
+================= Reource: uplinks ***********************
+
+** nfdump -M /var/lib/nfsen/profiles/profiles-data/live/r0-l3-lim-pe  -T  -r 2020/11/24/nfcapd.202011241945 -n 10 -s inif/bytes
+nfdump filter:
+out if 140
+Top 10 Input If ordered by bytes:
+Date first seen          Duration Proto          Input If    Flows(%)     Packets(%)       Bytes(%)         pps      bps   bpp
+
+Summary: total flows: 0, total bytes: 0, total packets: 0, avg bps: 0, avg pps: 0, avg bpp: 0
+Time window: 2020-11-24 19:14:36 - 2020-11-24 19:48:45
+Total flows processed: 2839468, Blocks skipped: 0, Bytes read: 249658920
+Sys: 0.822s flows/second: 3452370.8  Wall: 0.822s flows/second: 3453958.3
+
+[{'name': 'WAVE 1', 'match': '157'}, {'name': 'WAVE 2', 'match': '159'}, {'name': 'HSIP', 'match': '98'}, {'name': 'FACEBOOK PNI 1', 'match': '161', 'check': True, 'assoc_as': '32934'}, {'name': 'FACEBOOK PNI 2', 'match': '162', 'check': True, 'assoc_as': '32934'}, {'name': 'GGC Google', 'match': '164', 'check': True}]
+{'name': 'Bernardo', 'resource_usage': {'uplinks': {}}}
+{'name': 'Bernardo', 'resource_usage': {'uplinks': {'WAVE 1': 0}}}
+{'name': 'Bernardo', 'resource_usage': {'uplinks': {'WAVE 1': 0, 'WAVE 2': 0}}}
+{'name': 'Bernardo', 'resource_usage': {'uplinks': {'WAVE 1': 0, 'WAVE 2': 0, 'HSIP': 0}}}
+{'name': 'Bernardo', 'resource_usage': {'uplinks': {'WAVE 1': 0, 'WAVE 2': 0, 'HSIP': 0, 'FACEBOOK PNI 1': 0}}}
+{'name': 'Bernardo', 'resource_usage': {'uplinks': {'WAVE 1': 0, 'WAVE 2': 0, 'HSIP': 0, 'FACEBOOK PNI 1': 0, 'FACEBOOK PNI 2': 0}}}
+================= Reource: as ***********************
+
+** nfdump -M /var/lib/nfsen/profiles/profiles-data/live/r0-l3-lim-pe  -T  -r 2020/11/24/nfcapd.202011241945 -n 20 -s srcas/bytes
+nfdump filter:
+out if 140
+Top 20 Src AS ordered by bytes:
+Date first seen          Duration Proto            Src AS    Flows(%)     Packets(%)       Bytes(%)         pps      bps   bpp
+
+Summary: total flows: 0, total bytes: 0, total packets: 0, avg bps: 0, avg pps: 0, avg bpp: 0
+Time window: 2020-11-24 19:14:36 - 2020-11-24 19:48:45
+Total flows processed: 2839468, Blocks skipped: 0, Bytes read: 249658920
+Sys: 0.806s flows/second: 3522642.2  Wall: 0.805s flows/second: 3525218.1
+
+[{'name': 'Google', 'match': '15169'}, {'name': 'Facebok', 'match': '32934'}, {'name': 'Akamai', 'match': '20940'}, {'name': 'Netflix', 'match': '2906'}, {'name': 'Telefonica', 'match': '6147', 'priority': 1}, {'name': 'Amazon', 'match': '16509'}, {'name': 'Yachay', 'match': '3132', 'priority': 1}]
+{'name': 'Bernardo', 'resource_usage': {'uplinks': {'WAVE 1': 0, 'WAVE 2': 0, 'HSIP': 0, 'FACEBOOK PNI 1': 0, 'FACEBOOK PNI 2': 0, 'GGC Google': 0}, 'as': {}}}
+{'name': 'Bernardo', 'resource_usage': {'uplinks': {'WAVE 1': 0, 'WAVE 2': 0, 'HSIP': 0, 'FACEBOOK PNI 1': 0, 'FACEBOOK PNI 2': 0, 'GGC Google': 0}, 'as': {'Google': 0}}}
+{'name': 'Bernardo', 'resource_usage': {'uplinks': {'WAVE 1': 0, 'WAVE 2': 0, 'HSIP': 0, 'FACEBOOK PNI 1': 0, 'FACEBOOK PNI 2': 0, 'GGC Google': 0}, 'as': {'Google': 0, 'Facebok': 0}}}
+{'name': 'Bernardo', 'resource_usage': {'uplinks': {'WAVE 1': 0, 'WAVE 2': 0, 'HSIP': 0, 'FACEBOOK PNI 1': 0, 'FACEBOOK PNI 2': 0, 'GGC Google': 0}, 'as': {'Google': 0, 'Facebok': 0, 'Akamai': 0}}}
+{'name': 'Bernardo', 'resource_usage': {'uplinks': {'WAVE 1': 0, 'WAVE 2': 0, 'HSIP': 0, 'FACEBOOK PNI 1': 0, 'FACEBOOK PNI 2': 0, 'GGC Google': 0}, 'as': {'Google': 0, 'Facebok': 0, 'Akamai': 0, 'Netflix': 0}}}
+{'name': 'Bernardo', 'resource_usage': {'uplinks': {'WAVE 1': 0, 'WAVE 2': 0, 'HSIP': 0, 'FACEBOOK PNI 1': 0, 'FACEBOOK PNI 2': 0, 'GGC Google': 0}, 'as': {'Google': 0, 'Facebok': 0, 'Akamai': 0, 'Netflix': 0, 'Telefonica': 0}}}
+{'name': 'Bernardo', 'resource_usage': {'uplinks': {'WAVE 1': 0, 'WAVE 2': 0, 'HSIP': 0, 'FACEBOOK PNI 1': 0, 'FACEBOOK PNI 2': 0, 'GGC Google': 0}, 'as': {'Google': 0, 'Facebok': 0, 'Akamai': 0, 'Netflix': 0, 'Telefonica': 0, 'Amazon': 0}}}
+INFLUXING>>>>>>>>>>
+[{'time': 1606333834, 'measurement': 'uplinks', 'tags': {'customer': 'Bernardo', 'country': 'Peru'}, 'fields': {'WAVE 1': 0, 'WAVE 2': 0, 'HSIP': 0, 'FACEBOOK PNI 1': 0, 'FACEBOOK PNI 2': 0, 'GGC Google': 0}}, {'time': 1606333834, 'measurement': 'as', 'tags': {'customer': 'Bernardo', 'country': 'Peru'}, 'fields': {'Google': 0, 'Facebok': 0, 'Akamai': 0, 'Netflix': 0, 'Telefonica': 0, 'Amazon': 0, 'Yachay': 0}}]
+***************** CUSTOMER: Bernardo 2 ***********************
+================= Reource: uplinks ***********************
+
+** nfdump -M /var/lib/nfsen/profiles/profiles-data/live/r0-l3-lim-pe  -T  -r 2020/11/24/nfcapd.202011241945 -n 10 -s inif/bytes
+nfdump filter:
+out if 150
+Top 10 Input If ordered by bytes:
+Date first seen          Duration Proto          Input If    Flows(%)     Packets(%)       Bytes(%)         pps      bps   bpp
+2020-11-24 19:43:39.148   301.753 any                  98   259906(40.6)   99.4 M(43.3)  110.3 G(41.6)   329528    2.9 G  1109
+2020-11-24 19:43:32.308   311.742 any                 159   185018(28.9)   65.2 M(28.4)   78.4 G(29.6)   209139    2.0 G  1203
+2020-11-24 19:43:32.308   311.742 any                 157   184549(28.8)   64.2 M(27.9)   76.1 G(28.7)   205943    2.0 G  1185
+2020-11-24 19:43:32.309   311.738 any                 112     6143( 1.0)   660416( 0.3)  422.7 M( 0.2)     2118   10.8 M   640
+2020-11-24 19:43:32.373   310.653 any                  49     5123( 0.8)   346240( 0.2)   80.2 M( 0.0)     1114    2.1 M   231
+2020-11-24 19:45:57.254   143.368 any                  69        5( 0.0)      320( 0.0)    69120( 0.0)        2     3856   216
+
+Summary: total flows: 640744, total bytes: 265368165888, total packets: 229841664, avg bps: 6809943245, avg pps: 737281, avg bpp: 1154
+Time window: 2020-11-24 19:14:36 - 2020-11-24 19:48:45
+Total flows processed: 2839468, Blocks skipped: 0, Bytes read: 249658920
+Sys: 0.840s flows/second: 3377243.3  Wall: 0.839s flows/second: 3380500.1
+
+[{'name': 'WAVE 1', 'match': '157'}, {'name': 'WAVE 2', 'match': '159'}, {'name': 'HSIP', 'match': '98'}, {'name': 'FACEBOOK PNI 1', 'match': '161', 'check': True, 'assoc_as': '32934'}, {'name': 'FACEBOOK PNI 2', 'match': '162', 'check': True, 'assoc_as': '32934'}, {'name': 'GGC Google', 'match': '164', 'check': True}]
+{'name': 'Bernardo 2', 'resource_usage': {'uplinks': {}}}
+{'name': 'Bernardo 2', 'resource_usage': {'uplinks': {'WAVE 1': 2000000000}}}
+{'name': 'Bernardo 2', 'resource_usage': {'uplinks': {'WAVE 1': 2000000000, 'WAVE 2': 2000000000}}}
+{'name': 'Bernardo 2', 'resource_usage': {'uplinks': {'WAVE 1': 2000000000, 'WAVE 2': 2000000000, 'HSIP': 2900000000}}}
+{'name': 'Bernardo 2', 'resource_usage': {'uplinks': {'WAVE 1': 2000000000, 'WAVE 2': 2000000000, 'HSIP': 2900000000, 'FACEBOOK PNI 1': 0}}}
+{'name': 'Bernardo 2', 'resource_usage': {'uplinks': {'WAVE 1': 2000000000, 'WAVE 2': 2000000000, 'HSIP': 2900000000, 'FACEBOOK PNI 1': 0, 'FACEBOOK PNI 2': 0}}}
+================= Reource: as ***********************
+
+** nfdump -M /var/lib/nfsen/profiles/profiles-data/live/r0-l3-lim-pe  -T  -r 2020/11/24/nfcapd.202011241945 -n 20 -s srcas/bytes
+nfdump filter:
+out if 150
+Top 20 Src AS ordered by bytes:
+Date first seen          Duration Proto            Src AS    Flows(%)     Packets(%)       Bytes(%)         pps      bps   bpp
+2020-11-24 19:43:32.437   310.458 any                3549   225660(35.2)   89.2 M(38.8)  101.3 G(38.2)   287189    2.6 G  1135
+2020-11-24 19:43:32.308   311.742 any               15169   211266(33.0)   76.9 M(33.5)   92.6 G(34.9)   246796    2.4 G  1203
+2020-11-24 19:43:32.308   311.676 any                2906    41999( 6.6)   28.6 M(12.4)   41.4 G(15.6)    91777    1.1 G  1446
+2020-11-24 19:43:32.758   311.033 any               20940     9535( 1.5)    5.1 M( 2.2)    7.1 G( 2.7)    16244  183.3 M  1410
+2020-11-24 19:43:32.311   311.608 any               16509    30264( 4.7)    5.9 M( 2.6)    4.2 G( 1.6)    18887  107.2 M   709
+2020-11-24 19:43:39.148   301.753 any               22697    11333( 1.8)    4.2 M( 1.8)    2.4 G( 0.9)    14054   63.3 M   563
+2020-11-24 19:43:32.308   311.612 any               20446     6546( 1.0)    1.6 M( 0.7)    2.1 G( 0.8)     5064   54.7 M  1351
+2020-11-24 19:43:32.372   311.421 any               16276     6078( 0.9)    2.1 M( 0.9)    1.5 G( 0.6)     6741   39.1 M   725
+2020-11-24 19:43:32.372   311.678 any               14618    22649( 3.5)    3.1 M( 1.4)    1.5 G( 0.6)     9969   38.1 M   477
+2020-11-24 19:43:32.312   311.607 any                8075    14387( 2.2)    2.2 M( 1.0)    1.4 G( 0.5)     7031   35.3 M   627
+2020-11-24 19:43:32.372   311.611 any               23456     7489( 1.2)    1.3 M( 0.5)  982.6 M( 0.4)     4050   25.2 M   778
+2020-11-24 19:43:32.372   311.483 any               32934    10798( 1.7)    1.0 M( 0.5)  676.6 M( 0.3)     3341   17.4 M   650
+2020-11-24 19:43:34.228   309.051 any               59930      626( 0.1)   553344( 0.2)  669.5 M( 0.3)     1790   17.3 M  1209
+2020-11-24 19:43:34.039   309.498 any               60781     1126( 0.2)   447424( 0.2)  585.5 M( 0.2)     1445   15.1 M  1308
+2020-11-24 19:43:34.295   308.411 any                 714     1475( 0.2)   439744( 0.2)  569.8 M( 0.2)     1425   14.8 M  1295
+2020-11-24 19:43:41.047   301.337 any               47764      265( 0.0)   336896( 0.1)  490.3 M( 0.2)     1118   13.0 M  1455
+2020-11-24 19:43:33.590   308.088 any               54113      972( 0.2)   346432( 0.2)  480.5 M( 0.2)     1124   12.5 M  1386
+2020-11-24 19:43:32.631   310.842 any               24940      964( 0.2)   301376( 0.1)  395.5 M( 0.1)      969   10.2 M  1312
+2020-11-24 19:43:32.756   310.971 any               12252      825( 0.1)   312064( 0.1)  356.7 M( 0.1)     1003    9.2 M  1143
+2020-11-24 19:43:33.910   309.882 any               23059      579( 0.1)   223168( 0.1)  312.5 M( 0.1)      720    8.1 M  1400
+
+Summary: total flows: 640744, total bytes: 265368165888, total packets: 229841664, avg bps: 6809943245, avg pps: 737281, avg bpp: 1154
+Time window: 2020-11-24 19:14:36 - 2020-11-24 19:48:45
+Total flows processed: 2839468, Blocks skipped: 0, Bytes read: 249658920
+Sys: 0.808s flows/second: 3514162.6  Wall: 0.810s flows/second: 3505338.6
+
+[{'name': 'Google', 'match': '15169'}, {'name': 'Facebok', 'match': '32934'}, {'name': 'Akamai', 'match': '20940'}, {'name': 'Netflix', 'match': '2906'}, {'name': 'Telefonica', 'match': '6147', 'priority': 1}, {'name': 'Amazon', 'match': '16509'}, {'name': 'Yachay', 'match': '3132', 'priority': 1}]
+AS 0 FIX Google AS 15169<----------------
+
+** nfdump -M /var/lib/nfsen/profiles/profiles-data/live/r0-l3-lim-pe  -T  -r 2020/11/24/nfcapd.202011241945 -n 20 -s srcas/bytes
+nfdump filter:
+(out if 150) and src as 3549 and ((src net 8.8.4.0/24 or src net 8.8.8.0/24 or src net 8.15.202.0/24 or src net 8.34.208.0/20 or src net 8.35.192.0/20 or src net 23.236.48.0/20 or src net 23.251.128.0/19 or src net 34.64.0.0/10 or src net 35.184.0.0/13 or src net 35.192.0.0/11 or src net 35.224.0.0/12 or src net 35.240.0.0/13 or src net 45.121.228.0/22 or src net 64.15.112.0/20 or src net 64.233.160.0/19 or src net 66.102.0.0/20 or src net 66.249.64.0/19 or src net 70.32.128.0/19 or src net 72.14.192.0/18 or src net 74.114.24.0/21 or src net 74.125.0.0/16 or src net 89.207.231.0/24 or src net 103.62.64.0/22 or src net 104.132.0.0/16 or src net 104.133.0.0/17 or src net 104.134.92.0/24 or src net 104.134.128.0/17 or src net 104.154.0.0/15 or src net 104.196.0.0/14 or src net 107.167.160.0/19 or src net 107.178.192.0/18 or src net 108.59.80.0/20 or src net 108.170.192.0/18 or src net 108.177.0.0/17 or src net 113.197.106.0/24 or src net 130.211.0.0/16 or src net 136.22.64.0/23 or src net 136.22.86.0/23
+Top 20 Src AS ordered by bytes:
+Date first seen          Duration Proto            Src AS    Flows(%)     Packets(%)       Bytes(%)         pps      bps   bpp
+
+Summary: total flows: 0, total bytes: 0, total packets: 0, avg bps: 0, avg pps: 0, avg bpp: 0
+Time window: 2020-11-24 19:14:36 - 2020-11-24 19:48:45
+Total flows processed: 2839468, Blocks skipped: 0, Bytes read: 249658920
+Sys: 0.893s flows/second: 3177784.5  Wall: 0.892s flows/second: 3182996.0
+
+AS 0 CUMULATED AS 3549 USAGE: 0------------>
+AS 0 USAGE: 0------------>
+{'name': 'Bernardo 2', 'resource_usage': {'uplinks': {'WAVE 1': 2000000000, 'WAVE 2': 2000000000, 'HSIP': 2900000000, 'FACEBOOK PNI 1': 0, 'FACEBOOK PNI 2': 0, 'GGC Google': 0}, 'as': {}}}
+AS 0 FIX Facebok AS 32934<----------------
+
+** nfdump -M /var/lib/nfsen/profiles/profiles-data/live/r0-l3-lim-pe  -T  -r 2020/11/24/nfcapd.202011241945 -n 20 -s srcas/bytes
+nfdump filter:
+(out if 150) and src as 3549 and ((src net 31.13.24.0/21 or src net 31.13.64.0/18 or src net 45.64.40.0/22 or src net 66.220.144.0/20 or src net 69.63.176.0/20 or src net 69.171.224.0/19 or src net 74.119.76.0/22 or src net 102.132.96.0/20 or src net 103.4.96.0/22 or src net 129.134.0.0/16 or src net 147.75.208.0/20 or src net 157.240.0.0/16 or src net 173.252.64.0/18 or src net 179.60.192.0/22 or src net 185.60.216.0/22 or src net 185.89.216.0/22 or src net 199.201.64.0/22 or src net 204.15.20.0/22))
+Top 20 Src AS ordered by bytes:
+Date first seen          Duration Proto            Src AS    Flows(%)     Packets(%)       Bytes(%)         pps      bps   bpp
+
+Summary: total flows: 0, total bytes: 0, total packets: 0, avg bps: 0, avg pps: 0, avg bpp: 0
+Time window: 2020-11-24 19:14:36 - 2020-11-24 19:48:45
+Total flows processed: 2839468, Blocks skipped: 0, Bytes read: 249658920
+Sys: 0.856s flows/second: 3315264.9  Wall: 0.854s flows/second: 3321372.6
+
+AS 0 CUMULATED AS 3549 USAGE: 0------------>
+AS 0 USAGE: 0------------>
+{'name': 'Bernardo 2', 'resource_usage': {'uplinks': {'WAVE 1': 2000000000, 'WAVE 2': 2000000000, 'HSIP': 2900000000, 'FACEBOOK PNI 1': 0, 'FACEBOOK PNI 2': 0, 'GGC Google': 0}, 'as': {'Google': 2400000000}}}
+AS 0 FIX Akamai AS 20940<----------------
+
+** nfdump -M /var/lib/nfsen/profiles/profiles-data/live/r0-l3-lim-pe  -T  -r 2020/11/24/nfcapd.202011241945 -n 20 -s srcas/bytes
+nfdump filter:
+(out if 150) and src as 3549 and ((src net 2.16.0.0/13 or src net 4.77.205.0/24 or src net 23.0.0.0/12 or src net 23.32.0.0/11 or src net 23.64.0.0/14 or src net 23.72.0.0/13 or src net 23.192.0.0/11 or src net 43.249.213.0/24 or src net 49.231.112.0/24 or src net 59.151.164.0/22 or src net 60.87.0.0/20 or src net 60.254.129.0/24 or src net 60.254.130.0/23 or src net 60.254.140.0/22 or src net 60.254.148.0/24 or src net 60.254.152.0/22 or src net 60.254.173.0/24 or src net 60.254.174.0/23 or src net 60.254.180.0/22 or src net 60.254.184.0/23 or src net 60.254.186.0/24 or src net 63.84.59.0/24 or src net 63.85.36.0/24 or src net 63.150.12.0/24 or src net 63.151.137.0/24 or src net 63.217.8.0/24 or src net 63.217.232.0/24 or src net 63.227.135.0/24 or src net 63.233.60.0/23 or src net 63.233.112.0/24 or src net 63.233.126.0/24 or src net 63.233.224.0/24 or src net 63.235.20.0/23 or src net 63.238.251.0/24 or src net 63.239.232.0/23 or src net 64.208.187.0/24 or src net 64.212.114.0/23 or src net 65.116.
+Top 20 Src AS ordered by bytes:
+Date first seen          Duration Proto            Src AS    Flows(%)     Packets(%)       Bytes(%)         pps      bps   bpp
+2020-11-24 19:43:39.148   303.237 any                3549    28413(100.0)   11.9 M(100.0)   16.7 G(100.0)    39285  440.4 M  1401
+
+Summary: total flows: 28413, total bytes: 16694420032, total packets: 11912832, avg bps: 440432269, avg pps: 39285, avg bpp: 1401
+Time window: 2020-11-24 19:14:36 - 2020-11-24 19:48:45
+Total flows processed: 2839468, Blocks skipped: 0, Bytes read: 249658920
+Sys: 1.176s flows/second: 2414137.9  Wall: 1.174s flows/second: 2418396.2
+
+AS 0 CUMULATED AS 3549 USAGE: 440400000------------>
+AS 0 USAGE: 440400000------------>
+{'name': 'Bernardo 2', 'resource_usage': {'uplinks': {'WAVE 1': 2000000000, 'WAVE 2': 2000000000, 'HSIP': 2900000000, 'FACEBOOK PNI 1': 0, 'FACEBOOK PNI 2': 0, 'GGC Google': 0}, 'as': {'Google': 2400000000, 'Facebok': 17400000}}}
+AS 0 FIX Netflix AS 2906<----------------
+
+** nfdump -M /var/lib/nfsen/profiles/profiles-data/live/r0-l3-lim-pe  -T  -r 2020/11/24/nfcapd.202011241945 -n 20 -s srcas/bytes
+nfdump filter:
+(out if 150) and src as 3549 and ((src net 23.246.0.0/18 or src net 37.77.184.0/21 or src net 45.57.0.0/17 or src net 64.120.128.0/17 or src net 66.197.128.0/17 or src net 69.53.224.0/19 or src net 108.175.32.0/20 or src net 185.2.220.0/22 or src net 185.9.188.0/22 or src net 192.173.64.0/18 or src net 198.38.96.0/19 or src net 198.45.48.0/20 or src net 208.75.76.0/22))
+Top 20 Src AS ordered by bytes:
+Date first seen          Duration Proto            Src AS    Flows(%)     Packets(%)       Bytes(%)         pps      bps   bpp
+2020-11-24 19:43:39.150   301.751 any                3549     1637(100.0)   958720(100.0)    1.4 G(100.0)     3177   37.5 M  1474
+
+Summary: total flows: 1637, total bytes: 1413992512, total packets: 958720, avg bps: 37487663, avg pps: 3177, avg bpp: 1474
+Time window: 2020-11-24 19:14:36 - 2020-11-24 19:48:45
+Total flows processed: 2839468, Blocks skipped: 0, Bytes read: 249658920
+Sys: 0.795s flows/second: 3568650.3  Wall: 0.794s flows/second: 3572026.3
+
+AS 0 CUMULATED AS 3549 USAGE: 37500000------------>
+AS 0 USAGE: 37500000------------>
+{'name': 'Bernardo 2', 'resource_usage': {'uplinks': {'WAVE 1': 2000000000, 'WAVE 2': 2000000000, 'HSIP': 2900000000, 'FACEBOOK PNI 1': 0, 'FACEBOOK PNI 2': 0, 'GGC Google': 0}, 'as': {'Google': 2400000000, 'Facebok': 17400000, 'Akamai': 623700000}}}
+AS 0 FIX Telefonica AS 6147<----------------
+
+** nfdump -M /var/lib/nfsen/profiles/profiles-data/live/r0-l3-lim-pe  -T  -r 2020/11/24/nfcapd.202011241945 -n 20 -s srcas/bytes
+nfdump filter:
+(out if 150) and src as 3549 and ((src net 170.79.36.0/22 or src net 181.64.0.0/18 or src net 181.64.96.0/19 or src net 181.64.128.0/17 or src net 181.65.0.0/16 or src net 181.66.0.0/15 or src net 190.40.0.0/16 or src net 190.41.0.0/17 or src net 190.41.128.0/19 or src net 190.41.192.0/19 or src net 190.42.0.0/15 or src net 190.232.0.0/13 or src net 199.229.76.0/24 or src net 200.0.166.0/23 or src net 200.0.170.0/23 or src net 200.0.172.0/23 or src net 200.4.223.0/24 or src net 200.4.224.0/19 or src net 200.10.64.0/19 or src net 200.10.130.0/23 or src net 200.10.188.0/24 or src net 200.11.48.0/20 or src net 200.16.0.0/21 or src net 200.37.0.0/16 or src net 200.48.0.0/16 or src net 200.60.0.0/16 or src net 200.106.0.0/17 or src net 200.107.128.0/18 or src net 200.121.0.0/16 or src net 201.131.220.0/22 or src net 201.230.0.0/16 or src net 201.240.0.0/16))
+Top 20 Src AS ordered by bytes:
+Date first seen          Duration Proto            Src AS    Flows(%)     Packets(%)       Bytes(%)         pps      bps   bpp
+2020-11-24 19:43:39.151   301.748 any                3549     7811(100.0)    3.0 M(100.0)    3.4 G(100.0)     9922   90.2 M  1136
+
+Summary: total flows: 7811, total bytes: 3401475968, total packets: 2994112, avg bps: 90180573, avg pps: 9922, avg bpp: 1136
+Time window: 2020-11-24 19:14:36 - 2020-11-24 19:48:45
+Total flows processed: 2839468, Blocks skipped: 0, Bytes read: 249658920
+Sys: 0.884s flows/second: 3209461.1  Wall: 0.883s flows/second: 3213747.5
+
+AS 0 CUMULATED AS 3549 USAGE: 90200000------------>
+AS 0 USAGE: 90200000------------>
+{'name': 'Bernardo 2', 'resource_usage': {'uplinks': {'WAVE 1': 2000000000, 'WAVE 2': 2000000000, 'HSIP': 2900000000, 'FACEBOOK PNI 1': 0, 'FACEBOOK PNI 2': 0, 'GGC Google': 0}, 'as': {'Google': 2400000000, 'Facebok': 17400000, 'Akamai': 623700000, 'Netflix': 1137500000}}}
+AS 0 FIX Amazon AS 16509<----------------
+
+** nfdump -M /var/lib/nfsen/profiles/profiles-data/live/r0-l3-lim-pe  -T  -r 2020/11/24/nfcapd.202011241945 -n 20 -s srcas/bytes
+nfdump filter:
+(out if 150) and src as 3549 and ((src net 2.59.128.0/22 or src net 3.0.0.0/15 or src net 3.2.2.0/23 or src net 3.5.0.0/16 or src net 3.6.0.0/15 or src net 3.8.0.0/13 or src net 3.16.0.0/13 or src net 3.24.0.0/14 or src net 3.34.0.0/15 or src net 3.36.0.0/14 or src net 3.64.0.0/11 or src net 3.96.0.0/14 or src net 3.101.0.0/16 or src net 3.104.0.0/14 or src net 3.112.0.0/14 or src net 3.120.0.0/13 or src net 3.128.0.0/12 or src net 3.208.0.0/12 or src net 3.224.0.0/12 or src net 3.248.0.0/13 or src net 5.252.144.0/23 or src net 8.18.144.0/23 or src net 13.32.0.0/13 or src net 13.48.0.0/13 or src net 13.56.0.0/14 or src net 13.112.0.0/14 or src net 13.124.0.0/14 or src net 13.208.0.0/14 or src net 13.212.0.0/15 or src net 13.224.0.0/12 or src net 13.244.0.0/15 or src net 13.248.0.0/14 or src net 15.152.0.0/16 or src net 15.156.0.0/15 or src net 15.160.0.0/15 or src net 15.164.0.0/15 or src net 15.177.0.0/18 or src net 15.177.64.0/20 or src net 15.177.80.0/21 or src net 15.177.88.0/22 or src net 15.184.
+Top 20 Src AS ordered by bytes:
+Date first seen          Duration Proto            Src AS    Flows(%)     Packets(%)       Bytes(%)         pps      bps   bpp
+2020-11-24 19:43:34.036   306.864 any                3549     8304(100.0)    3.3 M(100.0)    4.5 G(100.0)    10595  116.5 M  1374
+
+Summary: total flows: 8304, total bytes: 4469339456, total packets: 3251520, avg bps: 116516488, avg pps: 10595, avg bpp: 1374
+Time window: 2020-11-24 19:14:36 - 2020-11-24 19:48:45
+Total flows processed: 2839468, Blocks skipped: 0, Bytes read: 249658920
+Sys: 1.606s flows/second: 1767244.0  Wall: 1.605s flows/second: 1768472.3
+
+
+** nfdump -M /var/lib/nfsen/profiles/profiles-data/live/r0-l3-lim-pe  -T  -r 2020/11/24/nfcapd.202011241945 -n 20 -s srcas/bytes
+nfdump filter:
+(out if 150) and src as 3549 and ((src net 74.117.16.0/22 or src net 74.117.148.0/23 or src net 74.118.104.0/22 or src net 74.122.241.0/24 or src net 74.123.145.0/24 or src net 74.214.200.0/21 or src net 74.221.129.0/24 or src net 74.221.130.0/23 or src net 74.221.133.0/24 or src net 74.221.135.0/24 or src net 74.221.137.0/24 or src net 74.221.139.0/24 or src net 74.221.141.0/24 or src net 75.2.0.0/17 or src net 76.76.17.0/24 or src net 76.76.21.0/24 or src net 76.223.0.0/17 or src net 76.223.160.0/21 or src net 76.223.176.0/20 or src net 78.108.124.0/23 or src net 79.125.0.0/17 or src net 79.143.156.0/24 or src net 81.90.143.0/24 or src net 82.115.214.0/24 or src net 82.192.96.0/23 or src net 82.192.100.0/23 or src net 82.192.108.0/23 or src net 85.92.100.0/22 or src net 85.115.38.0/24 or src net 85.236.136.0/21 or src net 85.238.10.0/24 or src net 87.236.67.0/24 or src net 87.237.84.0/24 or src net 87.237.86.0/24 or src net 87.238.80.0/21 or src net 88.218.222.0/24 or src net 89.22.192.0/21 or src n
+Top 20 Src AS ordered by bytes:
+Date first seen          Duration Proto            Src AS    Flows(%)     Packets(%)       Bytes(%)         pps      bps   bpp
+2020-11-24 19:45:53.421   166.711 any                3549       14(100.0)     4928(100.0)    6.7 M(100.0)       29   321227  1358
+
+Summary: total flows: 14, total bytes: 6694016, total packets: 4928, avg bps: 321227, avg pps: 29, avg bpp: 1358
+Time window: 2020-11-24 19:14:36 - 2020-11-24 19:48:45
+Total flows processed: 2839468, Blocks skipped: 0, Bytes read: 249658920
+Sys: 1.567s flows/second: 1811891.7  Wall: 1.564s flows/second: 1814876.1
+
+
+** nfdump -M /var/lib/nfsen/profiles/profiles-data/live/r0-l3-lim-pe  -T  -r 2020/11/24/nfcapd.202011241945 -n 20 -s srcas/bytes
+nfdump filter:
+(out if 150) and src as 3549 and ((src net 167.88.58.0/24 or src net 168.100.88.0/24 or src net 168.100.96.0/23 or src net 168.149.240.0/21 or src net 168.151.30.0/24 or src net 168.238.4.0/23 or src net 168.238.6.0/24 or src net 168.238.100.0/24 or src net 168.245.155.0/24 or src net 170.10.223.0/24 or src net 170.39.88.0/24 or src net 170.39.141.0/24 or src net 170.72.224.0/23 or src net 170.72.228.0/23 or src net 170.72.235.0/24 or src net 170.72.236.0/22 or src net 170.89.128.0/22 or src net 170.89.132.0/23 or src net 170.89.134.0/24 or src net 170.89.141.0/24 or src net 170.89.144.0/24 or src net 170.89.146.0/23 or src net 170.89.149.0/24 or src net 170.89.150.0/23 or src net 170.89.152.0/24 or src net 170.89.156.0/22 or src net 170.89.160.0/24 or src net 170.89.164.0/24 or src net 170.89.173.0/24 or src net 170.89.176.0/24 or src net 170.89.178.0/24 or src net 170.89.181.0/24 or src net 170.89.182.0/23 or src net 170.89.184.0/24 or src net 170.89.189.0/24 or src net 170.89.190.0/23 or src net 17
+Top 20 Src AS ordered by bytes:
+Date first seen          Duration Proto            Src AS    Flows(%)     Packets(%)       Bytes(%)         pps      bps   bpp
+
+Summary: total flows: 0, total bytes: 0, total packets: 0, avg bps: 0, avg pps: 0, avg bpp: 0
+Time window: 2020-11-24 19:14:36 - 2020-11-24 19:48:45
+Total flows processed: 2839468, Blocks skipped: 0, Bytes read: 249658920
+Sys: 1.499s flows/second: 1893354.8  Wall: 1.497s flows/second: 1896340.2
+
+AS 0 CUMULATED AS 3549 USAGE: 116821227------------>
+AS 0 USAGE: 116821227------------>
+{'name': 'Bernardo 2', 'resource_usage': {'uplinks': {'WAVE 1': 2000000000, 'WAVE 2': 2000000000, 'HSIP': 2900000000, 'FACEBOOK PNI 1': 0, 'FACEBOOK PNI 2': 0, 'GGC Google': 0}, 'as': {'Google': 2400000000, 'Facebok': 17400000, 'Akamai': 623700000, 'Netflix': 1137500000, 'Telefonica': 90200000}}}
+AS 0 FIX Yachay AS 3132<----------------
+
+** nfdump -M /var/lib/nfsen/profiles/profiles-data/live/r0-l3-lim-pe  -T  -r 2020/11/24/nfcapd.202011241945 -n 20 -s srcas/bytes
+nfdump filter:
+(out if 150) and src as 3549 and ((src net 161.132.0.0/16 or src net 167.250.204.0/22 or src net 200.0.107.0/24 or src net 200.0.136.0/24 or src net 200.0.164.0/22 or src net 200.0.168.0/24 or src net 200.1.176.0/21 or src net 200.11.32.0/24 or src net 200.11.36.0/22 or src net 209.45.0.0/17))
+Top 20 Src AS ordered by bytes:
+Date first seen          Duration Proto            Src AS    Flows(%)     Packets(%)       Bytes(%)         pps      bps   bpp
+2020-11-24 19:43:39.150   301.751 any                3549    14659(100.0)    6.4 M(100.0)    9.0 G(100.0)    21263  238.7 M  1403
+
+Summary: total flows: 14659, total bytes: 9003315712, total packets: 6416192, avg bps: 238695234, avg pps: 21263, avg bpp: 1403
+Time window: 2020-11-24 19:14:36 - 2020-11-24 19:48:45
+Total flows processed: 2839468, Blocks skipped: 0, Bytes read: 249658920
+Sys: 0.841s flows/second: 3375083.7  Wall: 0.840s flows/second: 3378280.0
+
+AS 0 CUMULATED AS 3549 USAGE: 238700000------------>
+AS 0 USAGE: 238700000------------>
+{'name': 'Bernardo 2', 'resource_usage': {'uplinks': {'WAVE 1': 2000000000, 'WAVE 2': 2000000000, 'HSIP': 2900000000, 'FACEBOOK PNI 1': 0, 'FACEBOOK PNI 2': 0, 'GGC Google': 0}, 'as': {'Google': 2400000000, 'Facebok': 17400000, 'Akamai': 623700000, 'Netflix': 1137500000, 'Telefonica': 90200000, 'Amazon': 224021227}}}
+INFLUXING>>>>>>>>>>
+[{'time': 1606333834, 'measurement': 'uplinks', 'tags': {'customer': 'Bernardo 2', 'country': 'Peru'}, 'fields': {'WAVE 1': 2000000000, 'WAVE 2': 2000000000, 'HSIP': 2900000000, 'FACEBOOK PNI 1': 0, 'FACEBOOK PNI 2': 0, 'GGC Google': 0}}, {'time': 1606333834, 'measurement': 'as', 'tags': {'customer': 'Bernardo 2', 'country': 'Peru'}, 'fields': {'Google': 2400000000, 'Facebok': 17400000, 'Akamai': 623700000, 'Netflix': 1137500000, 'Telefonica': 90200000, 'Amazon': 224021227, 'Yachay': 238700000}}]
+***************** CUSTOMER: Cable Santa Fe ***********************
+================= Reource: uplinks ***********************
+
+** nfdump -M /var/lib/nfsen/profiles/profiles-data/live/r0-l3-lim-pe  -T  -r 2020/11/24/nfcapd.202011241945 -n 10 -s inif/bytes
+nfdump filter:
+out if 69
+Top 10 Input If ordered by bytes:
+Date first seen          Duration Proto          Input If    Flows(%)     Packets(%)       Bytes(%)         pps      bps   bpp
+2020-11-24 19:43:32.308   311.677 any                 164    61973(16.0)   53.1 M(30.9)   74.3 G(34.8)   170504    1.9 G  1398
+2020-11-24 19:43:32.308   311.678 any                 157   116027(29.9)   38.1 M(22.1)   43.2 G(20.2)   122265    1.1 G  1133
+2020-11-24 19:43:32.310   311.673 any                 159   116552(30.0)   36.8 M(21.4)   40.9 G(19.1)   117937    1.0 G  1112
+2020-11-24 19:43:32.309   311.355 any                 161    33837( 8.7)   16.6 M( 9.7)   20.5 G( 9.6)    53392  528.0 M  1236
+2020-11-24 19:43:39.148   301.753 any                 162    29385( 7.6)   15.2 M( 8.8)   18.7 G( 8.7)    50318  495.5 M  1230
+2020-11-24 19:43:39.148   301.752 any                  98    23860( 6.1)   11.5 M( 6.7)   15.5 G( 7.3)    38101  411.8 M  1350
+2020-11-24 19:43:32.566   310.268 any                 112     1500( 0.4)   342208( 0.2)  388.4 M( 0.2)     1102   10.0 M  1134
+2020-11-24 19:43:32.437   311.035 any                  49     3972( 1.0)   301120( 0.2)   43.7 M( 0.0)      968    1.1 M   145
+2020-11-24 19:45:09.514    75.001 any                 110       54( 0.0)    23936( 0.0)   17.1 M( 0.0)      319    1.8 M   715
+2020-11-24 19:43:33.653   308.665 any                  69     1121( 0.3)   128832( 0.1)    6.0 M( 0.0)      417   155518    46
+
+Summary: total flows: 388286, total bytes: 213624996288, total packets: 172109248, avg bps: 5483222974, avg pps: 552202, avg bpp: 1241
+Time window: 2020-11-24 19:14:36 - 2020-11-24 19:48:45
+Total flows processed: 2839468, Blocks skipped: 0, Bytes read: 249658920
+Sys: 0.829s flows/second: 3424404.2  Wall: 0.828s flows/second: 3428911.6
+
+[{'name': 'WAVE 1', 'match': '157'}, {'name': 'WAVE 2', 'match': '159'}, {'name': 'HSIP', 'match': '98'}, {'name': 'FACEBOOK PNI 1', 'match': '161', 'check': True, 'assoc_as': '32934'}, {'name': 'FACEBOOK PNI 2', 'match': '162', 'check': True, 'assoc_as': '32934'}, {'name': 'GGC Google', 'match': '164', 'check': True}]
+{'name': 'Cable Santa Fe', 'resource_usage': {'uplinks': {}}}
+{'name': 'Cable Santa Fe', 'resource_usage': {'uplinks': {'WAVE 1': 1100000000}}}
+{'name': 'Cable Santa Fe', 'resource_usage': {'uplinks': {'WAVE 1': 1100000000, 'WAVE 2': 1000000000}}}
+{'name': 'Cable Santa Fe', 'resource_usage': {'uplinks': {'WAVE 1': 1100000000, 'WAVE 2': 1000000000, 'HSIP': 411800000}}}
+{'name': 'Cable Santa Fe', 'resource_usage': {'uplinks': {'WAVE 1': 1100000000, 'WAVE 2': 1000000000, 'HSIP': 411800000, 'FACEBOOK PNI 1': 528000000}}}
+{'name': 'Cable Santa Fe', 'resource_usage': {'uplinks': {'WAVE 1': 1100000000, 'WAVE 2': 1000000000, 'HSIP': 411800000, 'FACEBOOK PNI 1': 528000000, 'FACEBOOK PNI 2': 495500000}}}
+================= Reource: as ***********************
+
+** nfdump -M /var/lib/nfsen/profiles/profiles-data/live/r0-l3-lim-pe  -T  -r 2020/11/24/nfcapd.202011241945 -n 20 -s srcas/bytes
+nfdump filter:
+out if 69
+Top 20 Src AS ordered by bytes:
+Date first seen          Duration Proto            Src AS    Flows(%)     Packets(%)       Bytes(%)         pps      bps   bpp
+2020-11-24 19:43:32.308   311.677 any                   0    63246(16.3)   53.2 M(30.9)   74.4 G(34.8)   170845    1.9 G  1396
+2020-11-24 19:43:32.309   311.355 any               32934    65953(17.0)   32.1 M(18.6)   39.4 G(18.4)   102981    1.0 G  1228
+2020-11-24 19:43:32.311   311.611 any                3549    99606(25.7)   33.2 M(19.3)   38.3 G(17.9)   106668  982.2 M  1150
+2020-11-24 19:43:32.310   311.673 any               15169    79503(20.5)   24.6 M(14.3)   27.3 G(12.8)    78822  699.8 M  1109
+2020-11-24 19:43:32.309   311.677 any                2906    27549( 7.1)   17.7 M(10.3)   26.1 G(12.2)    56646  669.8 M  1478
+2020-11-24 19:43:32.308   311.486 any               16509    10967( 2.8)    2.5 M( 1.5)    2.3 G( 1.1)     8184   60.0 M   915
+2020-11-24 19:43:32.309   311.549 any               22697     5823( 1.5)    1.8 M( 1.1)    1.0 G( 0.5)     5858   26.3 M   561
+2020-11-24 19:43:32.308   311.548 any               14618     8266( 2.1)    1.1 M( 0.6)  500.7 M( 0.2)     3546   12.9 M   453
+2020-11-24 19:43:33.335   310.072 any               16276     2011( 0.5)    1.0 M( 0.6)  495.1 M( 0.2)     3237   12.8 M   493
+2020-11-24 19:43:33.526   309.626 any               20446      818( 0.2)   331392( 0.2)  467.2 M( 0.2)     1070   12.1 M  1409
+2020-11-24 19:43:32.372   311.419 any                8075     5510( 1.4)   789504( 0.5)  398.7 M( 0.2)     2535   10.2 M   505
+2020-11-24 19:43:32.566   308.409 any               12252      346( 0.1)   268160( 0.2)  375.2 M( 0.2)      869    9.7 M  1399
+2020-11-24 19:43:33.205   310.653 any               23456     3265( 0.8)   510336( 0.3)  326.8 M( 0.2)     1642    8.4 M   640
+2020-11-24 19:43:41.689   300.310 any               60781      466( 0.1)   177920( 0.1)  244.3 M( 0.1)      592    6.5 M  1373
+2020-11-24 19:43:32.437   311.549 any                8068     1222( 0.3)   204352( 0.1)  227.5 M( 0.1)      655    5.8 M  1113
+2020-11-24 19:43:42.549   298.682 any               54994      239( 0.1)   147072( 0.1)  211.3 M( 0.1)      492    5.7 M  1437
+2020-11-24 19:43:32.439   310.458 any               20940      858( 0.2)   150784( 0.1)  182.7 M( 0.1)      485    4.7 M  1211
+2020-11-24 19:43:43.478   297.627 any               47764       40( 0.0)    84160( 0.0)  124.4 M( 0.1)      282    3.3 M  1477
+2020-11-24 19:43:41.302   300.632 any               60476       78( 0.0)    82048( 0.0)  120.3 M( 0.1)      272    3.2 M  1466
+2020-11-24 19:43:42.108   299.891 any               59930      150( 0.0)    94848( 0.1)  117.7 M( 0.1)      316    3.1 M  1241
+
+Summary: total flows: 388286, total bytes: 213624996288, total packets: 172109248, avg bps: 5483222974, avg pps: 552202, avg bpp: 1241
+Time window: 2020-11-24 19:14:36 - 2020-11-24 19:48:45
+Total flows processed: 2839468, Blocks skipped: 0, Bytes read: 249658920
+Sys: 0.847s flows/second: 3350084.5  Wall: 0.846s flows/second: 3354850.1
+
+[{'name': 'Google', 'match': '15169'}, {'name': 'Facebok', 'match': '32934'}, {'name': 'Akamai', 'match': '20940'}, {'name': 'Netflix', 'match': '2906'}, {'name': 'Telefonica', 'match': '6147', 'priority': 1}, {'name': 'Amazon', 'match': '16509'}, {'name': 'Yachay', 'match': '3132', 'priority': 1}]
+AS 0 FIX Google AS 15169<----------------
+
+** nfdump -M /var/lib/nfsen/profiles/profiles-data/live/r0-l3-lim-pe  -T  -r 2020/11/24/nfcapd.202011241945 -n 20 -s srcas/bytes
+nfdump filter:
+(out if 69) and src as 0 and ((src net 8.8.4.0/24 or src net 8.8.8.0/24 or src net 8.15.202.0/24 or src net 8.34.208.0/20 or src net 8.35.192.0/20 or src net 23.236.48.0/20 or src net 23.251.128.0/19 or src net 34.64.0.0/10 or src net 35.184.0.0/13 or src net 35.192.0.0/11 or src net 35.224.0.0/12 or src net 35.240.0.0/13 or src net 45.121.228.0/22 or src net 64.15.112.0/20 or src net 64.233.160.0/19 or src net 66.102.0.0/20 or src net 66.249.64.0/19 or src net 70.32.128.0/19 or src net 72.14.192.0/18 or src net 74.114.24.0/21 or src net 74.125.0.0/16 or src net 89.207.231.0/24 or src net 103.62.64.0/22 or src net 104.132.0.0/16 or src net 104.133.0.0/17 or src net 104.134.92.0/24 or src net 104.134.128.0/17 or src net 104.154.0.0/15 or src net 104.196.0.0/14 or src net 107.167.160.0/19 or src net 107.178.192.0/18 or src net 108.59.80.0/20 or src net 108.170.192.0/18 or src net 108.177.0.0/17 or src net 113.197.106.0/24 or src net 130.211.0.0/16 or src net 136.22.64.0/23 or src net 136.22.86.0/23 or s
+Top 20 Src AS ordered by bytes:
+Date first seen          Duration Proto            Src AS    Flows(%)     Packets(%)       Bytes(%)         pps      bps   bpp
+2020-11-24 19:43:32.756   310.078 any                   0     1157(100.0)    74368(100.0)   13.2 M(100.0)      239   340802   177
+
+Summary: total flows: 1157, total bytes: 13209408, total packets: 74368, avg bps: 340802, avg pps: 239, avg bpp: 177
+Time window: 2020-11-24 19:14:36 - 2020-11-24 19:48:45
+Total flows processed: 2839468, Blocks skipped: 0, Bytes read: 249658920
+Sys: 0.860s flows/second: 3299765.5  Wall: 0.859s flows/second: 3302375.1
+
+AS 0 CUMULATED AS 0 USAGE: 340802------------>
+
+** nfdump -M /var/lib/nfsen/profiles/profiles-data/live/r0-l3-lim-pe  -T  -r 2020/11/24/nfcapd.202011241945 -n 20 -s srcas/bytes
+nfdump filter:
+(out if 69) and src as 3549 and ((src net 8.8.4.0/24 or src net 8.8.8.0/24 or src net 8.15.202.0/24 or src net 8.34.208.0/20 or src net 8.35.192.0/20 or src net 23.236.48.0/20 or src net 23.251.128.0/19 or src net 34.64.0.0/10 or src net 35.184.0.0/13 or src net 35.192.0.0/11 or src net 35.224.0.0/12 or src net 35.240.0.0/13 or src net 45.121.228.0/22 or src net 64.15.112.0/20 or src net 64.233.160.0/19 or src net 66.102.0.0/20 or src net 66.249.64.0/19 or src net 70.32.128.0/19 or src net 72.14.192.0/18 or src net 74.114.24.0/21 or src net 74.125.0.0/16 or src net 89.207.231.0/24 or src net 103.62.64.0/22 or src net 104.132.0.0/16 or src net 104.133.0.0/17 or src net 104.134.92.0/24 or src net 104.134.128.0/17 or src net 104.154.0.0/15 or src net 104.196.0.0/14 or src net 107.167.160.0/19 or src net 107.178.192.0/18 or src net 108.59.80.0/20 or src net 108.170.192.0/18 or src net 108.177.0.0/17 or src net 113.197.106.0/24 or src net 130.211.0.0/16 or src net 136.22.64.0/23 or src net 136.22.86.0/23 o
+Top 20 Src AS ordered by bytes:
+Date first seen          Duration Proto            Src AS    Flows(%)     Packets(%)       Bytes(%)         pps      bps   bpp
+
+Summary: total flows: 0, total bytes: 0, total packets: 0, avg bps: 0, avg pps: 0, avg bpp: 0
+Time window: 2020-11-24 19:14:36 - 2020-11-24 19:48:45
+Total flows processed: 2839468, Blocks skipped: 0, Bytes read: 249658920
+Sys: 0.869s flows/second: 3265636.9  Wall: 0.871s flows/second: 3257873.4
+
+AS 0 CUMULATED AS 3549 USAGE: 340802------------>
+AS 0 USAGE: 340802------------>
+{'name': 'Cable Santa Fe', 'resource_usage': {'uplinks': {'WAVE 1': 1100000000, 'WAVE 2': 1000000000, 'HSIP': 411800000, 'FACEBOOK PNI 1': 528000000, 'FACEBOOK PNI 2': 495500000, 'GGC Google': 1900000000}, 'as': {}}}
+AS 0 FIX Facebok AS 32934<----------------
+
+** nfdump -M /var/lib/nfsen/profiles/profiles-data/live/r0-l3-lim-pe  -T  -r 2020/11/24/nfcapd.202011241945 -n 20 -s srcas/bytes
+nfdump filter:
+(out if 69) and src as 0 and ((src net 31.13.24.0/21 or src net 31.13.64.0/18 or src net 45.64.40.0/22 or src net 66.220.144.0/20 or src net 69.63.176.0/20 or src net 69.171.224.0/19 or src net 74.119.76.0/22 or src net 102.132.96.0/20 or src net 103.4.96.0/22 or src net 129.134.0.0/16 or src net 147.75.208.0/20 or src net 157.240.0.0/16 or src net 173.252.64.0/18 or src net 179.60.192.0/22 or src net 185.60.216.0/22 or src net 185.89.216.0/22 or src net 199.201.64.0/22 or src net 204.15.20.0/22))
+Top 20 Src AS ordered by bytes:
+Date first seen          Duration Proto            Src AS    Flows(%)     Packets(%)       Bytes(%)         pps      bps   bpp
+
+Summary: total flows: 0, total bytes: 0, total packets: 0, avg bps: 0, avg pps: 0, avg bpp: 0
+Time window: 2020-11-24 19:14:36 - 2020-11-24 19:48:45
+Total flows processed: 2839468, Blocks skipped: 0, Bytes read: 249658920
+Sys: 0.857s flows/second: 3312136.4  Wall: 0.856s flows/second: 3316248.3
+
+AS 0 CUMULATED AS 0 USAGE: 0------------>
+
+** nfdump -M /var/lib/nfsen/profiles/profiles-data/live/r0-l3-lim-pe  -T  -r 2020/11/24/nfcapd.202011241945 -n 20 -s srcas/bytes
+nfdump filter:
+(out if 69) and src as 3549 and ((src net 31.13.24.0/21 or src net 31.13.64.0/18 or src net 45.64.40.0/22 or src net 66.220.144.0/20 or src net 69.63.176.0/20 or src net 69.171.224.0/19 or src net 74.119.76.0/22 or src net 102.132.96.0/20 or src net 103.4.96.0/22 or src net 129.134.0.0/16 or src net 147.75.208.0/20 or src net 157.240.0.0/16 or src net 173.252.64.0/18 or src net 179.60.192.0/22 or src net 185.60.216.0/22 or src net 185.89.216.0/22 or src net 199.201.64.0/22 or src net 204.15.20.0/22))
+Top 20 Src AS ordered by bytes:
+Date first seen          Duration Proto            Src AS    Flows(%)     Packets(%)       Bytes(%)         pps      bps   bpp
+
+Summary: total flows: 0, total bytes: 0, total packets: 0, avg bps: 0, avg pps: 0, avg bpp: 0
+Time window: 2020-11-24 19:14:36 - 2020-11-24 19:48:45
+Total flows processed: 2839468, Blocks skipped: 0, Bytes read: 249658920
+Sys: 0.827s flows/second: 3431381.3  Wall: 0.826s flows/second: 3435528.8
+
+AS 0 CUMULATED AS 3549 USAGE: 0------------>
+AS 0 USAGE: 0------------>
+{'name': 'Cable Santa Fe', 'resource_usage': {'uplinks': {'WAVE 1': 1100000000, 'WAVE 2': 1000000000, 'HSIP': 411800000, 'FACEBOOK PNI 1': 528000000, 'FACEBOOK PNI 2': 495500000, 'GGC Google': 1900000000}, 'as': {'Google': 700140802}}}
+AS 0 FIX Akamai AS 20940<----------------
+
+** nfdump -M /var/lib/nfsen/profiles/profiles-data/live/r0-l3-lim-pe  -T  -r 2020/11/24/nfcapd.202011241945 -n 20 -s srcas/bytes
+nfdump filter:
+(out if 69) and src as 0 and ((src net 2.16.0.0/13 or src net 4.77.205.0/24 or src net 23.0.0.0/12 or src net 23.32.0.0/11 or src net 23.64.0.0/14 or src net 23.72.0.0/13 or src net 23.192.0.0/11 or src net 43.249.213.0/24 or src net 49.231.112.0/24 or src net 59.151.164.0/22 or src net 60.87.0.0/20 or src net 60.254.129.0/24 or src net 60.254.130.0/23 or src net 60.254.140.0/22 or src net 60.254.148.0/24 or src net 60.254.152.0/22 or src net 60.254.173.0/24 or src net 60.254.174.0/23 or src net 60.254.180.0/22 or src net 60.254.184.0/23 or src net 60.254.186.0/24 or src net 63.84.59.0/24 or src net 63.85.36.0/24 or src net 63.150.12.0/24 or src net 63.151.137.0/24 or src net 63.217.8.0/24 or src net 63.217.232.0/24 or src net 63.227.135.0/24 or src net 63.233.60.0/23 or src net 63.233.112.0/24 or src net 63.233.126.0/24 or src net 63.233.224.0/24 or src net 63.235.20.0/23 or src net 63.238.251.0/24 or src net 63.239.232.0/23 or src net 64.208.187.0/24 or src net 64.212.114.0/23 or src net 65.116.164.
+Top 20 Src AS ordered by bytes:
+Date first seen          Duration Proto            Src AS    Flows(%)     Packets(%)       Bytes(%)         pps      bps   bpp
+
+Summary: total flows: 0, total bytes: 0, total packets: 0, avg bps: 0, avg pps: 0, avg bpp: 0
+Time window: 2020-11-24 19:14:36 - 2020-11-24 19:48:45
+Total flows processed: 2839468, Blocks skipped: 0, Bytes read: 249658920
+Sys: 0.941s flows/second: 3017157.5  Wall: 0.939s flows/second: 3022874.9
+
+AS 0 CUMULATED AS 0 USAGE: 0------------>
+
+** nfdump -M /var/lib/nfsen/profiles/profiles-data/live/r0-l3-lim-pe  -T  -r 2020/11/24/nfcapd.202011241945 -n 20 -s srcas/bytes
+nfdump filter:
+(out if 69) and src as 3549 and ((src net 2.16.0.0/13 or src net 4.77.205.0/24 or src net 23.0.0.0/12 or src net 23.32.0.0/11 or src net 23.64.0.0/14 or src net 23.72.0.0/13 or src net 23.192.0.0/11 or src net 43.249.213.0/24 or src net 49.231.112.0/24 or src net 59.151.164.0/22 or src net 60.87.0.0/20 or src net 60.254.129.0/24 or src net 60.254.130.0/23 or src net 60.254.140.0/22 or src net 60.254.148.0/24 or src net 60.254.152.0/22 or src net 60.254.173.0/24 or src net 60.254.174.0/23 or src net 60.254.180.0/22 or src net 60.254.184.0/23 or src net 60.254.186.0/24 or src net 63.84.59.0/24 or src net 63.85.36.0/24 or src net 63.150.12.0/24 or src net 63.151.137.0/24 or src net 63.217.8.0/24 or src net 63.217.232.0/24 or src net 63.227.135.0/24 or src net 63.233.60.0/23 or src net 63.233.112.0/24 or src net 63.233.126.0/24 or src net 63.233.224.0/24 or src net 63.235.20.0/23 or src net 63.238.251.0/24 or src net 63.239.232.0/23 or src net 64.208.187.0/24 or src net 64.212.114.0/23 or src net 65.116.1
+Top 20 Src AS ordered by bytes:
+Date first seen          Duration Proto            Src AS    Flows(%)     Packets(%)       Bytes(%)         pps      bps   bpp
+2020-11-24 19:43:32.374   311.548 any                3549     9862(100.0)    2.4 M(100.0)    3.2 G(100.0)     7623   81.3 M  1332
+
+Summary: total flows: 9862, total bytes: 3165073344, total packets: 2375104, avg bps: 81273469, avg pps: 7623, avg bpp: 1332
+Time window: 2020-11-24 19:14:36 - 2020-11-24 19:48:45
+Total flows processed: 2839468, Blocks skipped: 0, Bytes read: 249658920
+Sys: 1.011s flows/second: 2807171.5  Wall: 1.009s flows/second: 2812412.6
+
+AS 0 CUMULATED AS 3549 USAGE: 81300000------------>
+AS 0 USAGE: 81300000------------>
+{'name': 'Cable Santa Fe', 'resource_usage': {'uplinks': {'WAVE 1': 1100000000, 'WAVE 2': 1000000000, 'HSIP': 411800000, 'FACEBOOK PNI 1': 528000000, 'FACEBOOK PNI 2': 495500000, 'GGC Google': 1900000000}, 'as': {'Google': 700140802, 'Facebok': 1000000000}}}
+AS 0 FIX Netflix AS 2906<----------------
+
+** nfdump -M /var/lib/nfsen/profiles/profiles-data/live/r0-l3-lim-pe  -T  -r 2020/11/24/nfcapd.202011241945 -n 20 -s srcas/bytes
+nfdump filter:
+(out if 69) and src as 0 and ((src net 23.246.0.0/18 or src net 37.77.184.0/21 or src net 45.57.0.0/17 or src net 64.120.128.0/17 or src net 66.197.128.0/17 or src net 69.53.224.0/19 or src net 108.175.32.0/20 or src net 185.2.220.0/22 or src net 185.9.188.0/22 or src net 192.173.64.0/18 or src net 198.38.96.0/19 or src net 198.45.48.0/20 or src net 208.75.76.0/22))
+Top 20 Src AS ordered by bytes:
+Date first seen          Duration Proto            Src AS    Flows(%)     Packets(%)       Bytes(%)         pps      bps   bpp
+
+Summary: total flows: 0, total bytes: 0, total packets: 0, avg bps: 0, avg pps: 0, avg bpp: 0
+Time window: 2020-11-24 19:14:36 - 2020-11-24 19:48:45
+Total flows processed: 2839468, Blocks skipped: 0, Bytes read: 249658920
+Sys: 0.820s flows/second: 3462753.2  Wall: 0.818s flows/second: 3467819.6
+
+AS 0 CUMULATED AS 0 USAGE: 0------------>
+
+** nfdump -M /var/lib/nfsen/profiles/profiles-data/live/r0-l3-lim-pe  -T  -r 2020/11/24/nfcapd.202011241945 -n 20 -s srcas/bytes
+nfdump filter:
+(out if 69) and src as 3549 and ((src net 23.246.0.0/18 or src net 37.77.184.0/21 or src net 45.57.0.0/17 or src net 64.120.128.0/17 or src net 66.197.128.0/17 or src net 69.53.224.0/19 or src net 108.175.32.0/20 or src net 185.2.220.0/22 or src net 185.9.188.0/22 or src net 192.173.64.0/18 or src net 198.38.96.0/19 or src net 198.45.48.0/20 or src net 208.75.76.0/22))
+Top 20 Src AS ordered by bytes:
+Date first seen          Duration Proto            Src AS    Flows(%)     Packets(%)       Bytes(%)         pps      bps   bpp
+2020-11-24 19:43:32.567   311.224 any                3549      358(100.0)   197696(100.0)  292.1 M(100.0)      635    7.5 M  1477
+
+Summary: total flows: 358, total bytes: 292051840, total packets: 197696, avg bps: 7507180, avg pps: 635, avg bpp: 1477
+Time window: 2020-11-24 19:14:36 - 2020-11-24 19:48:45
+Total flows processed: 2839468, Blocks skipped: 0, Bytes read: 249658920
+Sys: 0.839s flows/second: 3381200.6  Wall: 0.841s flows/second: 3373175.1
+
+AS 0 CUMULATED AS 3549 USAGE: 7500000------------>
+AS 0 USAGE: 7500000------------>
+{'name': 'Cable Santa Fe', 'resource_usage': {'uplinks': {'WAVE 1': 1100000000, 'WAVE 2': 1000000000, 'HSIP': 411800000, 'FACEBOOK PNI 1': 528000000, 'FACEBOOK PNI 2': 495500000, 'GGC Google': 1900000000}, 'as': {'Google': 700140802, 'Facebok': 1000000000, 'Akamai': 86000000}}}
+AS 0 FIX Telefonica AS 6147<----------------
+
+** nfdump -M /var/lib/nfsen/profiles/profiles-data/live/r0-l3-lim-pe  -T  -r 2020/11/24/nfcapd.202011241945 -n 20 -s srcas/bytes
+nfdump filter:
+(out if 69) and src as 0 and ((src net 170.79.36.0/22 or src net 181.64.0.0/18 or src net 181.64.96.0/19 or src net 181.64.128.0/17 or src net 181.65.0.0/16 or src net 181.66.0.0/15 or src net 190.40.0.0/16 or src net 190.41.0.0/17 or src net 190.41.128.0/19 or src net 190.41.192.0/19 or src net 190.42.0.0/15 or src net 190.232.0.0/13 or src net 199.229.76.0/24 or src net 200.0.166.0/23 or src net 200.0.170.0/23 or src net 200.0.172.0/23 or src net 200.4.223.0/24 or src net 200.4.224.0/19 or src net 200.10.64.0/19 or src net 200.10.130.0/23 or src net 200.10.188.0/24 or src net 200.11.48.0/20 or src net 200.16.0.0/21 or src net 200.37.0.0/16 or src net 200.48.0.0/16 or src net 200.60.0.0/16 or src net 200.106.0.0/17 or src net 200.107.128.0/18 or src net 200.121.0.0/16 or src net 201.131.220.0/22 or src net 201.230.0.0/16 or src net 201.240.0.0/16))
+Top 20 Src AS ordered by bytes:
+Date first seen          Duration Proto            Src AS    Flows(%)     Packets(%)       Bytes(%)         pps      bps   bpp
+
+Summary: total flows: 0, total bytes: 0, total packets: 0, avg bps: 0, avg pps: 0, avg bpp: 0
+Time window: 2020-11-24 19:14:36 - 2020-11-24 19:48:45
+Total flows processed: 2839468, Blocks skipped: 0, Bytes read: 249658920
+Sys: 0.805s flows/second: 3526382.7  Wall: 0.804s flows/second: 3530785.1
+
+AS 0 CUMULATED AS 0 USAGE: 0------------>
+
+** nfdump -M /var/lib/nfsen/profiles/profiles-data/live/r0-l3-lim-pe  -T  -r 2020/11/24/nfcapd.202011241945 -n 20 -s srcas/bytes
+nfdump filter:
+(out if 69) and src as 3549 and ((src net 170.79.36.0/22 or src net 181.64.0.0/18 or src net 181.64.96.0/19 or src net 181.64.128.0/17 or src net 181.65.0.0/16 or src net 181.66.0.0/15 or src net 190.40.0.0/16 or src net 190.41.0.0/17 or src net 190.41.128.0/19 or src net 190.41.192.0/19 or src net 190.42.0.0/15 or src net 190.232.0.0/13 or src net 199.229.76.0/24 or src net 200.0.166.0/23 or src net 200.0.170.0/23 or src net 200.0.172.0/23 or src net 200.4.223.0/24 or src net 200.4.224.0/19 or src net 200.10.64.0/19 or src net 200.10.130.0/23 or src net 200.10.188.0/24 or src net 200.11.48.0/20 or src net 200.16.0.0/21 or src net 200.37.0.0/16 or src net 200.48.0.0/16 or src net 200.60.0.0/16 or src net 200.106.0.0/17 or src net 200.107.128.0/18 or src net 200.121.0.0/16 or src net 201.131.220.0/22 or src net 201.230.0.0/16 or src net 201.240.0.0/16))
+Top 20 Src AS ordered by bytes:
+Date first seen          Duration Proto            Src AS    Flows(%)     Packets(%)       Bytes(%)         pps      bps   bpp
+2020-11-24 19:43:32.373   311.098 any                3549     5787(100.0)    3.7 M(100.0)    5.2 G(100.0)    12000  132.8 M  1383
+
+Summary: total flows: 5787, total bytes: 5165184256, total packets: 3733376, avg bps: 132824621, avg pps: 12000, avg bpp: 1383
+Time window: 2020-11-24 19:14:36 - 2020-11-24 19:48:45
+Total flows processed: 2839468, Blocks skipped: 0, Bytes read: 249658920
+Sys: 0.866s flows/second: 3277419.8  Wall: 0.865s flows/second: 3281601.4
+
+AS 0 CUMULATED AS 3549 USAGE: 132800000------------>
+AS 0 USAGE: 132800000------------>
+{'name': 'Cable Santa Fe', 'resource_usage': {'uplinks': {'WAVE 1': 1100000000, 'WAVE 2': 1000000000, 'HSIP': 411800000, 'FACEBOOK PNI 1': 528000000, 'FACEBOOK PNI 2': 495500000, 'GGC Google': 1900000000}, 'as': {'Google': 700140802, 'Facebok': 1000000000, 'Akamai': 86000000, 'Netflix': 677300000}}}
+AS 0 FIX Amazon AS 16509<----------------
+
+** nfdump -M /var/lib/nfsen/profiles/profiles-data/live/r0-l3-lim-pe  -T  -r 2020/11/24/nfcapd.202011241945 -n 20 -s srcas/bytes
+nfdump filter:
+(out if 69) and src as 0 and ((src net 2.59.128.0/22 or src net 3.0.0.0/15 or src net 3.2.2.0/23 or src net 3.5.0.0/16 or src net 3.6.0.0/15 or src net 3.8.0.0/13 or src net 3.16.0.0/13 or src net 3.24.0.0/14 or src net 3.34.0.0/15 or src net 3.36.0.0/14 or src net 3.64.0.0/11 or src net 3.96.0.0/14 or src net 3.101.0.0/16 or src net 3.104.0.0/14 or src net 3.112.0.0/14 or src net 3.120.0.0/13 or src net 3.128.0.0/12 or src net 3.208.0.0/12 or src net 3.224.0.0/12 or src net 3.248.0.0/13 or src net 5.252.144.0/23 or src net 8.18.144.0/23 or src net 13.32.0.0/13 or src net 13.48.0.0/13 or src net 13.56.0.0/14 or src net 13.112.0.0/14 or src net 13.124.0.0/14 or src net 13.208.0.0/14 or src net 13.212.0.0/15 or src net 13.224.0.0/12 or src net 13.244.0.0/15 or src net 13.248.0.0/14 or src net 15.152.0.0/16 or src net 15.156.0.0/15 or src net 15.160.0.0/15 or src net 15.164.0.0/15 or src net 15.177.0.0/18 or src net 15.177.64.0/20 or src net 15.177.80.0/21 or src net 15.177.88.0/22 or src net 15.184.0.0/
+Top 20 Src AS ordered by bytes:
+Date first seen          Duration Proto            Src AS    Flows(%)     Packets(%)       Bytes(%)         pps      bps   bpp
+
+Summary: total flows: 0, total bytes: 0, total packets: 0, avg bps: 0, avg pps: 0, avg bpp: 0
+Time window: 2020-11-24 19:14:36 - 2020-11-24 19:48:45
+Total flows processed: 2839468, Blocks skipped: 0, Bytes read: 249658920
+Sys: 1.025s flows/second: 2770034.3  Wall: 1.023s flows/second: 2774454.2
+
+
+** nfdump -M /var/lib/nfsen/profiles/profiles-data/live/r0-l3-lim-pe  -T  -r 2020/11/24/nfcapd.202011241945 -n 20 -s srcas/bytes
+nfdump filter:
+(out if 69) and src as 0 and ((src net 74.117.16.0/22 or src net 74.117.148.0/23 or src net 74.118.104.0/22 or src net 74.122.241.0/24 or src net 74.123.145.0/24 or src net 74.214.200.0/21 or src net 74.221.129.0/24 or src net 74.221.130.0/23 or src net 74.221.133.0/24 or src net 74.221.135.0/24 or src net 74.221.137.0/24 or src net 74.221.139.0/24 or src net 74.221.141.0/24 or src net 75.2.0.0/17 or src net 76.76.17.0/24 or src net 76.76.21.0/24 or src net 76.223.0.0/17 or src net 76.223.160.0/21 or src net 76.223.176.0/20 or src net 78.108.124.0/23 or src net 79.125.0.0/17 or src net 79.143.156.0/24 or src net 81.90.143.0/24 or src net 82.115.214.0/24 or src net 82.192.96.0/23 or src net 82.192.100.0/23 or src net 82.192.108.0/23 or src net 85.92.100.0/22 or src net 85.115.38.0/24 or src net 85.236.136.0/21 or src net 85.238.10.0/24 or src net 87.236.67.0/24 or src net 87.237.84.0/24 or src net 87.237.86.0/24 or src net 87.238.80.0/21 or src net 88.218.222.0/24 or src net 89.22.192.0/21 or src net 8
+Top 20 Src AS ordered by bytes:
+Date first seen          Duration Proto            Src AS    Flows(%)     Packets(%)       Bytes(%)         pps      bps   bpp
+
+Summary: total flows: 0, total bytes: 0, total packets: 0, avg bps: 0, avg pps: 0, avg bpp: 0
+Time window: 2020-11-24 19:14:36 - 2020-11-24 19:48:45
+Total flows processed: 2839468, Blocks skipped: 0, Bytes read: 249658920
+Sys: 1.022s flows/second: 2778075.3  Wall: 1.020s flows/second: 2782403.7
+
+
+** nfdump -M /var/lib/nfsen/profiles/profiles-data/live/r0-l3-lim-pe  -T  -r 2020/11/24/nfcapd.202011241945 -n 20 -s srcas/bytes
+nfdump filter:
+(out if 69) and src as 0 and ((src net 167.88.58.0/24 or src net 168.100.88.0/24 or src net 168.100.96.0/23 or src net 168.149.240.0/21 or src net 168.151.30.0/24 or src net 168.238.4.0/23 or src net 168.238.6.0/24 or src net 168.238.100.0/24 or src net 168.245.155.0/24 or src net 170.10.223.0/24 or src net 170.39.88.0/24 or src net 170.39.141.0/24 or src net 170.72.224.0/23 or src net 170.72.228.0/23 or src net 170.72.235.0/24 or src net 170.72.236.0/22 or src net 170.89.128.0/22 or src net 170.89.132.0/23 or src net 170.89.134.0/24 or src net 170.89.141.0/24 or src net 170.89.144.0/24 or src net 170.89.146.0/23 or src net 170.89.149.0/24 or src net 170.89.150.0/23 or src net 170.89.152.0/24 or src net 170.89.156.0/22 or src net 170.89.160.0/24 or src net 170.89.164.0/24 or src net 170.89.173.0/24 or src net 170.89.176.0/24 or src net 170.89.178.0/24 or src net 170.89.181.0/24 or src net 170.89.182.0/23 or src net 170.89.184.0/24 or src net 170.89.189.0/24 or src net 170.89.190.0/23 or src net 170.17
+Top 20 Src AS ordered by bytes:
+Date first seen          Duration Proto            Src AS    Flows(%)     Packets(%)       Bytes(%)         pps      bps   bpp
+
+Summary: total flows: 0, total bytes: 0, total packets: 0, avg bps: 0, avg pps: 0, avg bpp: 0
+Time window: 2020-11-24 19:14:36 - 2020-11-24 19:48:45
+Total flows processed: 2839468, Blocks skipped: 0, Bytes read: 249658920
+Sys: 1.020s flows/second: 2783759.4  Wall: 1.017s flows/second: 2789702.5
+
+AS 0 CUMULATED AS 0 USAGE: 0------------>
+
+** nfdump -M /var/lib/nfsen/profiles/profiles-data/live/r0-l3-lim-pe  -T  -r 2020/11/24/nfcapd.202011241945 -n 20 -s srcas/bytes
+nfdump filter:
+(out if 69) and src as 3549 and ((src net 2.59.128.0/22 or src net 3.0.0.0/15 or src net 3.2.2.0/23 or src net 3.5.0.0/16 or src net 3.6.0.0/15 or src net 3.8.0.0/13 or src net 3.16.0.0/13 or src net 3.24.0.0/14 or src net 3.34.0.0/15 or src net 3.36.0.0/14 or src net 3.64.0.0/11 or src net 3.96.0.0/14 or src net 3.101.0.0/16 or src net 3.104.0.0/14 or src net 3.112.0.0/14 or src net 3.120.0.0/13 or src net 3.128.0.0/12 or src net 3.208.0.0/12 or src net 3.224.0.0/12 or src net 3.248.0.0/13 or src net 5.252.144.0/23 or src net 8.18.144.0/23 or src net 13.32.0.0/13 or src net 13.48.0.0/13 or src net 13.56.0.0/14 or src net 13.112.0.0/14 or src net 13.124.0.0/14 or src net 13.208.0.0/14 or src net 13.212.0.0/15 or src net 13.224.0.0/12 or src net 13.244.0.0/15 or src net 13.248.0.0/14 or src net 15.152.0.0/16 or src net 15.156.0.0/15 or src net 15.160.0.0/15 or src net 15.164.0.0/15 or src net 15.177.0.0/18 or src net 15.177.64.0/20 or src net 15.177.80.0/21 or src net 15.177.88.0/22 or src net 15.184.0
+Top 20 Src AS ordered by bytes:
+Date first seen          Duration Proto            Src AS    Flows(%)     Packets(%)       Bytes(%)         pps      bps   bpp
+2020-11-24 19:43:32.629   310.778 any                3549     1591(100.0)   544512(100.0)  760.5 M(100.0)     1752   19.6 M  1396
+
+Summary: total flows: 1591, total bytes: 760495040, total packets: 544512, avg bps: 19576547, avg pps: 1752, avg bpp: 1396
+Time window: 2020-11-24 19:14:36 - 2020-11-24 19:48:45
+Total flows processed: 2839468, Blocks skipped: 0, Bytes read: 249658920
+Sys: 1.184s flows/second: 2397300.3  Wall: 1.181s flows/second: 2403949.3
+
+
+** nfdump -M /var/lib/nfsen/profiles/profiles-data/live/r0-l3-lim-pe  -T  -r 2020/11/24/nfcapd.202011241945 -n 20 -s srcas/bytes
+nfdump filter:
+(out if 69) and src as 3549 and ((src net 74.117.16.0/22 or src net 74.117.148.0/23 or src net 74.118.104.0/22 or src net 74.122.241.0/24 or src net 74.123.145.0/24 or src net 74.214.200.0/21 or src net 74.221.129.0/24 or src net 74.221.130.0/23 or src net 74.221.133.0/24 or src net 74.221.135.0/24 or src net 74.221.137.0/24 or src net 74.221.139.0/24 or src net 74.221.141.0/24 or src net 75.2.0.0/17 or src net 76.76.17.0/24 or src net 76.76.21.0/24 or src net 76.223.0.0/17 or src net 76.223.160.0/21 or src net 76.223.176.0/20 or src net 78.108.124.0/23 or src net 79.125.0.0/17 or src net 79.143.156.0/24 or src net 81.90.143.0/24 or src net 82.115.214.0/24 or src net 82.192.96.0/23 or src net 82.192.100.0/23 or src net 82.192.108.0/23 or src net 85.92.100.0/22 or src net 85.115.38.0/24 or src net 85.236.136.0/21 or src net 85.238.10.0/24 or src net 87.236.67.0/24 or src net 87.237.84.0/24 or src net 87.237.86.0/24 or src net 87.238.80.0/21 or src net 88.218.222.0/24 or src net 89.22.192.0/21 or src ne
+Top 20 Src AS ordered by bytes:
+Date first seen          Duration Proto            Src AS    Flows(%)     Packets(%)       Bytes(%)         pps      bps   bpp
+2020-11-24 19:44:23.412   190.102 any                3549       25(100.0)     4480(100.0)    6.5 M(100.0)       23   272876  1447
+
+Summary: total flows: 25, total bytes: 6484288, total packets: 4480, avg bps: 272876, avg pps: 23, avg bpp: 1447
+Time window: 2020-11-24 19:14:36 - 2020-11-24 19:48:45
+Total flows processed: 2839468, Blocks skipped: 0, Bytes read: 249658920
+Sys: 1.148s flows/second: 2472473.8  Wall: 1.146s flows/second: 2476195.3
+
+
+** nfdump -M /var/lib/nfsen/profiles/profiles-data/live/r0-l3-lim-pe  -T  -r 2020/11/24/nfcapd.202011241945 -n 20 -s srcas/bytes
+nfdump filter:
+(out if 69) and src as 3549 and ((src net 167.88.58.0/24 or src net 168.100.88.0/24 or src net 168.100.96.0/23 or src net 168.149.240.0/21 or src net 168.151.30.0/24 or src net 168.238.4.0/23 or src net 168.238.6.0/24 or src net 168.238.100.0/24 or src net 168.245.155.0/24 or src net 170.10.223.0/24 or src net 170.39.88.0/24 or src net 170.39.141.0/24 or src net 170.72.224.0/23 or src net 170.72.228.0/23 or src net 170.72.235.0/24 or src net 170.72.236.0/22 or src net 170.89.128.0/22 or src net 170.89.132.0/23 or src net 170.89.134.0/24 or src net 170.89.141.0/24 or src net 170.89.144.0/24 or src net 170.89.146.0/23 or src net 170.89.149.0/24 or src net 170.89.150.0/23 or src net 170.89.152.0/24 or src net 170.89.156.0/22 or src net 170.89.160.0/24 or src net 170.89.164.0/24 or src net 170.89.173.0/24 or src net 170.89.176.0/24 or src net 170.89.178.0/24 or src net 170.89.181.0/24 or src net 170.89.182.0/23 or src net 170.89.184.0/24 or src net 170.89.189.0/24 or src net 170.89.190.0/23 or src net 170
+Top 20 Src AS ordered by bytes:
+Date first seen          Duration Proto            Src AS    Flows(%)     Packets(%)       Bytes(%)         pps      bps   bpp
+
+Summary: total flows: 0, total bytes: 0, total packets: 0, avg bps: 0, avg pps: 0, avg bpp: 0
+Time window: 2020-11-24 19:14:36 - 2020-11-24 19:48:45
+Total flows processed: 2839468, Blocks skipped: 0, Bytes read: 249658920
+Sys: 1.129s flows/second: 2514739.7  Wall: 1.127s flows/second: 2518388.6
+
+AS 0 CUMULATED AS 3549 USAGE: 19872876------------>
+AS 0 USAGE: 19872876------------>
+{'name': 'Cable Santa Fe', 'resource_usage': {'uplinks': {'WAVE 1': 1100000000, 'WAVE 2': 1000000000, 'HSIP': 411800000, 'FACEBOOK PNI 1': 528000000, 'FACEBOOK PNI 2': 495500000, 'GGC Google': 1900000000}, 'as': {'Google': 700140802, 'Facebok': 1000000000, 'Akamai': 86000000, 'Netflix': 677300000, 'Telefonica': 132800000}}}
+AS 0 FIX Yachay AS 3132<----------------
+
+** nfdump -M /var/lib/nfsen/profiles/profiles-data/live/r0-l3-lim-pe  -T  -r 2020/11/24/nfcapd.202011241945 -n 20 -s srcas/bytes
+nfdump filter:
+(out if 69) and src as 0 and ((src net 161.132.0.0/16 or src net 167.250.204.0/22 or src net 200.0.107.0/24 or src net 200.0.136.0/24 or src net 200.0.164.0/22 or src net 200.0.168.0/24 or src net 200.1.176.0/21 or src net 200.11.32.0/24 or src net 200.11.36.0/22 or src net 209.45.0.0/17))
+Top 20 Src AS ordered by bytes:
+Date first seen          Duration Proto            Src AS    Flows(%)     Packets(%)       Bytes(%)         pps      bps   bpp
+
+Summary: total flows: 0, total bytes: 0, total packets: 0, avg bps: 0, avg pps: 0, avg bpp: 0
+Time window: 2020-11-24 19:14:36 - 2020-11-24 19:48:45
+Total flows processed: 2839468, Blocks skipped: 0, Bytes read: 249658920
+Sys: 0.822s flows/second: 3450478.8  Wall: 0.821s flows/second: 3456396.8
+
+AS 0 CUMULATED AS 0 USAGE: 0------------>
+
+** nfdump -M /var/lib/nfsen/profiles/profiles-data/live/r0-l3-lim-pe  -T  -r 2020/11/24/nfcapd.202011241945 -n 20 -s srcas/bytes
+nfdump filter:
+(out if 69) and src as 3549 and ((src net 161.132.0.0/16 or src net 167.250.204.0/22 or src net 200.0.107.0/24 or src net 200.0.136.0/24 or src net 200.0.164.0/22 or src net 200.0.168.0/24 or src net 200.1.176.0/21 or src net 200.11.32.0/24 or src net 200.11.36.0/22 or src net 209.45.0.0/17))
+Top 20 Src AS ordered by bytes:
+Date first seen          Duration Proto            Src AS    Flows(%)     Packets(%)       Bytes(%)         pps      bps   bpp
+2020-11-24 19:43:39.150   301.750 any                3549    14558(100.0)    6.7 M(100.0)    9.6 G(100.0)    22068  253.2 M  1434
+
+Summary: total flows: 14558, total bytes: 9550090432, total packets: 6659200, avg bps: 253192124, avg pps: 22068, avg bpp: 1434
+Time window: 2020-11-24 19:14:36 - 2020-11-24 19:48:45
+Total flows processed: 2839468, Blocks skipped: 0, Bytes read: 249658920
+Sys: 0.832s flows/second: 3411862.5  Wall: 0.833s flows/second: 3407898.7
+
+AS 0 CUMULATED AS 3549 USAGE: 253200000------------>
+AS 0 USAGE: 253200000------------>
+{'name': 'Cable Santa Fe', 'resource_usage': {'uplinks': {'WAVE 1': 1100000000, 'WAVE 2': 1000000000, 'HSIP': 411800000, 'FACEBOOK PNI 1': 528000000, 'FACEBOOK PNI 2': 495500000, 'GGC Google': 1900000000}, 'as': {'Google': 700140802, 'Facebok': 1000000000, 'Akamai': 86000000, 'Netflix': 677300000, 'Telefonica': 132800000, 'Amazon': 79872876}}}
+INFLUXING>>>>>>>>>>
+[{'time': 1606333834, 'measurement': 'uplinks', 'tags': {'customer': 'Cable Santa Fe', 'country': 'Peru'}, 'fields': {'WAVE 1': 1100000000, 'WAVE 2': 1000000000, 'HSIP': 411800000, 'FACEBOOK PNI 1': 528000000, 'FACEBOOK PNI 2': 495500000, 'GGC Google': 1900000000}}, {'time': 1606333834, 'measurement': 'as', 'tags': {'customer': 'Cable Santa Fe', 'country': 'Peru'}, 'fields': {'Google': 700140802, 'Facebok': 1000000000, 'Akamai': 86000000, 'Netflix': 677300000, 'Telefonica': 132800000, 'Amazon': 79872876, 'Yachay': 253200000}}]
+***************** CUSTOMER: Mega Andina ***********************
+================= Reource: uplinks ***********************
+
+** nfdump -M /var/lib/nfsen/profiles/profiles-data/live/r0-l3-lim-pe  -T  -r 2020/11/24/nfcapd.202011241945 -n 10 -s inif/bytes
+nfdump filter:
+out if 102
+Top 10 Input If ordered by bytes:
+Date first seen          Duration Proto          Input If    Flows(%)     Packets(%)       Bytes(%)         pps      bps   bpp
+
+Summary: total flows: 0, total bytes: 0, total packets: 0, avg bps: 0, avg pps: 0, avg bpp: 0
+Time window: 2020-11-24 19:14:36 - 2020-11-24 19:48:45
+Total flows processed: 2839468, Blocks skipped: 0, Bytes read: 249658920
+Sys: 0.820s flows/second: 3460525.0  Wall: 0.819s flows/second: 3465902.1
+
+[{'name': 'WAVE 1', 'match': '157'}, {'name': 'WAVE 2', 'match': '159'}, {'name': 'HSIP', 'match': '98'}, {'name': 'FACEBOOK PNI 1', 'match': '161', 'check': True, 'assoc_as': '32934'}, {'name': 'FACEBOOK PNI 2', 'match': '162', 'check': True, 'assoc_as': '32934'}, {'name': 'GGC Google', 'match': '164', 'check': True}]
+{'name': 'Mega Andina', 'resource_usage': {'uplinks': {}}}
+{'name': 'Mega Andina', 'resource_usage': {'uplinks': {'WAVE 1': 0}}}
+{'name': 'Mega Andina', 'resource_usage': {'uplinks': {'WAVE 1': 0, 'WAVE 2': 0}}}
+{'name': 'Mega Andina', 'resource_usage': {'uplinks': {'WAVE 1': 0, 'WAVE 2': 0, 'HSIP': 0}}}
+{'name': 'Mega Andina', 'resource_usage': {'uplinks': {'WAVE 1': 0, 'WAVE 2': 0, 'HSIP': 0, 'FACEBOOK PNI 1': 0}}}
+{'name': 'Mega Andina', 'resource_usage': {'uplinks': {'WAVE 1': 0, 'WAVE 2': 0, 'HSIP': 0, 'FACEBOOK PNI 1': 0, 'FACEBOOK PNI 2': 0}}}
+================= Reource: as ***********************
+
+** nfdump -M /var/lib/nfsen/profiles/profiles-data/live/r0-l3-lim-pe  -T  -r 2020/11/24/nfcapd.202011241945 -n 20 -s srcas/bytes
+nfdump filter:
+out if 102
+Top 20 Src AS ordered by bytes:
+Date first seen          Duration Proto            Src AS    Flows(%)     Packets(%)       Bytes(%)         pps      bps   bpp
+
+Summary: total flows: 0, total bytes: 0, total packets: 0, avg bps: 0, avg pps: 0, avg bpp: 0
+Time window: 2020-11-24 19:14:36 - 2020-11-24 19:48:45
+Total flows processed: 2839468, Blocks skipped: 0, Bytes read: 249658920
+Sys: 0.823s flows/second: 3446470.8  Wall: 0.822s flows/second: 3451154.0
+
+[{'name': 'Google', 'match': '15169'}, {'name': 'Facebok', 'match': '32934'}, {'name': 'Akamai', 'match': '20940'}, {'name': 'Netflix', 'match': '2906'}, {'name': 'Telefonica', 'match': '6147', 'priority': 1}, {'name': 'Amazon', 'match': '16509'}, {'name': 'Yachay', 'match': '3132', 'priority': 1}]
+{'name': 'Mega Andina', 'resource_usage': {'uplinks': {'WAVE 1': 0, 'WAVE 2': 0, 'HSIP': 0, 'FACEBOOK PNI 1': 0, 'FACEBOOK PNI 2': 0, 'GGC Google': 0}, 'as': {}}}
+{'name': 'Mega Andina', 'resource_usage': {'uplinks': {'WAVE 1': 0, 'WAVE 2': 0, 'HSIP': 0, 'FACEBOOK PNI 1': 0, 'FACEBOOK PNI 2': 0, 'GGC Google': 0}, 'as': {'Google': 0}}}
+{'name': 'Mega Andina', 'resource_usage': {'uplinks': {'WAVE 1': 0, 'WAVE 2': 0, 'HSIP': 0, 'FACEBOOK PNI 1': 0, 'FACEBOOK PNI 2': 0, 'GGC Google': 0}, 'as': {'Google': 0, 'Facebok': 0}}}
+{'name': 'Mega Andina', 'resource_usage': {'uplinks': {'WAVE 1': 0, 'WAVE 2': 0, 'HSIP': 0, 'FACEBOOK PNI 1': 0, 'FACEBOOK PNI 2': 0, 'GGC Google': 0}, 'as': {'Google': 0, 'Facebok': 0, 'Akamai': 0}}}
+{'name': 'Mega Andina', 'resource_usage': {'uplinks': {'WAVE 1': 0, 'WAVE 2': 0, 'HSIP': 0, 'FACEBOOK PNI 1': 0, 'FACEBOOK PNI 2': 0, 'GGC Google': 0}, 'as': {'Google': 0, 'Facebok': 0, 'Akamai': 0, 'Netflix': 0}}}
+{'name': 'Mega Andina', 'resource_usage': {'uplinks': {'WAVE 1': 0, 'WAVE 2': 0, 'HSIP': 0, 'FACEBOOK PNI 1': 0, 'FACEBOOK PNI 2': 0, 'GGC Google': 0}, 'as': {'Google': 0, 'Facebok': 0, 'Akamai': 0, 'Netflix': 0, 'Telefonica': 0}}}
+{'name': 'Mega Andina', 'resource_usage': {'uplinks': {'WAVE 1': 0, 'WAVE 2': 0, 'HSIP': 0, 'FACEBOOK PNI 1': 0, 'FACEBOOK PNI 2': 0, 'GGC Google': 0}, 'as': {'Google': 0, 'Facebok': 0, 'Akamai': 0, 'Netflix': 0, 'Telefonica': 0, 'Amazon': 0}}}
+INFLUXING>>>>>>>>>>
+[{'time': 1606333834, 'measurement': 'uplinks', 'tags': {'customer': 'Mega Andina', 'country': 'Peru'}, 'fields': {'WAVE 1': 0, 'WAVE 2': 0, 'HSIP': 0, 'FACEBOOK PNI 1': 0, 'FACEBOOK PNI 2': 0, 'GGC Google': 0}}, {'time': 1606333834, 'measurement': 'as', 'tags': {'customer': 'Mega Andina', 'country': 'Peru'}, 'fields': {'Google': 0, 'Facebok': 0, 'Akamai': 0, 'Netflix': 0, 'Telefonica': 0, 'Amazon': 0, 'Yachay': 0}}]
+***************** CUSTOMER: GGC Google DOWN ***********************
+================= Reource: uplinks ***********************
+
+** nfdump -M /var/lib/nfsen/profiles/profiles-data/live/r0-l3-lim-pe  -T  -r 2020/11/24/nfcapd.202011241945 -n 10 -s inif/bytes
+nfdump filter:
+out if 164
+Top 10 Input If ordered by bytes:
+Date first seen          Duration Proto          Input If    Flows(%)     Packets(%)       Bytes(%)         pps      bps   bpp
+2020-11-24 19:43:32.372   311.101 any                 159    11163( 9.4)   10.0 M(19.7)   13.9 G(46.9)    32212  357.8 M  1388
+2020-11-24 19:43:32.308   311.676 any                 157    10165( 8.6)    9.7 M(19.0)   13.6 G(45.7)    31039  348.3 M  1402
+2020-11-24 19:43:32.308   311.546 any                  69    59516(50.1)   22.2 M(43.5)    1.5 G( 5.1)    71172   39.0 M    68
+2020-11-24 19:43:39.148   301.753 any                  98    34559(29.1)    8.0 M(15.7)  615.2 M( 2.1)    26438   16.3 M    77
+2020-11-24 19:43:41.047   301.656 any                  19     1274( 1.1)   493760( 1.0)   35.1 M( 0.1)     1636   930908    71
+2020-11-24 19:43:40.376   302.519 any                 153     1018( 0.9)   348032( 0.7)   24.7 M( 0.1)     1150   652421    70
+2020-11-24 19:43:33.079   310.200 any                 121     1082( 0.9)   240384( 0.5)   17.1 M( 0.1)      774   439989    70
+2020-11-24 19:43:54.330   241.594 any                 112        4( 0.0)      256( 0.0)    35456( 0.0)        1     1174   138
+
+Summary: total flows: 118781, total bytes: 29694911488, total packets: 50929536, avg bps: 762199501, avg pps: 163405, avg bpp: 583
+Time window: 2020-11-24 19:14:36 - 2020-11-24 19:48:45
+Total flows processed: 2839468, Blocks skipped: 0, Bytes read: 249658920
+Sys: 0.820s flows/second: 3462419.6  Wall: 0.818s flows/second: 3468450.7
+
+[{'name': 'WAVE 1', 'match': '157'}, {'name': 'WAVE 2', 'match': '159'}, {'name': 'HSIP', 'match': '98'}, {'name': 'FACEBOOK PNI 1', 'match': '161', 'check': True, 'assoc_as': '32934'}, {'name': 'FACEBOOK PNI 2', 'match': '162', 'check': True, 'assoc_as': '32934'}, {'name': 'GGC Google', 'match': '164', 'check': True}]
+{'name': 'GGC Google DOWN', 'resource_usage': {'uplinks': {}}}
+{'name': 'GGC Google DOWN', 'resource_usage': {'uplinks': {'WAVE 1': 348300000}}}
+{'name': 'GGC Google DOWN', 'resource_usage': {'uplinks': {'WAVE 1': 348300000, 'WAVE 2': 357800000}}}
+{'name': 'GGC Google DOWN', 'resource_usage': {'uplinks': {'WAVE 1': 348300000, 'WAVE 2': 357800000, 'HSIP': 16300000}}}
+{'name': 'GGC Google DOWN', 'resource_usage': {'uplinks': {'WAVE 1': 348300000, 'WAVE 2': 357800000, 'HSIP': 16300000, 'FACEBOOK PNI 1': 0}}}
+{'name': 'GGC Google DOWN', 'resource_usage': {'uplinks': {'WAVE 1': 348300000, 'WAVE 2': 357800000, 'HSIP': 16300000, 'FACEBOOK PNI 1': 0, 'FACEBOOK PNI 2': 0}}}
+================= Reource: as ***********************
+
+** nfdump -M /var/lib/nfsen/profiles/profiles-data/live/r0-l3-lim-pe  -T  -r 2020/11/24/nfcapd.202011241945 -n 20 -s srcas/bytes
+nfdump filter:
+out if 164
+Top 20 Src AS ordered by bytes:
+Date first seen          Duration Proto            Src AS    Flows(%)     Packets(%)       Bytes(%)         pps      bps   bpp
+2020-11-24 19:43:32.308   311.676 any               15169    20717(17.4)   19.6 M(38.4)   27.5 G(92.5)    62755  705.1 M  1404
+2020-11-24 19:43:32.308   311.546 any                   0    60601(51.0)   22.4 M(44.0)    1.5 G( 5.2)    71945   39.5 M    68
+2020-11-24 19:43:39.148   303.747 any               23456    36600(30.8)    8.8 M(17.2)  671.4 M( 2.3)    28891   17.7 M    76
+2020-11-24 19:43:34.358   307.322 any               22541      830( 0.7)   177024( 0.3)   12.7 M( 0.0)      576   330567    71
+2020-11-24 19:43:54.076   283.892 any                3549       24( 0.0)     2624( 0.0)    2.5 M( 0.0)        9    70828   957
+2020-11-24 19:47:35.825     0.448 any               26464        1( 0.0)       64( 0.0)    18752( 0.0)      142   334857   293
+2020-11-24 19:45:09.774   171.142 any               16509        4( 0.0)      256( 0.0)    14208( 0.0)        1      664    55
+2020-11-24 19:44:00.439    62.425 any               19527        2( 0.0)      128( 0.0)     5888( 0.0)        2      754    46
+2020-11-24 19:46:53.139     0.000 any               14618        1( 0.0)       64( 0.0)     5376( 0.0)        0        0    84
+2020-11-24 19:44:35.225     1.600 any               42304        1( 0.0)       64( 0.0)     2944( 0.0)       40    14720    46
+
+Summary: total flows: 118781, total bytes: 29694911488, total packets: 50929536, avg bps: 762199501, avg pps: 163405, avg bpp: 583
+Time window: 2020-11-24 19:14:36 - 2020-11-24 19:48:45
+Total flows processed: 2839468, Blocks skipped: 0, Bytes read: 249658920
+Sys: 0.820s flows/second: 3458763.0  Wall: 0.819s flows/second: 3464641.8
+
+[{'name': 'Google', 'match': '15169'}, {'name': 'Facebok', 'match': '32934'}, {'name': 'Akamai', 'match': '20940'}, {'name': 'Netflix', 'match': '2906'}, {'name': 'Telefonica', 'match': '6147', 'priority': 1}, {'name': 'Amazon', 'match': '16509'}, {'name': 'Yachay', 'match': '3132', 'priority': 1}]
+AS 0 FIX Google AS 15169<----------------
+
+** nfdump -M /var/lib/nfsen/profiles/profiles-data/live/r0-l3-lim-pe  -T  -r 2020/11/24/nfcapd.202011241945 -n 20 -s srcas/bytes
+nfdump filter:
+(out if 164) and src as 0 and ((src net 8.8.4.0/24 or src net 8.8.8.0/24 or src net 8.15.202.0/24 or src net 8.34.208.0/20 or src net 8.35.192.0/20 or src net 23.236.48.0/20 or src net 23.251.128.0/19 or src net 34.64.0.0/10 or src net 35.184.0.0/13 or src net 35.192.0.0/11 or src net 35.224.0.0/12 or src net 35.240.0.0/13 or src net 45.121.228.0/22 or src net 64.15.112.0/20 or src net 64.233.160.0/19 or src net 66.102.0.0/20 or src net 66.249.64.0/19 or src net 70.32.128.0/19 or src net 72.14.192.0/18 or src net 74.114.24.0/21 or src net 74.125.0.0/16 or src net 89.207.231.0/24 or src net 103.62.64.0/22 or src net 104.132.0.0/16 or src net 104.133.0.0/17 or src net 104.134.92.0/24 or src net 104.134.128.0/17 or src net 104.154.0.0/15 or src net 104.196.0.0/14 or src net 107.167.160.0/19 or src net 107.178.192.0/18 or src net 108.59.80.0/20 or src net 108.170.192.0/18 or src net 108.177.0.0/17 or src net 113.197.106.0/24 or src net 130.211.0.0/16 or src net 136.22.64.0/23 or src net 136.22.86.0/23 or
+Top 20 Src AS ordered by bytes:
+Date first seen          Duration Proto            Src AS    Flows(%)     Packets(%)       Bytes(%)         pps      bps   bpp
+2020-11-24 19:43:54.330   241.594 any                   0        4(100.0)      256(100.0)    35456(100.0)        1     1174   138
+
+Summary: total flows: 4, total bytes: 35456, total packets: 256, avg bps: 1174, avg pps: 1, avg bpp: 138
+Time window: 2020-11-24 19:14:36 - 2020-11-24 19:48:45
+Total flows processed: 2839468, Blocks skipped: 0, Bytes read: 249658920
+Sys: 0.853s flows/second: 3328673.1  Wall: 0.851s flows/second: 3333057.1
+
+AS 0 CUMULATED AS 0 USAGE: 1174------------>
+
+** nfdump -M /var/lib/nfsen/profiles/profiles-data/live/r0-l3-lim-pe  -T  -r 2020/11/24/nfcapd.202011241945 -n 20 -s srcas/bytes
+nfdump filter:
+(out if 164) and src as 3549 and ((src net 8.8.4.0/24 or src net 8.8.8.0/24 or src net 8.15.202.0/24 or src net 8.34.208.0/20 or src net 8.35.192.0/20 or src net 23.236.48.0/20 or src net 23.251.128.0/19 or src net 34.64.0.0/10 or src net 35.184.0.0/13 or src net 35.192.0.0/11 or src net 35.224.0.0/12 or src net 35.240.0.0/13 or src net 45.121.228.0/22 or src net 64.15.112.0/20 or src net 64.233.160.0/19 or src net 66.102.0.0/20 or src net 66.249.64.0/19 or src net 70.32.128.0/19 or src net 72.14.192.0/18 or src net 74.114.24.0/21 or src net 74.125.0.0/16 or src net 89.207.231.0/24 or src net 103.62.64.0/22 or src net 104.132.0.0/16 or src net 104.133.0.0/17 or src net 104.134.92.0/24 or src net 104.134.128.0/17 or src net 104.154.0.0/15 or src net 104.196.0.0/14 or src net 107.167.160.0/19 or src net 107.178.192.0/18 or src net 108.59.80.0/20 or src net 108.170.192.0/18 or src net 108.177.0.0/17 or src net 113.197.106.0/24 or src net 130.211.0.0/16 or src net 136.22.64.0/23 or src net 136.22.86.0/23
+Top 20 Src AS ordered by bytes:
+Date first seen          Duration Proto            Src AS    Flows(%)     Packets(%)       Bytes(%)         pps      bps   bpp
+
+Summary: total flows: 0, total bytes: 0, total packets: 0, avg bps: 0, avg pps: 0, avg bpp: 0
+Time window: 2020-11-24 19:14:36 - 2020-11-24 19:48:45
+Total flows processed: 2839468, Blocks skipped: 0, Bytes read: 249658920
+Sys: 0.802s flows/second: 3538758.5  Wall: 0.801s flows/second: 3544833.1
+
+AS 0 CUMULATED AS 3549 USAGE: 1174------------>
+AS 0 USAGE: 1174------------>
+{'name': 'GGC Google DOWN', 'resource_usage': {'uplinks': {'WAVE 1': 348300000, 'WAVE 2': 357800000, 'HSIP': 16300000, 'FACEBOOK PNI 1': 0, 'FACEBOOK PNI 2': 0, 'GGC Google': 0}, 'as': {}}}
+AS 0 FIX Facebok AS 32934<----------------
+
+** nfdump -M /var/lib/nfsen/profiles/profiles-data/live/r0-l3-lim-pe  -T  -r 2020/11/24/nfcapd.202011241945 -n 20 -s srcas/bytes
+nfdump filter:
+(out if 164) and src as 0 and ((src net 31.13.24.0/21 or src net 31.13.64.0/18 or src net 45.64.40.0/22 or src net 66.220.144.0/20 or src net 69.63.176.0/20 or src net 69.171.224.0/19 or src net 74.119.76.0/22 or src net 102.132.96.0/20 or src net 103.4.96.0/22 or src net 129.134.0.0/16 or src net 147.75.208.0/20 or src net 157.240.0.0/16 or src net 173.252.64.0/18 or src net 179.60.192.0/22 or src net 185.60.216.0/22 or src net 185.89.216.0/22 or src net 199.201.64.0/22 or src net 204.15.20.0/22))
+Top 20 Src AS ordered by bytes:
+Date first seen          Duration Proto            Src AS    Flows(%)     Packets(%)       Bytes(%)         pps      bps   bpp
+
+Summary: total flows: 0, total bytes: 0, total packets: 0, avg bps: 0, avg pps: 0, avg bpp: 0
+Time window: 2020-11-24 19:14:36 - 2020-11-24 19:48:45
+Total flows processed: 2839468, Blocks skipped: 0, Bytes read: 249658920
+Sys: 0.825s flows/second: 3440394.9  Wall: 0.823s flows/second: 3446550.3
+
+AS 0 CUMULATED AS 0 USAGE: 0------------>
+
+** nfdump -M /var/lib/nfsen/profiles/profiles-data/live/r0-l3-lim-pe  -T  -r 2020/11/24/nfcapd.202011241945 -n 20 -s srcas/bytes
+nfdump filter:
+(out if 164) and src as 3549 and ((src net 31.13.24.0/21 or src net 31.13.64.0/18 or src net 45.64.40.0/22 or src net 66.220.144.0/20 or src net 69.63.176.0/20 or src net 69.171.224.0/19 or src net 74.119.76.0/22 or src net 102.132.96.0/20 or src net 103.4.96.0/22 or src net 129.134.0.0/16 or src net 147.75.208.0/20 or src net 157.240.0.0/16 or src net 173.252.64.0/18 or src net 179.60.192.0/22 or src net 185.60.216.0/22 or src net 185.89.216.0/22 or src net 199.201.64.0/22 or src net 204.15.20.0/22))
+Top 20 Src AS ordered by bytes:
+Date first seen          Duration Proto            Src AS    Flows(%)     Packets(%)       Bytes(%)         pps      bps   bpp
+
+Summary: total flows: 0, total bytes: 0, total packets: 0, avg bps: 0, avg pps: 0, avg bpp: 0
+Time window: 2020-11-24 19:14:36 - 2020-11-24 19:48:45
+Total flows processed: 2839468, Blocks skipped: 0, Bytes read: 249658920
+Sys: 0.813s flows/second: 3491245.0  Wall: 0.812s flows/second: 3493384.1
+
+AS 0 CUMULATED AS 3549 USAGE: 0------------>
+AS 0 USAGE: 0------------>
+{'name': 'GGC Google DOWN', 'resource_usage': {'uplinks': {'WAVE 1': 348300000, 'WAVE 2': 357800000, 'HSIP': 16300000, 'FACEBOOK PNI 1': 0, 'FACEBOOK PNI 2': 0, 'GGC Google': 0}, 'as': {'Google': 705101174}}}
+AS 0 FIX Akamai AS 20940<----------------
+
+** nfdump -M /var/lib/nfsen/profiles/profiles-data/live/r0-l3-lim-pe  -T  -r 2020/11/24/nfcapd.202011241945 -n 20 -s srcas/bytes
+nfdump filter:
+(out if 164) and src as 0 and ((src net 2.16.0.0/13 or src net 4.77.205.0/24 or src net 23.0.0.0/12 or src net 23.32.0.0/11 or src net 23.64.0.0/14 or src net 23.72.0.0/13 or src net 23.192.0.0/11 or src net 43.249.213.0/24 or src net 49.231.112.0/24 or src net 59.151.164.0/22 or src net 60.87.0.0/20 or src net 60.254.129.0/24 or src net 60.254.130.0/23 or src net 60.254.140.0/22 or src net 60.254.148.0/24 or src net 60.254.152.0/22 or src net 60.254.173.0/24 or src net 60.254.174.0/23 or src net 60.254.180.0/22 or src net 60.254.184.0/23 or src net 60.254.186.0/24 or src net 63.84.59.0/24 or src net 63.85.36.0/24 or src net 63.150.12.0/24 or src net 63.151.137.0/24 or src net 63.217.8.0/24 or src net 63.217.232.0/24 or src net 63.227.135.0/24 or src net 63.233.60.0/23 or src net 63.233.112.0/24 or src net 63.233.126.0/24 or src net 63.233.224.0/24 or src net 63.235.20.0/23 or src net 63.238.251.0/24 or src net 63.239.232.0/23 or src net 64.208.187.0/24 or src net 64.212.114.0/23 or src net 65.116.164
+Top 20 Src AS ordered by bytes:
+Date first seen          Duration Proto            Src AS    Flows(%)     Packets(%)       Bytes(%)         pps      bps   bpp
+
+Summary: total flows: 0, total bytes: 0, total packets: 0, avg bps: 0, avg pps: 0, avg bpp: 0
+Time window: 2020-11-24 19:14:36 - 2020-11-24 19:48:45
+Total flows processed: 2839468, Blocks skipped: 0, Bytes read: 249658920
+Sys: 0.955s flows/second: 2972437.0  Wall: 0.953s flows/second: 2977139.9
+
+AS 0 CUMULATED AS 0 USAGE: 0------------>
+
+** nfdump -M /var/lib/nfsen/profiles/profiles-data/live/r0-l3-lim-pe  -T  -r 2020/11/24/nfcapd.202011241945 -n 20 -s srcas/bytes
+nfdump filter:
+(out if 164) and src as 3549 and ((src net 2.16.0.0/13 or src net 4.77.205.0/24 or src net 23.0.0.0/12 or src net 23.32.0.0/11 or src net 23.64.0.0/14 or src net 23.72.0.0/13 or src net 23.192.0.0/11 or src net 43.249.213.0/24 or src net 49.231.112.0/24 or src net 59.151.164.0/22 or src net 60.87.0.0/20 or src net 60.254.129.0/24 or src net 60.254.130.0/23 or src net 60.254.140.0/22 or src net 60.254.148.0/24 or src net 60.254.152.0/22 or src net 60.254.173.0/24 or src net 60.254.174.0/23 or src net 60.254.180.0/22 or src net 60.254.184.0/23 or src net 60.254.186.0/24 or src net 63.84.59.0/24 or src net 63.85.36.0/24 or src net 63.150.12.0/24 or src net 63.151.137.0/24 or src net 63.217.8.0/24 or src net 63.217.232.0/24 or src net 63.227.135.0/24 or src net 63.233.60.0/23 or src net 63.233.112.0/24 or src net 63.233.126.0/24 or src net 63.233.224.0/24 or src net 63.235.20.0/23 or src net 63.238.251.0/24 or src net 63.239.232.0/23 or src net 64.208.187.0/24 or src net 64.212.114.0/23 or src net 65.116.
+Top 20 Src AS ordered by bytes:
+Date first seen          Duration Proto            Src AS    Flows(%)     Packets(%)       Bytes(%)         pps      bps   bpp
+
+Summary: total flows: 0, total bytes: 0, total packets: 0, avg bps: 0, avg pps: 0, avg bpp: 0
+Time window: 2020-11-24 19:14:36 - 2020-11-24 19:48:45
+Total flows processed: 2839468, Blocks skipped: 0, Bytes read: 249658920
+Sys: 0.805s flows/second: 3523127.3  Wall: 0.804s flows/second: 3528937.7
+
+AS 0 CUMULATED AS 3549 USAGE: 0------------>
+AS 0 USAGE: 0------------>
+{'name': 'GGC Google DOWN', 'resource_usage': {'uplinks': {'WAVE 1': 348300000, 'WAVE 2': 357800000, 'HSIP': 16300000, 'FACEBOOK PNI 1': 0, 'FACEBOOK PNI 2': 0, 'GGC Google': 0}, 'as': {'Google': 705101174, 'Facebok': 0}}}
+AS 0 FIX Netflix AS 2906<----------------
+
+** nfdump -M /var/lib/nfsen/profiles/profiles-data/live/r0-l3-lim-pe  -T  -r 2020/11/24/nfcapd.202011241945 -n 20 -s srcas/bytes
+nfdump filter:
+(out if 164) and src as 0 and ((src net 23.246.0.0/18 or src net 37.77.184.0/21 or src net 45.57.0.0/17 or src net 64.120.128.0/17 or src net 66.197.128.0/17 or src net 69.53.224.0/19 or src net 108.175.32.0/20 or src net 185.2.220.0/22 or src net 185.9.188.0/22 or src net 192.173.64.0/18 or src net 198.38.96.0/19 or src net 198.45.48.0/20 or src net 208.75.76.0/22))
+Top 20 Src AS ordered by bytes:
+Date first seen          Duration Proto            Src AS    Flows(%)     Packets(%)       Bytes(%)         pps      bps   bpp
+
+Summary: total flows: 0, total bytes: 0, total packets: 0, avg bps: 0, avg pps: 0, avg bpp: 0
+Time window: 2020-11-24 19:14:36 - 2020-11-24 19:48:45
+Total flows processed: 2839468, Blocks skipped: 0, Bytes read: 249658920
+Sys: 0.822s flows/second: 3453172.8  Wall: 0.820s flows/second: 3459420.3
+
+AS 0 CUMULATED AS 0 USAGE: 0------------>
+
+** nfdump -M /var/lib/nfsen/profiles/profiles-data/live/r0-l3-lim-pe  -T  -r 2020/11/24/nfcapd.202011241945 -n 20 -s srcas/bytes
+nfdump filter:
+(out if 164) and src as 3549 and ((src net 23.246.0.0/18 or src net 37.77.184.0/21 or src net 45.57.0.0/17 or src net 64.120.128.0/17 or src net 66.197.128.0/17 or src net 69.53.224.0/19 or src net 108.175.32.0/20 or src net 185.2.220.0/22 or src net 185.9.188.0/22 or src net 192.173.64.0/18 or src net 198.38.96.0/19 or src net 198.45.48.0/20 or src net 208.75.76.0/22))
+Top 20 Src AS ordered by bytes:
+Date first seen          Duration Proto            Src AS    Flows(%)     Packets(%)       Bytes(%)         pps      bps   bpp
+
+Summary: total flows: 0, total bytes: 0, total packets: 0, avg bps: 0, avg pps: 0, avg bpp: 0
+Time window: 2020-11-24 19:14:36 - 2020-11-24 19:48:45
+Total flows processed: 2839468, Blocks skipped: 0, Bytes read: 249658920
+Sys: 0.806s flows/second: 3518709.0  Wall: 0.805s flows/second: 3524316.8
+
+AS 0 CUMULATED AS 3549 USAGE: 0------------>
+AS 0 USAGE: 0------------>
+{'name': 'GGC Google DOWN', 'resource_usage': {'uplinks': {'WAVE 1': 348300000, 'WAVE 2': 357800000, 'HSIP': 16300000, 'FACEBOOK PNI 1': 0, 'FACEBOOK PNI 2': 0, 'GGC Google': 0}, 'as': {'Google': 705101174, 'Facebok': 0, 'Akamai': 0}}}
+AS 0 FIX Telefonica AS 6147<----------------
+
+** nfdump -M /var/lib/nfsen/profiles/profiles-data/live/r0-l3-lim-pe  -T  -r 2020/11/24/nfcapd.202011241945 -n 20 -s srcas/bytes
+nfdump filter:
+(out if 164) and src as 0 and ((src net 170.79.36.0/22 or src net 181.64.0.0/18 or src net 181.64.96.0/19 or src net 181.64.128.0/17 or src net 181.65.0.0/16 or src net 181.66.0.0/15 or src net 190.40.0.0/16 or src net 190.41.0.0/17 or src net 190.41.128.0/19 or src net 190.41.192.0/19 or src net 190.42.0.0/15 or src net 190.232.0.0/13 or src net 199.229.76.0/24 or src net 200.0.166.0/23 or src net 200.0.170.0/23 or src net 200.0.172.0/23 or src net 200.4.223.0/24 or src net 200.4.224.0/19 or src net 200.10.64.0/19 or src net 200.10.130.0/23 or src net 200.10.188.0/24 or src net 200.11.48.0/20 or src net 200.16.0.0/21 or src net 200.37.0.0/16 or src net 200.48.0.0/16 or src net 200.60.0.0/16 or src net 200.106.0.0/17 or src net 200.107.128.0/18 or src net 200.121.0.0/16 or src net 201.131.220.0/22 or src net 201.230.0.0/16 or src net 201.240.0.0/16))
+Top 20 Src AS ordered by bytes:
+Date first seen          Duration Proto            Src AS    Flows(%)     Packets(%)       Bytes(%)         pps      bps   bpp
+
+Summary: total flows: 0, total bytes: 0, total packets: 0, avg bps: 0, avg pps: 0, avg bpp: 0
+Time window: 2020-11-24 19:14:36 - 2020-11-24 19:48:45
+Total flows processed: 2839468, Blocks skipped: 0, Bytes read: 249658920
+Sys: 0.825s flows/second: 3439199.0  Wall: 0.824s flows/second: 3444209.1
+
+AS 0 CUMULATED AS 0 USAGE: 0------------>
+
+** nfdump -M /var/lib/nfsen/profiles/profiles-data/live/r0-l3-lim-pe  -T  -r 2020/11/24/nfcapd.202011241945 -n 20 -s srcas/bytes
+nfdump filter:
+(out if 164) and src as 3549 and ((src net 170.79.36.0/22 or src net 181.64.0.0/18 or src net 181.64.96.0/19 or src net 181.64.128.0/17 or src net 181.65.0.0/16 or src net 181.66.0.0/15 or src net 190.40.0.0/16 or src net 190.41.0.0/17 or src net 190.41.128.0/19 or src net 190.41.192.0/19 or src net 190.42.0.0/15 or src net 190.232.0.0/13 or src net 199.229.76.0/24 or src net 200.0.166.0/23 or src net 200.0.170.0/23 or src net 200.0.172.0/23 or src net 200.4.223.0/24 or src net 200.4.224.0/19 or src net 200.10.64.0/19 or src net 200.10.130.0/23 or src net 200.10.188.0/24 or src net 200.11.48.0/20 or src net 200.16.0.0/21 or src net 200.37.0.0/16 or src net 200.48.0.0/16 or src net 200.60.0.0/16 or src net 200.106.0.0/17 or src net 200.107.128.0/18 or src net 200.121.0.0/16 or src net 201.131.220.0/22 or src net 201.230.0.0/16 or src net 201.240.0.0/16))
+Top 20 Src AS ordered by bytes:
+Date first seen          Duration Proto            Src AS    Flows(%)     Packets(%)       Bytes(%)         pps      bps   bpp
+2020-11-24 19:43:54.076   283.892 any                3549       16(100.0)     2048(100.0)    2.2 M(100.0)        7    61816  1071
+
+Summary: total flows: 16, total bytes: 2193664, total packets: 2048, avg bps: 61816, avg pps: 7, avg bpp: 1071
+Time window: 2020-11-24 19:14:36 - 2020-11-24 19:48:45
+Total flows processed: 2839468, Blocks skipped: 0, Bytes read: 249658920
+Sys: 0.806s flows/second: 3522301.3  Wall: 0.805s flows/second: 3526557.8
+
+AS 0 CUMULATED AS 3549 USAGE: 61816------------>
+AS 0 USAGE: 61816------------>
+{'name': 'GGC Google DOWN', 'resource_usage': {'uplinks': {'WAVE 1': 348300000, 'WAVE 2': 357800000, 'HSIP': 16300000, 'FACEBOOK PNI 1': 0, 'FACEBOOK PNI 2': 0, 'GGC Google': 0}, 'as': {'Google': 705101174, 'Facebok': 0, 'Akamai': 0, 'Netflix': 0}}}
+AS 0 FIX Amazon AS 16509<----------------
+
+** nfdump -M /var/lib/nfsen/profiles/profiles-data/live/r0-l3-lim-pe  -T  -r 2020/11/24/nfcapd.202011241945 -n 20 -s srcas/bytes
+nfdump filter:
+(out if 164) and src as 0 and ((src net 2.59.128.0/22 or src net 3.0.0.0/15 or src net 3.2.2.0/23 or src net 3.5.0.0/16 or src net 3.6.0.0/15 or src net 3.8.0.0/13 or src net 3.16.0.0/13 or src net 3.24.0.0/14 or src net 3.34.0.0/15 or src net 3.36.0.0/14 or src net 3.64.0.0/11 or src net 3.96.0.0/14 or src net 3.101.0.0/16 or src net 3.104.0.0/14 or src net 3.112.0.0/14 or src net 3.120.0.0/13 or src net 3.128.0.0/12 or src net 3.208.0.0/12 or src net 3.224.0.0/12 or src net 3.248.0.0/13 or src net 5.252.144.0/23 or src net 8.18.144.0/23 or src net 13.32.0.0/13 or src net 13.48.0.0/13 or src net 13.56.0.0/14 or src net 13.112.0.0/14 or src net 13.124.0.0/14 or src net 13.208.0.0/14 or src net 13.212.0.0/15 or src net 13.224.0.0/12 or src net 13.244.0.0/15 or src net 13.248.0.0/14 or src net 15.152.0.0/16 or src net 15.156.0.0/15 or src net 15.160.0.0/15 or src net 15.164.0.0/15 or src net 15.177.0.0/18 or src net 15.177.64.0/20 or src net 15.177.80.0/21 or src net 15.177.88.0/22 or src net 15.184.0.0
+Top 20 Src AS ordered by bytes:
+Date first seen          Duration Proto            Src AS    Flows(%)     Packets(%)       Bytes(%)         pps      bps   bpp
+
+Summary: total flows: 0, total bytes: 0, total packets: 0, avg bps: 0, avg pps: 0, avg bpp: 0
+Time window: 2020-11-24 19:14:36 - 2020-11-24 19:48:45
+Total flows processed: 2839468, Blocks skipped: 0, Bytes read: 249658920
+Sys: 1.027s flows/second: 2763096.0  Wall: 1.024s flows/second: 2770902.0
+
+
+** nfdump -M /var/lib/nfsen/profiles/profiles-data/live/r0-l3-lim-pe  -T  -r 2020/11/24/nfcapd.202011241945 -n 20 -s srcas/bytes
+nfdump filter:
+(out if 164) and src as 0 and ((src net 74.117.16.0/22 or src net 74.117.148.0/23 or src net 74.118.104.0/22 or src net 74.122.241.0/24 or src net 74.123.145.0/24 or src net 74.214.200.0/21 or src net 74.221.129.0/24 or src net 74.221.130.0/23 or src net 74.221.133.0/24 or src net 74.221.135.0/24 or src net 74.221.137.0/24 or src net 74.221.139.0/24 or src net 74.221.141.0/24 or src net 75.2.0.0/17 or src net 76.76.17.0/24 or src net 76.76.21.0/24 or src net 76.223.0.0/17 or src net 76.223.160.0/21 or src net 76.223.176.0/20 or src net 78.108.124.0/23 or src net 79.125.0.0/17 or src net 79.143.156.0/24 or src net 81.90.143.0/24 or src net 82.115.214.0/24 or src net 82.192.96.0/23 or src net 82.192.100.0/23 or src net 82.192.108.0/23 or src net 85.92.100.0/22 or src net 85.115.38.0/24 or src net 85.236.136.0/21 or src net 85.238.10.0/24 or src net 87.236.67.0/24 or src net 87.237.84.0/24 or src net 87.237.86.0/24 or src net 87.238.80.0/21 or src net 88.218.222.0/24 or src net 89.22.192.0/21 or src net
+Top 20 Src AS ordered by bytes:
+Date first seen          Duration Proto            Src AS    Flows(%)     Packets(%)       Bytes(%)         pps      bps   bpp
+
+Summary: total flows: 0, total bytes: 0, total packets: 0, avg bps: 0, avg pps: 0, avg bpp: 0
+Time window: 2020-11-24 19:14:36 - 2020-11-24 19:48:45
+Total flows processed: 2839468, Blocks skipped: 0, Bytes read: 249658920
+Sys: 1.011s flows/second: 2806189.4  Wall: 1.009s flows/second: 2812655.0
+
+
+** nfdump -M /var/lib/nfsen/profiles/profiles-data/live/r0-l3-lim-pe  -T  -r 2020/11/24/nfcapd.202011241945 -n 20 -s srcas/bytes
+nfdump filter:
+(out if 164) and src as 0 and ((src net 167.88.58.0/24 or src net 168.100.88.0/24 or src net 168.100.96.0/23 or src net 168.149.240.0/21 or src net 168.151.30.0/24 or src net 168.238.4.0/23 or src net 168.238.6.0/24 or src net 168.238.100.0/24 or src net 168.245.155.0/24 or src net 170.10.223.0/24 or src net 170.39.88.0/24 or src net 170.39.141.0/24 or src net 170.72.224.0/23 or src net 170.72.228.0/23 or src net 170.72.235.0/24 or src net 170.72.236.0/22 or src net 170.89.128.0/22 or src net 170.89.132.0/23 or src net 170.89.134.0/24 or src net 170.89.141.0/24 or src net 170.89.144.0/24 or src net 170.89.146.0/23 or src net 170.89.149.0/24 or src net 170.89.150.0/23 or src net 170.89.152.0/24 or src net 170.89.156.0/22 or src net 170.89.160.0/24 or src net 170.89.164.0/24 or src net 170.89.173.0/24 or src net 170.89.176.0/24 or src net 170.89.178.0/24 or src net 170.89.181.0/24 or src net 170.89.182.0/23 or src net 170.89.184.0/24 or src net 170.89.189.0/24 or src net 170.89.190.0/23 or src net 170.1
+Top 20 Src AS ordered by bytes:
+Date first seen          Duration Proto            Src AS    Flows(%)     Packets(%)       Bytes(%)         pps      bps   bpp
+
+Summary: total flows: 0, total bytes: 0, total packets: 0, avg bps: 0, avg pps: 0, avg bpp: 0
+Time window: 2020-11-24 19:14:36 - 2020-11-24 19:48:45
+Total flows processed: 2839468, Blocks skipped: 0, Bytes read: 249658920
+Sys: 1.001s flows/second: 2835107.6  Wall: 0.999s flows/second: 2839544.7
+
+AS 0 CUMULATED AS 0 USAGE: 0------------>
+
+** nfdump -M /var/lib/nfsen/profiles/profiles-data/live/r0-l3-lim-pe  -T  -r 2020/11/24/nfcapd.202011241945 -n 20 -s srcas/bytes
+nfdump filter:
+(out if 164) and src as 3549 and ((src net 2.59.128.0/22 or src net 3.0.0.0/15 or src net 3.2.2.0/23 or src net 3.5.0.0/16 or src net 3.6.0.0/15 or src net 3.8.0.0/13 or src net 3.16.0.0/13 or src net 3.24.0.0/14 or src net 3.34.0.0/15 or src net 3.36.0.0/14 or src net 3.64.0.0/11 or src net 3.96.0.0/14 or src net 3.101.0.0/16 or src net 3.104.0.0/14 or src net 3.112.0.0/14 or src net 3.120.0.0/13 or src net 3.128.0.0/12 or src net 3.208.0.0/12 or src net 3.224.0.0/12 or src net 3.248.0.0/13 or src net 5.252.144.0/23 or src net 8.18.144.0/23 or src net 13.32.0.0/13 or src net 13.48.0.0/13 or src net 13.56.0.0/14 or src net 13.112.0.0/14 or src net 13.124.0.0/14 or src net 13.208.0.0/14 or src net 13.212.0.0/15 or src net 13.224.0.0/12 or src net 13.244.0.0/15 or src net 13.248.0.0/14 or src net 15.152.0.0/16 or src net 15.156.0.0/15 or src net 15.160.0.0/15 or src net 15.164.0.0/15 or src net 15.177.0.0/18 or src net 15.177.64.0/20 or src net 15.177.80.0/21 or src net 15.177.88.0/22 or src net 15.184.
+Top 20 Src AS ordered by bytes:
+Date first seen          Duration Proto            Src AS    Flows(%)     Packets(%)       Bytes(%)         pps      bps   bpp
+
+Summary: total flows: 0, total bytes: 0, total packets: 0, avg bps: 0, avg pps: 0, avg bpp: 0
+Time window: 2020-11-24 19:14:36 - 2020-11-24 19:48:45
+Total flows processed: 2839468, Blocks skipped: 0, Bytes read: 249658920
+Sys: 0.816s flows/second: 3477021.6  Wall: 0.814s flows/second: 3486354.0
+
+
+** nfdump -M /var/lib/nfsen/profiles/profiles-data/live/r0-l3-lim-pe  -T  -r 2020/11/24/nfcapd.202011241945 -n 20 -s srcas/bytes
+nfdump filter:
+(out if 164) and src as 3549 and ((src net 74.117.16.0/22 or src net 74.117.148.0/23 or src net 74.118.104.0/22 or src net 74.122.241.0/24 or src net 74.123.145.0/24 or src net 74.214.200.0/21 or src net 74.221.129.0/24 or src net 74.221.130.0/23 or src net 74.221.133.0/24 or src net 74.221.135.0/24 or src net 74.221.137.0/24 or src net 74.221.139.0/24 or src net 74.221.141.0/24 or src net 75.2.0.0/17 or src net 76.76.17.0/24 or src net 76.76.21.0/24 or src net 76.223.0.0/17 or src net 76.223.160.0/21 or src net 76.223.176.0/20 or src net 78.108.124.0/23 or src net 79.125.0.0/17 or src net 79.143.156.0/24 or src net 81.90.143.0/24 or src net 82.115.214.0/24 or src net 82.192.96.0/23 or src net 82.192.100.0/23 or src net 82.192.108.0/23 or src net 85.92.100.0/22 or src net 85.115.38.0/24 or src net 85.236.136.0/21 or src net 85.238.10.0/24 or src net 87.236.67.0/24 or src net 87.237.84.0/24 or src net 87.237.86.0/24 or src net 87.238.80.0/21 or src net 88.218.222.0/24 or src net 89.22.192.0/21 or src n
+Top 20 Src AS ordered by bytes:
+Date first seen          Duration Proto            Src AS    Flows(%)     Packets(%)       Bytes(%)         pps      bps   bpp
+
+Summary: total flows: 0, total bytes: 0, total packets: 0, avg bps: 0, avg pps: 0, avg bpp: 0
+Time window: 2020-11-24 19:14:36 - 2020-11-24 19:48:45
+Total flows processed: 2839468, Blocks skipped: 0, Bytes read: 249658920
+Sys: 0.812s flows/second: 3496274.7  Wall: 0.809s flows/second: 3506269.2
+
+
+** nfdump -M /var/lib/nfsen/profiles/profiles-data/live/r0-l3-lim-pe  -T  -r 2020/11/24/nfcapd.202011241945 -n 20 -s srcas/bytes
+nfdump filter:
+(out if 164) and src as 3549 and ((src net 167.88.58.0/24 or src net 168.100.88.0/24 or src net 168.100.96.0/23 or src net 168.149.240.0/21 or src net 168.151.30.0/24 or src net 168.238.4.0/23 or src net 168.238.6.0/24 or src net 168.238.100.0/24 or src net 168.245.155.0/24 or src net 170.10.223.0/24 or src net 170.39.88.0/24 or src net 170.39.141.0/24 or src net 170.72.224.0/23 or src net 170.72.228.0/23 or src net 170.72.235.0/24 or src net 170.72.236.0/22 or src net 170.89.128.0/22 or src net 170.89.132.0/23 or src net 170.89.134.0/24 or src net 170.89.141.0/24 or src net 170.89.144.0/24 or src net 170.89.146.0/23 or src net 170.89.149.0/24 or src net 170.89.150.0/23 or src net 170.89.152.0/24 or src net 170.89.156.0/22 or src net 170.89.160.0/24 or src net 170.89.164.0/24 or src net 170.89.173.0/24 or src net 170.89.176.0/24 or src net 170.89.178.0/24 or src net 170.89.181.0/24 or src net 170.89.182.0/23 or src net 170.89.184.0/24 or src net 170.89.189.0/24 or src net 170.89.190.0/23 or src net 17
+Top 20 Src AS ordered by bytes:
+Date first seen          Duration Proto            Src AS    Flows(%)     Packets(%)       Bytes(%)         pps      bps   bpp
+
+Summary: total flows: 0, total bytes: 0, total packets: 0, avg bps: 0, avg pps: 0, avg bpp: 0
+Time window: 2020-11-24 19:14:36 - 2020-11-24 19:48:45
+Total flows processed: 2839468, Blocks skipped: 0, Bytes read: 249658920
+Sys: 0.809s flows/second: 3507447.3  Wall: 0.807s flows/second: 3514449.7
+
+AS 0 CUMULATED AS 3549 USAGE: 0------------>
+AS 0 USAGE: 0------------>
+{'name': 'GGC Google DOWN', 'resource_usage': {'uplinks': {'WAVE 1': 348300000, 'WAVE 2': 357800000, 'HSIP': 16300000, 'FACEBOOK PNI 1': 0, 'FACEBOOK PNI 2': 0, 'GGC Google': 0}, 'as': {'Google': 705101174, 'Facebok': 0, 'Akamai': 0, 'Netflix': 0, 'Telefonica': 61816}}}
+AS 0 FIX Yachay AS 3132<----------------
+
+** nfdump -M /var/lib/nfsen/profiles/profiles-data/live/r0-l3-lim-pe  -T  -r 2020/11/24/nfcapd.202011241945 -n 20 -s srcas/bytes
+nfdump filter:
+(out if 164) and src as 0 and ((src net 161.132.0.0/16 or src net 167.250.204.0/22 or src net 200.0.107.0/24 or src net 200.0.136.0/24 or src net 200.0.164.0/22 or src net 200.0.168.0/24 or src net 200.1.176.0/21 or src net 200.11.32.0/24 or src net 200.11.36.0/22 or src net 209.45.0.0/17))
+Top 20 Src AS ordered by bytes:
+Date first seen          Duration Proto            Src AS    Flows(%)     Packets(%)       Bytes(%)         pps      bps   bpp
+
+Summary: total flows: 0, total bytes: 0, total packets: 0, avg bps: 0, avg pps: 0, avg bpp: 0
+Time window: 2020-11-24 19:14:36 - 2020-11-24 19:48:45
+Total flows processed: 2839468, Blocks skipped: 0, Bytes read: 249658920
+Sys: 0.850s flows/second: 3340016.2  Wall: 0.848s flows/second: 3344694.1
+
+AS 0 CUMULATED AS 0 USAGE: 0------------>
+
+** nfdump -M /var/lib/nfsen/profiles/profiles-data/live/r0-l3-lim-pe  -T  -r 2020/11/24/nfcapd.202011241945 -n 20 -s srcas/bytes
+nfdump filter:
+(out if 164) and src as 3549 and ((src net 161.132.0.0/16 or src net 167.250.204.0/22 or src net 200.0.107.0/24 or src net 200.0.136.0/24 or src net 200.0.164.0/22 or src net 200.0.168.0/24 or src net 200.1.176.0/21 or src net 200.11.32.0/24 or src net 200.11.36.0/22 or src net 209.45.0.0/17))
+Top 20 Src AS ordered by bytes:
+Date first seen          Duration Proto            Src AS    Flows(%)     Packets(%)       Bytes(%)         pps      bps   bpp
+
+Summary: total flows: 0, total bytes: 0, total packets: 0, avg bps: 0, avg pps: 0, avg bpp: 0
+Time window: 2020-11-24 19:14:36 - 2020-11-24 19:48:45
+Total flows processed: 2839468, Blocks skipped: 0, Bytes read: 249658920
+Sys: 0.829s flows/second: 3421944.6  Wall: 0.829s flows/second: 3424391.8
+
+AS 0 CUMULATED AS 3549 USAGE: 0------------>
+AS 0 USAGE: 0------------>
+{'name': 'GGC Google DOWN', 'resource_usage': {'uplinks': {'WAVE 1': 348300000, 'WAVE 2': 357800000, 'HSIP': 16300000, 'FACEBOOK PNI 1': 0, 'FACEBOOK PNI 2': 0, 'GGC Google': 0}, 'as': {'Google': 705101174, 'Facebok': 0, 'Akamai': 0, 'Netflix': 0, 'Telefonica': 61816, 'Amazon': 664}}}
+INFLUXING>>>>>>>>>>
+[{'time': 1606333834, 'measurement': 'uplinks', 'tags': {'customer': 'GGC Google DOWN', 'country': 'Peru'}, 'fields': {'WAVE 1': 348300000, 'WAVE 2': 357800000, 'HSIP': 16300000, 'FACEBOOK PNI 1': 0, 'FACEBOOK PNI 2': 0, 'GGC Google': 0}}, {'time': 1606333834, 'measurement': 'as', 'tags': {'customer': 'GGC Google DOWN', 'country': 'Peru'}, 'fields': {'Google': 705101174, 'Facebok': 0, 'Akamai': 0, 'Netflix': 0, 'Telefonica': 61816, 'Amazon': 664, 'Yachay': 0}}]
+---------------COUNTRY: Bolivia-------------
+***************** CUSTOMER: SIRIO ***********************
+================= Reource: as ***********************
+
+** nfdump -M /var/lib/nfsen/profiles/profiles-data/live/r0-sql-lim-pe  -T  -r 2020/11/24/nfcapd.202011241945 -n 20 -s srcas/bytes
+nfdump filter:
+out if 87
+Top 20 Src AS ordered by bytes:
+Date first seen          Duration Proto            Src AS    Flows(%)     Packets(%)       Bytes(%)         pps      bps   bpp
+2020-11-24 19:43:39.787   304.568 any                   0   118868(100.0)   55.7 M(100.0)   64.8 G(100.0)   182968    1.7 G  1163
+
+Summary: total flows: 118868, total bytes: 64837061056, total packets: 55726272, avg bps: 1703056422, avg pps: 182968, avg bpp: 1163
+Time window: 2020-11-24 19:13:41 - 2020-11-24 19:48:44
+Total flows processed: 284157, Blocks skipped: 0, Bytes read: 25002492
+Sys: 0.078s flows/second: 3613941.6  Wall: 0.077s flows/second: 3660684.8
+
+[{'name': 'Google', 'match': '15169'}, {'name': 'Facebok', 'match': '32934'}, {'name': 'Akamai', 'match': '20940'}, {'name': 'Netflix', 'match': '2906'}, {'name': 'Telefonica', 'match': '6147', 'priority': 1}, {'name': 'Amazon', 'match': '16509'}, {'name': 'Yachay', 'match': '3132', 'priority': 1}]
+AS 0 FIX Google AS 15169<----------------
+
+** nfdump -M /var/lib/nfsen/profiles/profiles-data/live/r0-sql-lim-pe  -T  -r 2020/11/24/nfcapd.202011241945 -n 20 -s srcas/bytes
+nfdump filter:
+(out if 87) and src as 0 and ((src net 8.8.4.0/24 or src net 8.8.8.0/24 or src net 8.15.202.0/24 or src net 8.34.208.0/20 or src net 8.35.192.0/20 or src net 23.236.48.0/20 or src net 23.251.128.0/19 or src net 34.64.0.0/10 or src net 35.184.0.0/13 or src net 35.192.0.0/11 or src net 35.224.0.0/12 or src net 35.240.0.0/13 or src net 45.121.228.0/22 or src net 64.15.112.0/20 or src net 64.233.160.0/19 or src net 66.102.0.0/20 or src net 66.249.64.0/19 or src net 70.32.128.0/19 or src net 72.14.192.0/18 or src net 74.114.24.0/21 or src net 74.125.0.0/16 or src net 89.207.231.0/24 or src net 103.62.64.0/22 or src net 104.132.0.0/16 or src net 104.133.0.0/17 or src net 104.134.92.0/24 or src net 104.134.128.0/17 or src net 104.154.0.0/15 or src net 104.196.0.0/14 or src net 107.167.160.0/19 or src net 107.178.192.0/18 or src net 108.59.80.0/20 or src net 108.170.192.0/18 or src net 108.177.0.0/17 or src net 113.197.106.0/24 or src net 130.211.0.0/16 or src net 136.22.64.0/23 or src net 136.22.86.0/23 or s
+Top 20 Src AS ordered by bytes:
+Date first seen          Duration Proto            Src AS    Flows(%)     Packets(%)       Bytes(%)         pps      bps   bpp
+2020-11-24 19:43:39.788   304.567 any                   0    33723(100.0)   23.7 M(100.0)   30.3 G(100.0)    77818  796.7 M  1279
+
+Summary: total flows: 33723, total bytes: 30331387008, total packets: 23700864, avg bps: 796708428, avg pps: 77818, avg bpp: 1279
+Time window: 2020-11-24 19:13:41 - 2020-11-24 19:48:44
+Total flows processed: 284157, Blocks skipped: 0, Bytes read: 25002492
+Sys: 0.131s flows/second: 2167102.6  Wall: 0.130s flows/second: 2184529.2
+
+AS 0 CUMULATED AS 0 USAGE: 796700000------------>
+AS 0 USAGE: 796700000------------>
+{'name': 'SIRIO', 'resource_usage': {'as': {}}}
+AS 0 FIX Facebok AS 32934<----------------
+
+** nfdump -M /var/lib/nfsen/profiles/profiles-data/live/r0-sql-lim-pe  -T  -r 2020/11/24/nfcapd.202011241945 -n 20 -s srcas/bytes
+nfdump filter:
+(out if 87) and src as 0 and ((src net 31.13.24.0/21 or src net 31.13.64.0/18 or src net 45.64.40.0/22 or src net 66.220.144.0/20 or src net 69.63.176.0/20 or src net 69.171.224.0/19 or src net 74.119.76.0/22 or src net 102.132.96.0/20 or src net 103.4.96.0/22 or src net 129.134.0.0/16 or src net 147.75.208.0/20 or src net 157.240.0.0/16 or src net 173.252.64.0/18 or src net 179.60.192.0/22 or src net 185.60.216.0/22 or src net 185.89.216.0/22 or src net 199.201.64.0/22 or src net 204.15.20.0/22))
+Top 20 Src AS ordered by bytes:
+Date first seen          Duration Proto            Src AS    Flows(%)     Packets(%)       Bytes(%)         pps      bps   bpp
+2020-11-24 19:43:39.787   304.568 any                   0    20317(100.0)    7.3 M(100.0)    8.3 G(100.0)    24104  217.7 M  1129
+
+Summary: total flows: 20317, total bytes: 8289439616, total packets: 7341568, avg bps: 217736324, avg pps: 24104, avg bpp: 1129
+Time window: 2020-11-24 19:13:41 - 2020-11-24 19:48:44
+Total flows processed: 284157, Blocks skipped: 0, Bytes read: 25002492
+Sys: 0.091s flows/second: 3111866.7  Wall: 0.090s flows/second: 3145835.2
+
+AS 0 CUMULATED AS 0 USAGE: 217700000------------>
+AS 0 USAGE: 217700000------------>
+{'name': 'SIRIO', 'resource_usage': {'as': {'Google': 796700000}}}
+AS 0 FIX Akamai AS 20940<----------------
+
+** nfdump -M /var/lib/nfsen/profiles/profiles-data/live/r0-sql-lim-pe  -T  -r 2020/11/24/nfcapd.202011241945 -n 20 -s srcas/bytes
+nfdump filter:
+(out if 87) and src as 0 and ((src net 2.16.0.0/13 or src net 4.77.205.0/24 or src net 23.0.0.0/12 or src net 23.32.0.0/11 or src net 23.64.0.0/14 or src net 23.72.0.0/13 or src net 23.192.0.0/11 or src net 43.249.213.0/24 or src net 49.231.112.0/24 or src net 59.151.164.0/22 or src net 60.87.0.0/20 or src net 60.254.129.0/24 or src net 60.254.130.0/23 or src net 60.254.140.0/22 or src net 60.254.148.0/24 or src net 60.254.152.0/22 or src net 60.254.173.0/24 or src net 60.254.174.0/23 or src net 60.254.180.0/22 or src net 60.254.184.0/23 or src net 60.254.186.0/24 or src net 63.84.59.0/24 or src net 63.85.36.0/24 or src net 63.150.12.0/24 or src net 63.151.137.0/24 or src net 63.217.8.0/24 or src net 63.217.232.0/24 or src net 63.227.135.0/24 or src net 63.233.60.0/23 or src net 63.233.112.0/24 or src net 63.233.126.0/24 or src net 63.233.224.0/24 or src net 63.235.20.0/23 or src net 63.238.251.0/24 or src net 63.239.232.0/23 or src net 64.208.187.0/24 or src net 64.212.114.0/23 or src net 65.116.164.
+Top 20 Src AS ordered by bytes:
+Date first seen          Duration Proto            Src AS    Flows(%)     Packets(%)       Bytes(%)         pps      bps   bpp
+2020-11-24 19:43:39.788   304.567 any                   0     5438(100.0)    3.0 M(100.0)    4.3 G(100.0)     9944  112.7 M  1417
+
+Summary: total flows: 5438, total bytes: 4292426176, total packets: 3028672, avg bps: 112748293, avg pps: 9944, avg bpp: 1417
+Time window: 2020-11-24 19:13:41 - 2020-11-24 19:48:44
+Total flows processed: 284157, Blocks skipped: 0, Bytes read: 25002492
+Sys: 0.330s flows/second: 860643.7   Wall: 0.328s flows/second: 864587.3
+
+AS 0 CUMULATED AS 0 USAGE: 112700000------------>
+AS 0 USAGE: 112700000------------>
+{'name': 'SIRIO', 'resource_usage': {'as': {'Google': 796700000, 'Facebok': 217700000}}}
+AS 0 FIX Netflix AS 2906<----------------
+
+** nfdump -M /var/lib/nfsen/profiles/profiles-data/live/r0-sql-lim-pe  -T  -r 2020/11/24/nfcapd.202011241945 -n 20 -s srcas/bytes
+nfdump filter:
+(out if 87) and src as 0 and ((src net 23.246.0.0/18 or src net 37.77.184.0/21 or src net 45.57.0.0/17 or src net 64.120.128.0/17 or src net 66.197.128.0/17 or src net 69.53.224.0/19 or src net 108.175.32.0/20 or src net 185.2.220.0/22 or src net 185.9.188.0/22 or src net 192.173.64.0/18 or src net 198.38.96.0/19 or src net 198.45.48.0/20 or src net 208.75.76.0/22))
+Top 20 Src AS ordered by bytes:
+Date first seen          Duration Proto            Src AS    Flows(%)     Packets(%)       Bytes(%)         pps      bps   bpp
+2020-11-24 19:43:39.791   304.370 any                   0     3948(100.0)    3.1 M(100.0)    4.5 G(100.0)    10047  117.3 M  1459
+
+Summary: total flows: 3948, total bytes: 4462457856, total packets: 3058240, avg bps: 117290346, avg pps: 10047, avg bpp: 1459
+Time window: 2020-11-24 19:13:41 - 2020-11-24 19:48:44
+Total flows processed: 284157, Blocks skipped: 0, Bytes read: 25002492
+Sys: 0.089s flows/second: 3190696.0  Wall: 0.088s flows/second: 3221406.0
+
+AS 0 CUMULATED AS 0 USAGE: 117300000------------>
+AS 0 USAGE: 117300000------------>
+{'name': 'SIRIO', 'resource_usage': {'as': {'Google': 796700000, 'Facebok': 217700000, 'Akamai': 112700000}}}
+AS 0 FIX Telefonica AS 6147<----------------
+
+** nfdump -M /var/lib/nfsen/profiles/profiles-data/live/r0-sql-lim-pe  -T  -r 2020/11/24/nfcapd.202011241945 -n 20 -s srcas/bytes
+nfdump filter:
+(out if 87) and src as 0 and ((src net 170.79.36.0/22 or src net 181.64.0.0/18 or src net 181.64.96.0/19 or src net 181.64.128.0/17 or src net 181.65.0.0/16 or src net 181.66.0.0/15 or src net 190.40.0.0/16 or src net 190.41.0.0/17 or src net 190.41.128.0/19 or src net 190.41.192.0/19 or src net 190.42.0.0/15 or src net 190.232.0.0/13 or src net 199.229.76.0/24 or src net 200.0.166.0/23 or src net 200.0.170.0/23 or src net 200.0.172.0/23 or src net 200.4.223.0/24 or src net 200.4.224.0/19 or src net 200.10.64.0/19 or src net 200.10.130.0/23 or src net 200.10.188.0/24 or src net 200.11.48.0/20 or src net 200.16.0.0/21 or src net 200.37.0.0/16 or src net 200.48.0.0/16 or src net 200.60.0.0/16 or src net 200.106.0.0/17 or src net 200.107.128.0/18 or src net 200.121.0.0/16 or src net 201.131.220.0/22 or src net 201.230.0.0/16 or src net 201.240.0.0/16))
+Top 20 Src AS ordered by bytes:
+Date first seen          Duration Proto            Src AS    Flows(%)     Packets(%)       Bytes(%)         pps      bps   bpp
+2020-11-24 19:43:40.363   296.982 any                   0      102(100.0)     7104(100.0)    1.7 M(100.0)       23    45663   238
+
+Summary: total flows: 102, total bytes: 1695168, total packets: 7104, avg bps: 45663, avg pps: 23, avg bpp: 238
+Time window: 2020-11-24 19:13:41 - 2020-11-24 19:48:44
+Total flows processed: 284157, Blocks skipped: 0, Bytes read: 25002492
+Sys: 0.104s flows/second: 2720194.9  Wall: 0.103s flows/second: 2749888.7
+
+AS 0 CUMULATED AS 0 USAGE: 45663------------>
+AS 0 USAGE: 45663------------>
+{'name': 'SIRIO', 'resource_usage': {'as': {'Google': 796700000, 'Facebok': 217700000, 'Akamai': 112700000, 'Netflix': 117300000}}}
+AS 0 FIX Amazon AS 16509<----------------
+
+** nfdump -M /var/lib/nfsen/profiles/profiles-data/live/r0-sql-lim-pe  -T  -r 2020/11/24/nfcapd.202011241945 -n 20 -s srcas/bytes
+nfdump filter:
+(out if 87) and src as 0 and ((src net 2.59.128.0/22 or src net 3.0.0.0/15 or src net 3.2.2.0/23 or src net 3.5.0.0/16 or src net 3.6.0.0/15 or src net 3.8.0.0/13 or src net 3.16.0.0/13 or src net 3.24.0.0/14 or src net 3.34.0.0/15 or src net 3.36.0.0/14 or src net 3.64.0.0/11 or src net 3.96.0.0/14 or src net 3.101.0.0/16 or src net 3.104.0.0/14 or src net 3.112.0.0/14 or src net 3.120.0.0/13 or src net 3.128.0.0/12 or src net 3.208.0.0/12 or src net 3.224.0.0/12 or src net 3.248.0.0/13 or src net 5.252.144.0/23 or src net 8.18.144.0/23 or src net 13.32.0.0/13 or src net 13.48.0.0/13 or src net 13.56.0.0/14 or src net 13.112.0.0/14 or src net 13.124.0.0/14 or src net 13.208.0.0/14 or src net 13.212.0.0/15 or src net 13.224.0.0/12 or src net 13.244.0.0/15 or src net 13.248.0.0/14 or src net 15.152.0.0/16 or src net 15.156.0.0/15 or src net 15.160.0.0/15 or src net 15.164.0.0/15 or src net 15.177.0.0/18 or src net 15.177.64.0/20 or src net 15.177.80.0/21 or src net 15.177.88.0/22 or src net 15.184.0.0/
+Top 20 Src AS ordered by bytes:
+Date first seen          Duration Proto            Src AS    Flows(%)     Packets(%)       Bytes(%)         pps      bps   bpp
+2020-11-24 19:43:39.788   304.567 any                   0    10220(100.0)    3.6 M(100.0)    3.7 G(100.0)    11822   98.0 M  1035
+
+Summary: total flows: 10220, total bytes: 3730282560, total packets: 3600704, avg bps: 97982580, avg pps: 11822, avg bpp: 1035
+Time window: 2020-11-24 19:13:41 - 2020-11-24 19:48:44
+Total flows processed: 284157, Blocks skipped: 0, Bytes read: 25002492
+Sys: 0.536s flows/second: 529161.4   Wall: 0.535s flows/second: 530991.7
+
+
+** nfdump -M /var/lib/nfsen/profiles/profiles-data/live/r0-sql-lim-pe  -T  -r 2020/11/24/nfcapd.202011241945 -n 20 -s srcas/bytes
+nfdump filter:
+(out if 87) and src as 0 and ((src net 74.117.16.0/22 or src net 74.117.148.0/23 or src net 74.118.104.0/22 or src net 74.122.241.0/24 or src net 74.123.145.0/24 or src net 74.214.200.0/21 or src net 74.221.129.0/24 or src net 74.221.130.0/23 or src net 74.221.133.0/24 or src net 74.221.135.0/24 or src net 74.221.137.0/24 or src net 74.221.139.0/24 or src net 74.221.141.0/24 or src net 75.2.0.0/17 or src net 76.76.17.0/24 or src net 76.76.21.0/24 or src net 76.223.0.0/17 or src net 76.223.160.0/21 or src net 76.223.176.0/20 or src net 78.108.124.0/23 or src net 79.125.0.0/17 or src net 79.143.156.0/24 or src net 81.90.143.0/24 or src net 82.115.214.0/24 or src net 82.192.96.0/23 or src net 82.192.100.0/23 or src net 82.192.108.0/23 or src net 85.92.100.0/22 or src net 85.115.38.0/24 or src net 85.236.136.0/21 or src net 85.238.10.0/24 or src net 87.236.67.0/24 or src net 87.237.84.0/24 or src net 87.237.86.0/24 or src net 87.238.80.0/21 or src net 88.218.222.0/24 or src net 89.22.192.0/21 or src net 8
+Top 20 Src AS ordered by bytes:
+Date first seen          Duration Proto            Src AS    Flows(%)     Packets(%)       Bytes(%)         pps      bps   bpp
+2020-11-24 19:43:40.044   299.733 any                   0      181(100.0)    22336(100.0)   11.0 M(100.0)       74   293529   492
+
+Summary: total flows: 181, total bytes: 10997568, total packets: 22336, avg bps: 293529, avg pps: 74, avg bpp: 492
+Time window: 2020-11-24 19:13:41 - 2020-11-24 19:48:44
+Total flows processed: 284157, Blocks skipped: 0, Bytes read: 25002492
+Sys: 0.527s flows/second: 538328.1   Wall: 0.525s flows/second: 540518.4
+
+
+** nfdump -M /var/lib/nfsen/profiles/profiles-data/live/r0-sql-lim-pe  -T  -r 2020/11/24/nfcapd.202011241945 -n 20 -s srcas/bytes
+nfdump filter:
+(out if 87) and src as 0 and ((src net 167.88.58.0/24 or src net 168.100.88.0/24 or src net 168.100.96.0/23 or src net 168.149.240.0/21 or src net 168.151.30.0/24 or src net 168.238.4.0/23 or src net 168.238.6.0/24 or src net 168.238.100.0/24 or src net 168.245.155.0/24 or src net 170.10.223.0/24 or src net 170.39.88.0/24 or src net 170.39.141.0/24 or src net 170.72.224.0/23 or src net 170.72.228.0/23 or src net 170.72.235.0/24 or src net 170.72.236.0/22 or src net 170.89.128.0/22 or src net 170.89.132.0/23 or src net 170.89.134.0/24 or src net 170.89.141.0/24 or src net 170.89.144.0/24 or src net 170.89.146.0/23 or src net 170.89.149.0/24 or src net 170.89.150.0/23 or src net 170.89.152.0/24 or src net 170.89.156.0/22 or src net 170.89.160.0/24 or src net 170.89.164.0/24 or src net 170.89.173.0/24 or src net 170.89.176.0/24 or src net 170.89.178.0/24 or src net 170.89.181.0/24 or src net 170.89.182.0/23 or src net 170.89.184.0/24 or src net 170.89.189.0/24 or src net 170.89.190.0/23 or src net 170.17
+Top 20 Src AS ordered by bytes:
+Date first seen          Duration Proto            Src AS    Flows(%)     Packets(%)       Bytes(%)         pps      bps   bpp
+2020-11-24 19:43:39.790   304.372 any                   0      786(100.0)   329856(100.0)  144.1 M(100.0)     1083    3.8 M   436
+
+Summary: total flows: 786, total bytes: 144110016, total packets: 329856, avg bps: 3787733, avg pps: 1083, avg bpp: 436
+Time window: 2020-11-24 19:13:41 - 2020-11-24 19:48:44
+Total flows processed: 284157, Blocks skipped: 0, Bytes read: 25002492
+Sys: 0.493s flows/second: 575844.9   Wall: 0.491s flows/second: 578130.7
+
+AS 0 CUMULATED AS 0 USAGE: 102093529------------>
+AS 0 USAGE: 102093529------------>
+{'name': 'SIRIO', 'resource_usage': {'as': {'Google': 796700000, 'Facebok': 217700000, 'Akamai': 112700000, 'Netflix': 117300000, 'Telefonica': 45663}}}
+AS 0 FIX Yachay AS 3132<----------------
+
+** nfdump -M /var/lib/nfsen/profiles/profiles-data/live/r0-sql-lim-pe  -T  -r 2020/11/24/nfcapd.202011241945 -n 20 -s srcas/bytes
+nfdump filter:
+(out if 87) and src as 0 and ((src net 161.132.0.0/16 or src net 167.250.204.0/22 or src net 200.0.107.0/24 or src net 200.0.136.0/24 or src net 200.0.164.0/22 or src net 200.0.168.0/24 or src net 200.1.176.0/21 or src net 200.11.32.0/24 or src net 200.11.36.0/22 or src net 209.45.0.0/17))
+Top 20 Src AS ordered by bytes:
+Date first seen          Duration Proto            Src AS    Flows(%)     Packets(%)       Bytes(%)         pps      bps   bpp
+2020-11-24 19:43:44.794   297.961 any                   0      499(100.0)   420544(100.0)  603.5 M(100.0)     1411   16.2 M  1434
+
+Summary: total flows: 499, total bytes: 603468288, total packets: 420544, avg bps: 16202611, avg pps: 1411, avg bpp: 1434
+Time window: 2020-11-24 19:13:41 - 2020-11-24 19:48:44
+Total flows processed: 284157, Blocks skipped: 0, Bytes read: 25002492
+Sys: 0.083s flows/second: 3398925.9  Wall: 0.082s flows/second: 3436828.7
+
+AS 0 CUMULATED AS 0 USAGE: 16200000------------>
+AS 0 USAGE: 16200000------------>
+{'name': 'SIRIO', 'resource_usage': {'as': {'Google': 796700000, 'Facebok': 217700000, 'Akamai': 112700000, 'Netflix': 117300000, 'Telefonica': 45663, 'Amazon': 102093529}}}
+INFLUXING>>>>>>>>>>
+[{'time': 1606333834, 'measurement': 'as', 'tags': {'customer': 'SIRIO', 'country': 'Bolivia'}, 'fields': {'Google': 796700000, 'Facebok': 217700000, 'Akamai': 112700000, 'Netflix': 117300000, 'Telefonica': 45663, 'Amazon': 102093529, 'Yachay': 16200000}}]
+***************** CUSTOMER: Megalink ***********************
+================= Reource: as ***********************
+
+** nfdump -M /var/lib/nfsen/profiles/profiles-data/live/r0-sql-lim-pe  -T  -r 2020/11/24/nfcapd.202011241945 -n 20 -s srcas/bytes
+nfdump filter:
+out if 92
+Top 20 Src AS ordered by bytes:
+Date first seen          Duration Proto            Src AS    Flows(%)     Packets(%)       Bytes(%)         pps      bps   bpp
+2020-11-24 19:43:40.046   302.004 any                   0     2280(100.0)   844608(100.0)    1.1 G(100.0)     2796   28.5 M  1274
+
+Summary: total flows: 2280, total bytes: 1076617984, total packets: 844608, avg bps: 28519303, avg pps: 2796, avg bpp: 1274
+Time window: 2020-11-24 19:13:41 - 2020-11-24 19:48:44
+Total flows processed: 284157, Blocks skipped: 0, Bytes read: 25002492
+Sys: 0.072s flows/second: 3912445.4  Wall: 0.071s flows/second: 3962585.4
+
+[{'name': 'Google', 'match': '15169'}, {'name': 'Facebok', 'match': '32934'}, {'name': 'Akamai', 'match': '20940'}, {'name': 'Netflix', 'match': '2906'}, {'name': 'Telefonica', 'match': '6147', 'priority': 1}, {'name': 'Amazon', 'match': '16509'}, {'name': 'Yachay', 'match': '3132', 'priority': 1}]
+AS 0 FIX Google AS 15169<----------------
+
+** nfdump -M /var/lib/nfsen/profiles/profiles-data/live/r0-sql-lim-pe  -T  -r 2020/11/24/nfcapd.202011241945 -n 20 -s srcas/bytes
+nfdump filter:
+(out if 92) and src as 0 and ((src net 8.8.4.0/24 or src net 8.8.8.0/24 or src net 8.15.202.0/24 or src net 8.34.208.0/20 or src net 8.35.192.0/20 or src net 23.236.48.0/20 or src net 23.251.128.0/19 or src net 34.64.0.0/10 or src net 35.184.0.0/13 or src net 35.192.0.0/11 or src net 35.224.0.0/12 or src net 35.240.0.0/13 or src net 45.121.228.0/22 or src net 64.15.112.0/20 or src net 64.233.160.0/19 or src net 66.102.0.0/20 or src net 66.249.64.0/19 or src net 70.32.128.0/19 or src net 72.14.192.0/18 or src net 74.114.24.0/21 or src net 74.125.0.0/16 or src net 89.207.231.0/24 or src net 103.62.64.0/22 or src net 104.132.0.0/16 or src net 104.133.0.0/17 or src net 104.134.92.0/24 or src net 104.134.128.0/17 or src net 104.154.0.0/15 or src net 104.196.0.0/14 or src net 107.167.160.0/19 or src net 107.178.192.0/18 or src net 108.59.80.0/20 or src net 108.170.192.0/18 or src net 108.177.0.0/17 or src net 113.197.106.0/24 or src net 130.211.0.0/16 or src net 136.22.64.0/23 or src net 136.22.86.0/23 or s
+Top 20 Src AS ordered by bytes:
+Date first seen          Duration Proto            Src AS    Flows(%)     Packets(%)       Bytes(%)         pps      bps   bpp
+2020-11-24 19:43:44.538   295.429 any                   0      321(100.0)    51904(100.0)   51.8 M(100.0)      175    1.4 M   998
+
+Summary: total flows: 321, total bytes: 51839872, total packets: 51904, avg bps: 1403785, avg pps: 175, avg bpp: 998
+Time window: 2020-11-24 19:13:41 - 2020-11-24 19:48:44
+Total flows processed: 284157, Blocks skipped: 0, Bytes read: 25002492
+Sys: 0.074s flows/second: 3829093.1  Wall: 0.073s flows/second: 3886226.6
+
+AS 0 CUMULATED AS 0 USAGE: 1400000------------>
+AS 0 USAGE: 1400000------------>
+{'name': 'Megalink', 'resource_usage': {'as': {}}}
+AS 0 FIX Facebok AS 32934<----------------
+
+** nfdump -M /var/lib/nfsen/profiles/profiles-data/live/r0-sql-lim-pe  -T  -r 2020/11/24/nfcapd.202011241945 -n 20 -s srcas/bytes
+nfdump filter:
+(out if 92) and src as 0 and ((src net 31.13.24.0/21 or src net 31.13.64.0/18 or src net 45.64.40.0/22 or src net 66.220.144.0/20 or src net 69.63.176.0/20 or src net 69.171.224.0/19 or src net 74.119.76.0/22 or src net 102.132.96.0/20 or src net 103.4.96.0/22 or src net 129.134.0.0/16 or src net 147.75.208.0/20 or src net 157.240.0.0/16 or src net 173.252.64.0/18 or src net 179.60.192.0/22 or src net 185.60.216.0/22 or src net 185.89.216.0/22 or src net 199.201.64.0/22 or src net 204.15.20.0/22))
+Top 20 Src AS ordered by bytes:
+Date first seen          Duration Proto            Src AS    Flows(%)     Packets(%)       Bytes(%)         pps      bps   bpp
+2020-11-24 19:43:45.944   292.745 any                   0       31(100.0)     2112(100.0)   223360(100.0)        7     6103   105
+
+Summary: total flows: 31, total bytes: 223360, total packets: 2112, avg bps: 6103, avg pps: 7, avg bpp: 105
+Time window: 2020-11-24 19:13:41 - 2020-11-24 19:48:44
+Total flows processed: 284157, Blocks skipped: 0, Bytes read: 25002492
+Sys: 0.074s flows/second: 3815263.4  Wall: 0.073s flows/second: 3869556.3
+
+AS 0 CUMULATED AS 0 USAGE: 6103------------>
+AS 0 USAGE: 6103------------>
+{'name': 'Megalink', 'resource_usage': {'as': {'Google': 1400000}}}
+AS 0 FIX Akamai AS 20940<----------------
+
+** nfdump -M /var/lib/nfsen/profiles/profiles-data/live/r0-sql-lim-pe  -T  -r 2020/11/24/nfcapd.202011241945 -n 20 -s srcas/bytes
+nfdump filter:
+(out if 92) and src as 0 and ((src net 2.16.0.0/13 or src net 4.77.205.0/24 or src net 23.0.0.0/12 or src net 23.32.0.0/11 or src net 23.64.0.0/14 or src net 23.72.0.0/13 or src net 23.192.0.0/11 or src net 43.249.213.0/24 or src net 49.231.112.0/24 or src net 59.151.164.0/22 or src net 60.87.0.0/20 or src net 60.254.129.0/24 or src net 60.254.130.0/23 or src net 60.254.140.0/22 or src net 60.254.148.0/24 or src net 60.254.152.0/22 or src net 60.254.173.0/24 or src net 60.254.174.0/23 or src net 60.254.180.0/22 or src net 60.254.184.0/23 or src net 60.254.186.0/24 or src net 63.84.59.0/24 or src net 63.85.36.0/24 or src net 63.150.12.0/24 or src net 63.151.137.0/24 or src net 63.217.8.0/24 or src net 63.217.232.0/24 or src net 63.227.135.0/24 or src net 63.233.60.0/23 or src net 63.233.112.0/24 or src net 63.233.126.0/24 or src net 63.233.224.0/24 or src net 63.235.20.0/23 or src net 63.238.251.0/24 or src net 63.239.232.0/23 or src net 64.208.187.0/24 or src net 64.212.114.0/23 or src net 65.116.164.
+Top 20 Src AS ordered by bytes:
+Date first seen          Duration Proto            Src AS    Flows(%)     Packets(%)       Bytes(%)         pps      bps   bpp
+2020-11-24 19:45:30.778   118.785 any                   0        6(100.0)      384(100.0)    41472(100.0)        3     2793   108
+
+Summary: total flows: 6, total bytes: 41472, total packets: 384, avg bps: 2793, avg pps: 3, avg bpp: 108
+Time window: 2020-11-24 19:13:41 - 2020-11-24 19:48:44
+Total flows processed: 284157, Blocks skipped: 0, Bytes read: 25002492
+Sys: 0.079s flows/second: 3585170.1  Wall: 0.077s flows/second: 3657622.1
+
+AS 0 CUMULATED AS 0 USAGE: 2793------------>
+AS 0 USAGE: 2793------------>
+{'name': 'Megalink', 'resource_usage': {'as': {'Google': 1400000, 'Facebok': 6103}}}
+AS 0 FIX Netflix AS 2906<----------------
+
+** nfdump -M /var/lib/nfsen/profiles/profiles-data/live/r0-sql-lim-pe  -T  -r 2020/11/24/nfcapd.202011241945 -n 20 -s srcas/bytes
+nfdump filter:
+(out if 92) and src as 0 and ((src net 23.246.0.0/18 or src net 37.77.184.0/21 or src net 45.57.0.0/17 or src net 64.120.128.0/17 or src net 66.197.128.0/17 or src net 69.53.224.0/19 or src net 108.175.32.0/20 or src net 185.2.220.0/22 or src net 185.9.188.0/22 or src net 192.173.64.0/18 or src net 198.38.96.0/19 or src net 198.45.48.0/20 or src net 208.75.76.0/22))
+Top 20 Src AS ordered by bytes:
+Date first seen          Duration Proto            Src AS    Flows(%)     Packets(%)       Bytes(%)         pps      bps   bpp
+
+Summary: total flows: 0, total bytes: 0, total packets: 0, avg bps: 0, avg pps: 0, avg bpp: 0
+Time window: 2020-11-24 19:13:41 - 2020-11-24 19:48:44
+Total flows processed: 284157, Blocks skipped: 0, Bytes read: 25002492
+Sys: 0.112s flows/second: 2526513.7  Wall: 0.111s flows/second: 2542746.4
+
+AS 0 CUMULATED AS 0 USAGE: 0------------>
+AS 0 USAGE: 0------------>
+{'name': 'Megalink', 'resource_usage': {'as': {'Google': 1400000, 'Facebok': 6103, 'Akamai': 2793}}}
+AS 0 FIX Telefonica AS 6147<----------------
+
+** nfdump -M /var/lib/nfsen/profiles/profiles-data/live/r0-sql-lim-pe  -T  -r 2020/11/24/nfcapd.202011241945 -n 20 -s srcas/bytes
+nfdump filter:
+(out if 92) and src as 0 and ((src net 170.79.36.0/22 or src net 181.64.0.0/18 or src net 181.64.96.0/19 or src net 181.64.128.0/17 or src net 181.65.0.0/16 or src net 181.66.0.0/15 or src net 190.40.0.0/16 or src net 190.41.0.0/17 or src net 190.41.128.0/19 or src net 190.41.192.0/19 or src net 190.42.0.0/15 or src net 190.232.0.0/13 or src net 199.229.76.0/24 or src net 200.0.166.0/23 or src net 200.0.170.0/23 or src net 200.0.172.0/23 or src net 200.4.223.0/24 or src net 200.4.224.0/19 or src net 200.10.64.0/19 or src net 200.10.130.0/23 or src net 200.10.188.0/24 or src net 200.11.48.0/20 or src net 200.16.0.0/21 or src net 200.37.0.0/16 or src net 200.48.0.0/16 or src net 200.60.0.0/16 or src net 200.106.0.0/17 or src net 200.107.128.0/18 or src net 200.121.0.0/16 or src net 201.131.220.0/22 or src net 201.230.0.0/16 or src net 201.240.0.0/16))
+Top 20 Src AS ordered by bytes:
+Date first seen          Duration Proto            Src AS    Flows(%)     Packets(%)       Bytes(%)         pps      bps   bpp
+
+Summary: total flows: 0, total bytes: 0, total packets: 0, avg bps: 0, avg pps: 0, avg bpp: 0
+Time window: 2020-11-24 19:13:41 - 2020-11-24 19:48:44
+Total flows processed: 284157, Blocks skipped: 0, Bytes read: 25002492
+Sys: 0.075s flows/second: 3778331.8  Wall: 0.074s flows/second: 3829144.7
+
+AS 0 CUMULATED AS 0 USAGE: 0------------>
+AS 0 USAGE: 0------------>
+{'name': 'Megalink', 'resource_usage': {'as': {'Google': 1400000, 'Facebok': 6103, 'Akamai': 2793, 'Netflix': 0}}}
+AS 0 FIX Amazon AS 16509<----------------
+
+** nfdump -M /var/lib/nfsen/profiles/profiles-data/live/r0-sql-lim-pe  -T  -r 2020/11/24/nfcapd.202011241945 -n 20 -s srcas/bytes
+nfdump filter:
+(out if 92) and src as 0 and ((src net 2.59.128.0/22 or src net 3.0.0.0/15 or src net 3.2.2.0/23 or src net 3.5.0.0/16 or src net 3.6.0.0/15 or src net 3.8.0.0/13 or src net 3.16.0.0/13 or src net 3.24.0.0/14 or src net 3.34.0.0/15 or src net 3.36.0.0/14 or src net 3.64.0.0/11 or src net 3.96.0.0/14 or src net 3.101.0.0/16 or src net 3.104.0.0/14 or src net 3.112.0.0/14 or src net 3.120.0.0/13 or src net 3.128.0.0/12 or src net 3.208.0.0/12 or src net 3.224.0.0/12 or src net 3.248.0.0/13 or src net 5.252.144.0/23 or src net 8.18.144.0/23 or src net 13.32.0.0/13 or src net 13.48.0.0/13 or src net 13.56.0.0/14 or src net 13.112.0.0/14 or src net 13.124.0.0/14 or src net 13.208.0.0/14 or src net 13.212.0.0/15 or src net 13.224.0.0/12 or src net 13.244.0.0/15 or src net 13.248.0.0/14 or src net 15.152.0.0/16 or src net 15.156.0.0/15 or src net 15.160.0.0/15 or src net 15.164.0.0/15 or src net 15.177.0.0/18 or src net 15.177.64.0/20 or src net 15.177.80.0/21 or src net 15.177.88.0/22 or src net 15.184.0.0/
+Top 20 Src AS ordered by bytes:
+Date first seen          Duration Proto            Src AS    Flows(%)     Packets(%)       Bytes(%)         pps      bps   bpp
+2020-11-24 19:43:41.003   299.511 any                   0      233(100.0)    24064(100.0)   25.5 M(100.0)       80   680700  1059
+
+Summary: total flows: 233, total bytes: 25484672, total packets: 24064, avg bps: 680700, avg pps: 80, avg bpp: 1059
+Time window: 2020-11-24 19:13:41 - 2020-11-24 19:48:44
+Total flows processed: 284157, Blocks skipped: 0, Bytes read: 25002492
+Sys: 0.082s flows/second: 3445580.2  Wall: 0.080s flows/second: 3536974.6
+
+
+** nfdump -M /var/lib/nfsen/profiles/profiles-data/live/r0-sql-lim-pe  -T  -r 2020/11/24/nfcapd.202011241945 -n 20 -s srcas/bytes
+nfdump filter:
+(out if 92) and src as 0 and ((src net 74.117.16.0/22 or src net 74.117.148.0/23 or src net 74.118.104.0/22 or src net 74.122.241.0/24 or src net 74.123.145.0/24 or src net 74.214.200.0/21 or src net 74.221.129.0/24 or src net 74.221.130.0/23 or src net 74.221.133.0/24 or src net 74.221.135.0/24 or src net 74.221.137.0/24 or src net 74.221.139.0/24 or src net 74.221.141.0/24 or src net 75.2.0.0/17 or src net 76.76.17.0/24 or src net 76.76.21.0/24 or src net 76.223.0.0/17 or src net 76.223.160.0/21 or src net 76.223.176.0/20 or src net 78.108.124.0/23 or src net 79.125.0.0/17 or src net 79.143.156.0/24 or src net 81.90.143.0/24 or src net 82.115.214.0/24 or src net 82.192.96.0/23 or src net 82.192.100.0/23 or src net 82.192.108.0/23 or src net 85.92.100.0/22 or src net 85.115.38.0/24 or src net 85.236.136.0/21 or src net 85.238.10.0/24 or src net 87.236.67.0/24 or src net 87.237.84.0/24 or src net 87.237.86.0/24 or src net 87.238.80.0/21 or src net 88.218.222.0/24 or src net 89.22.192.0/21 or src net 8
+Top 20 Src AS ordered by bytes:
+Date first seen          Duration Proto            Src AS    Flows(%)     Packets(%)       Bytes(%)         pps      bps   bpp
+
+Summary: total flows: 0, total bytes: 0, total packets: 0, avg bps: 0, avg pps: 0, avg bpp: 0
+Time window: 2020-11-24 19:13:41 - 2020-11-24 19:48:44
+Total flows processed: 284157, Blocks skipped: 0, Bytes read: 25002492
+Sys: 0.082s flows/second: 3437909.8  Wall: 0.080s flows/second: 3526483.7
+
+
+** nfdump -M /var/lib/nfsen/profiles/profiles-data/live/r0-sql-lim-pe  -T  -r 2020/11/24/nfcapd.202011241945 -n 20 -s srcas/bytes
+nfdump filter:
+(out if 92) and src as 0 and ((src net 167.88.58.0/24 or src net 168.100.88.0/24 or src net 168.100.96.0/23 or src net 168.149.240.0/21 or src net 168.151.30.0/24 or src net 168.238.4.0/23 or src net 168.238.6.0/24 or src net 168.238.100.0/24 or src net 168.245.155.0/24 or src net 170.10.223.0/24 or src net 170.39.88.0/24 or src net 170.39.141.0/24 or src net 170.72.224.0/23 or src net 170.72.228.0/23 or src net 170.72.235.0/24 or src net 170.72.236.0/22 or src net 170.89.128.0/22 or src net 170.89.132.0/23 or src net 170.89.134.0/24 or src net 170.89.141.0/24 or src net 170.89.144.0/24 or src net 170.89.146.0/23 or src net 170.89.149.0/24 or src net 170.89.150.0/23 or src net 170.89.152.0/24 or src net 170.89.156.0/22 or src net 170.89.160.0/24 or src net 170.89.164.0/24 or src net 170.89.173.0/24 or src net 170.89.176.0/24 or src net 170.89.178.0/24 or src net 170.89.181.0/24 or src net 170.89.182.0/23 or src net 170.89.184.0/24 or src net 170.89.189.0/24 or src net 170.89.190.0/23 or src net 170.17
+Top 20 Src AS ordered by bytes:
+Date first seen          Duration Proto            Src AS    Flows(%)     Packets(%)       Bytes(%)         pps      bps   bpp
+2020-11-24 19:43:59.192   275.242 any                   0       17(100.0)     1088(100.0)   303296(100.0)        3     8815   278
+
+Summary: total flows: 17, total bytes: 303296, total packets: 1088, avg bps: 8815, avg pps: 3, avg bpp: 278
+Time window: 2020-11-24 19:13:41 - 2020-11-24 19:48:44
+Total flows processed: 284157, Blocks skipped: 0, Bytes read: 25002492
+Sys: 0.083s flows/second: 3396122.9  Wall: 0.081s flows/second: 3479800.1
+
+AS 0 CUMULATED AS 0 USAGE: 689515------------>
+AS 0 USAGE: 689515------------>
+{'name': 'Megalink', 'resource_usage': {'as': {'Google': 1400000, 'Facebok': 6103, 'Akamai': 2793, 'Netflix': 0, 'Telefonica': 0}}}
+AS 0 FIX Yachay AS 3132<----------------
+
+** nfdump -M /var/lib/nfsen/profiles/profiles-data/live/r0-sql-lim-pe  -T  -r 2020/11/24/nfcapd.202011241945 -n 20 -s srcas/bytes
+nfdump filter:
+(out if 92) and src as 0 and ((src net 161.132.0.0/16 or src net 167.250.204.0/22 or src net 200.0.107.0/24 or src net 200.0.136.0/24 or src net 200.0.164.0/22 or src net 200.0.168.0/24 or src net 200.1.176.0/21 or src net 200.11.32.0/24 or src net 200.11.36.0/22 or src net 209.45.0.0/17))
+Top 20 Src AS ordered by bytes:
+Date first seen          Duration Proto            Src AS    Flows(%)     Packets(%)       Bytes(%)         pps      bps   bpp
+
+Summary: total flows: 0, total bytes: 0, total packets: 0, avg bps: 0, avg pps: 0, avg bpp: 0
+Time window: 2020-11-24 19:13:41 - 2020-11-24 19:48:44
+Total flows processed: 284157, Blocks skipped: 0, Bytes read: 25002492
+Sys: 0.073s flows/second: 3861196.0  Wall: 0.072s flows/second: 3912122.3
+
+AS 0 CUMULATED AS 0 USAGE: 0------------>
+AS 0 USAGE: 0------------>
+{'name': 'Megalink', 'resource_usage': {'as': {'Google': 1400000, 'Facebok': 6103, 'Akamai': 2793, 'Netflix': 0, 'Telefonica': 0, 'Amazon': 689515}}}
+INFLUXING>>>>>>>>>>
+[{'time': 1606333834, 'measurement': 'as', 'tags': {'customer': 'Megalink', 'country': 'Bolivia'}, 'fields': {'Google': 1400000, 'Facebok': 6103, 'Akamai': 2793, 'Netflix': 0, 'Telefonica': 0, 'Amazon': 689515, 'Yachay': 0}}]
+[{'customers': [{'name': 'Econocable',
+                 'resource_usage': {'as': {'Akamai': 248900000,
+                                           'Amazon': 73000000,
+                                           'Facebok': 739000000,
+                                           'Google': 596900000,
+                                           'Netflix': 1407800000,
+                                           'Telefonica': 189400000,
+                                           'Yachay': 812314},
+                                    'uplinks': {'FACEBOOK PNI 1': 356100000,
+                                                'FACEBOOK PNI 2': 393300000,
+                                                'GGC Google': 1700000000,
+                                                'HSIP': 915600000,
+                                                'WAVE 1': 1100000000,
+                                                'WAVE 2': 1200000000}}},
+                {'name': 'Bernardo',
+                 'resource_usage': {'as': {'Akamai': 0,
+                                           'Amazon': 0,
+                                           'Facebok': 0,
+                                           'Google': 0,
+                                           'Netflix': 0,
+                                           'Telefonica': 0,
+                                           'Yachay': 0},
+                                    'uplinks': {'FACEBOOK PNI 1': 0,
+                                                'FACEBOOK PNI 2': 0,
+                                                'GGC Google': 0,
+                                                'HSIP': 0,
+                                                'WAVE 1': 0,
+                                                'WAVE 2': 0}}},
+                {'name': 'Bernardo 2',
+                 'resource_usage': {'as': {'Akamai': 623700000,
+                                           'Amazon': 224021227,
+                                           'Facebok': 17400000,
+                                           'Google': 2400000000,
+                                           'Netflix': 1137500000,
+                                           'Telefonica': 90200000,
+                                           'Yachay': 238700000},
+                                    'uplinks': {'FACEBOOK PNI 1': 0,
+                                                'FACEBOOK PNI 2': 0,
+                                                'GGC Google': 0,
+                                                'HSIP': 2900000000,
+                                                'WAVE 1': 2000000000,
+                                                'WAVE 2': 2000000000}}},
+                {'name': 'Cable Santa Fe',
+                 'resource_usage': {'as': {'Akamai': 86000000,
+                                           'Amazon': 79872876,
+                                           'Facebok': 1000000000,
+                                           'Google': 700140802,
+                                           'Netflix': 677300000,
+                                           'Telefonica': 132800000,
+                                           'Yachay': 253200000},
+                                    'uplinks': {'FACEBOOK PNI 1': 528000000,
+                                                'FACEBOOK PNI 2': 495500000,
+                                                'GGC Google': 1900000000,
+                                                'HSIP': 411800000,
+                                                'WAVE 1': 1100000000,
+                                                'WAVE 2': 1000000000}}},
+                {'name': 'Mega Andina',
+                 'resource_usage': {'as': {'Akamai': 0,
+                                           'Amazon': 0,
+                                           'Facebok': 0,
+                                           'Google': 0,
+                                           'Netflix': 0,
+                                           'Telefonica': 0,
+                                           'Yachay': 0},
+                                    'uplinks': {'FACEBOOK PNI 1': 0,
+                                                'FACEBOOK PNI 2': 0,
+                                                'GGC Google': 0,
+                                                'HSIP': 0,
+                                                'WAVE 1': 0,
+                                                'WAVE 2': 0}}},
+                {'name': 'GGC Google DOWN',
+                 'resource_usage': {'as': {'Akamai': 0,
+                                           'Amazon': 664,
+                                           'Facebok': 0,
+                                           'Google': 705101174,
+                                           'Netflix': 0,
+                                           'Telefonica': 61816,
+                                           'Yachay': 0},
+                                    'uplinks': {'FACEBOOK PNI 1': 0,
+                                                'FACEBOOK PNI 2': 0,
+                                                'GGC Google': 0,
+                                                'HSIP': 16300000,
+                                                'WAVE 1': 348300000,
+                                                'WAVE 2': 357800000}}}],
+  'name': 'Peru'},
+ {'customers': [{'name': 'SIRIO',
+                 'resource_usage': {'as': {'Akamai': 112700000,
+                                           'Amazon': 102093529,
+                                           'Facebok': 217700000,
+                                           'Google': 796700000,
+                                           'Netflix': 117300000,
+                                           'Telefonica': 45663,
+                                           'Yachay': 16200000}}},
+                {'name': 'Megalink',
+                 'resource_usage': {'as': {'Akamai': 2793,
+                                           'Amazon': 689515,
+                                           'Facebok': 6103,
+                                           'Google': 1400000,
+                                           'Netflix': 0,
+                                           'Telefonica': 0,
+                                           'Yachay': 0}}}],
+  'name': 'Bolivia'}]
+TOTAL TIME: 148.7870318889618
+
+Process finished with exit code 0
